@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  &--index {
+    justify-content: flex-start;
+
+    img:not(:last-of-type) {
+      margin-right: rem(20);
+    }
+  }
+}

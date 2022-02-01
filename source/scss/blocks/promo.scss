@@ -1,0 +1,206 @@
+.promo,
+.promo__img,
+.promo__title,
+.promo__text,
+.promo__link,
+.promo__buttons {
+  @extend %w100;
+}
+
+.promo {
+  position: relative;
+
+  height: 100%;
+
+  padding-top: rem(181);
+  padding-bottom: rem(242);
+
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    width: 100%;
+    height: rem(81);
+
+    background-color: $bg;
+    background-image: url('../img/pattern.png');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+
+    transform: rotate(180deg);
+
+    content: '';
+  }
+
+  &--login {
+    padding-top: rem(141);
+    padding-bottom: rem(70);
+  }
+}
+
+.promo__img {
+  position: absolute;
+
+  top: rem(121);
+  left: 0;
+
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: right center;
+  }
+}
+
+.promo__wrapper {
+  @extend %wrapper;
+
+  min-height: 100%;
+
+  &--login {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.promo__content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 540px;
+
+  margin-right: auto;
+  margin-left: 0;
+
+  padding-left: rem(75);
+}
+
+.promo__logo {
+  width: 468px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 0 auto rem(115) 0;
+}
+
+.promo__title {
+  margin-bottom: rem(90);
+
+  @include title;
+}
+
+.promo__text {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: rem(70);
+}
+
+.promo__buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: rem(30);
+}
+
+.promo__button {
+  &:not(:last-of-type) {
+    margin-right: rem(20);
+  }
+}
+
+.promo__link {
+  width: auto;
+
+  color: $red;
+
+  font-weight: 700;
+
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $red-80;
+
+    transition: color 0.3s;
+
+    svg {
+      transition: stroke 0.3s;
+
+      stroke: $red-80;
+    }
+  }
+
+  &--back {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-right: auto;
+    margin-bottom: rem(21);
+    margin-left: 0;
+  }
+}
+
+.promo__link-icon {
+  fill: none;
+  stroke: $red;
+
+  &--left {
+    margin-right: rem(8);
+  }
+}
+
+.promo__social {
+  position: fixed;
+
+  top: 50%;
+  left: rem(30);
+
+  z-index: 2;
+
+  transform: translateY(-50%);
+}
+
+.promo__form {
+  margin-bottom: rem(40);
+
+  &--sign-in,
+  &--sign-up {
+    max-width: 100%;
+  }
+
+  &--sign-in {
+    width: 480px;
+  }
+
+  &--sign-up {
+    width: 800px;
+  }
+}

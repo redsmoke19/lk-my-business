@@ -1,0 +1,111 @@
+.button {
+  @extend %button-reset;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  &--red,
+  &--primary {
+    &:disabled,
+    &.disabled {
+      border: 2px solid $gray;
+
+      color: $black;
+
+      background-color: $gray;
+    }
+  }
+
+  &--red {
+    padding: rem(17) rem(38);
+
+    border: 2px solid $red;
+
+    color: $white;
+
+    font-weight: 700;
+
+    background-color: $red;
+
+    &:hover,
+    &:focus {
+      border-color: $red-dark;
+
+      background-color: $red-dark;
+    }
+  }
+
+  &--primary {
+    padding: rem(17) rem(38);
+
+    @include text-small;
+
+    border: 2px solid transparent;
+
+    color: $red;
+
+    background-color: $red-10;
+
+    &-small {
+      padding: rem(9);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $red-20;
+    }
+  }
+
+  &--white {
+    padding: rem(17) rem(38);
+
+    border: 2px solid $red-10;
+
+    color: $red;
+
+    font-weight: 700;
+
+    background-color: transparent;
+
+    &-small {
+      padding: rem(9);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+
+      background-color: $red-10;
+    }
+
+    &:disabled,
+    &.disabled {
+      border: 2px solid $gray;
+
+      color: $black;
+    }
+  }
+}
+
+.button__icon {
+  &--red {
+    fill: none;
+
+    stroke: $red;
+  }
+
+  &--left {
+    margin-right: rem(10);
+  }
+}

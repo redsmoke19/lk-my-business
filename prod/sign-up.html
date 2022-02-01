@@ -1,0 +1,159 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>ЛК Мой бизнес - Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header page-header--inner">
+        <div class="page-header__wrapper page-header__wrapper--inner"><a class="page-header__link link link--red" href="https://mb89.ru"><span class="link__text link__text--red link__text--left">mb89.ru</span>
+            <svg class="link__icon link__icon--red link__icon--right" width="20" height="20">
+              <use xlink:href="img/sprites/sprite-mono.svg#arrow-top"></use>
+            </svg></a><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+            <svg class="link__icon link__icon--black" width="20" height="20">
+              <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+            </svg><span class="link__text">8-800-350-00-89</span></a></div>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Регистрация</h1>
+        <section class="promo promo--login">
+          <div class="promo__wrapper promo__wrapper--login">
+            <form class="promo__form promo__form--sign-up form form--login" action="order.html" method="get">
+              <h2 class="form__title form__title--login form__title--sign-up">Регистрация</h2>
+              <div class="form__text form__text--sign-up">
+                <p>Уже зарегистрированы?<a href="sign-in.html"> Войдите</a></p>
+              </div>
+              <div class="form__row form__row--field">
+                <div class="form__col form__col--3">
+                  <div class="form__field">
+                    <input type="text" name="surname" required="true" id="surname"/>
+                    <label class="form__placeholder" fot="surname">Фамилия</label>
+                  </div><span class="form__error">Неккорректная фамилия</span>
+                </div>
+                <div class="form__col form__col--3">
+                  <div class="form__field">
+                    <input type="text" name="name" required="true" id="name" value="jkshdfkdh"/>
+                    <label class="form__placeholder" fot="name">Имя</label>
+                  </div><span class="form__error">Неккорректное имя</span>
+                </div>
+                <div class="form__col form__col--3">
+                  <div class="form__field">
+                    <input type="text" name="patronymic" id="patronymic"/>
+                    <label class="form__placeholder" fot="patronymic">Отчество</label>
+                  </div><span class="form__error">Неккорректное отчество</span>
+                </div>
+              </div>
+              <div class="form__row form__row--field">
+                <div class="form__col form__col--2">
+                  <div class="form__field">
+                    <input type="email" name="email" required="true" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}" value="dgdg"/>
+                    <label class="form__placeholder" fot="email">E-mail</label>
+                  </div><span class="form__error">Неккорректный e-mail</span>
+                </div>
+                <div class="form__col form__col--2">
+                  <div class="form__field">
+                    <input type="tel" name="phone" required="true" id="phone"/>
+                    <label class="form__placeholder" fot="phone">Телефон</label>
+                  </div><span class="form__error">Неккорректный телефон</span>
+                </div>
+              </div>
+              <div class="form__row form__row--field">
+                <div class="form__field form__field--select">
+                  <input type="text" name="status-text" required="true" id="status-text"/>
+                  <label class="form__placeholder" fot="status-text">Статус</label>
+                  <input type="hidden" name="status-id" id="status-id" value="3"/>
+                  <ul class="form__select">
+                    <li class="form__select-item" data-value="1">Самозанятый</li>
+                    <li class="form__select-item" data-value="2">Индивидуальный предприниматель</li>
+                    <li class="form__select-item" data-value="3">Юридическое лицо</li>
+                  </ul>
+                </div><span class="form__error">Выберите статус</span>
+              </div>
+              <div class="form__row form__row--field">
+                <div class="form__field">
+                  <input type="text" name="inn" required="true" id="inn"/>
+                  <label class="form__placeholder" fot="inn">ИНН</label>
+                </div><span class="form__error">Неккорректный ИНН</span>
+              </div>
+              <div class="form__row form__row--field form__row--organisation">
+                <div class="form__field">
+                  <input type="text" name="organisation" id="organisation"/>
+                  <label class="form__placeholder" fot="organisation">Наименование организации</label>
+                </div><span class="form__error">Неккорректное Наименование организации</span>
+              </div>
+              <div class="form__row form__row--field form__row--organisation">
+                <div class="form__field">
+                  <input type="text" name="address" id="address"/>
+                  <label class="form__placeholder" fot="address">Юридический адрес</label>
+                </div><span class="form__error">Неккорректный Юридический адрес</span>
+              </div>
+              <div class="form__row form__row--field">
+                <div class="form__col form__col--2">
+                  <div class="form__field form__field--password">
+                    <input type="password" name="password-1" required="true" id="pass-1"/>
+                    <label class="form__placeholder" fot="pass-1">Придумайте пароль</label>
+                    <button class="form__show-password" type="button"><span class="visually-hidden">Показать/скрыть пароль</span></button>
+                  </div><span class="form__error">Пароли не совпадают</span>
+                </div>
+                <div class="form__col form__col--2">
+                  <div class="form__field form__field--password">
+                    <input type="password" name="password-2" required="true" id="pass-2"/>
+                    <label class="form__placeholder" fot="pass-2">Повторите пароль</label>
+                    <button class="form__show-password" type="button"><span class="visually-hidden">Показать/скрыть пароль</span></button>
+                  </div><span class="form__error">Пароли не совпадают</span>
+                </div>
+              </div>
+              <div class="form__text form__text--privacy">
+                <p>Нажимая на кнопку «Создать учетную запись» я соглашаюсь на обработку<a> персональных данных</a>, принимаю условия<a> пользовательского соглашения</a> и<a> публичной оферты.</a></p>
+              </div>
+              <div class="form__buttons form__buttons--sign-up"><a class="form__button form__button--back button button--white" href="sign-in.html">
+                  <svg class="button__icon button__icon--red button__icon--left" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite-mono.svg#arrow-back"></use>
+                  </svg>Назад ко входу</a>
+                <button class="form__button form__button--create button button--red" type="submit">Создать учетную запись</button>
+              </div>
+            </form>
+            <div class="promo__social social">
+              <ul class="social__list social__list--vertical">
+                <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                    <svg width="24" height="24" aria-label="fb">
+                      <use xlink:href="img/sprites/sprite-mono.svg#fb"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                    <svg width="24" height="24" aria-label="insta">
+                      <use xlink:href="img/sprites/sprite-mono.svg#insta"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                    <svg width="24" height="24" aria-label="vk">
+                      <use xlink:href="img/sprites/sprite-mono.svg#vk"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__top">
+          <div class="page-footer__wrapper">
+            <ul class="page-footer__list">
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Политика конфиденциальности</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Пользовательское соглашение</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Согласие на обработку персональных данных</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Форма обратной связи</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page-footer__wrapper">
+            <p class="page-footer__copyright">© 2021 Мой бизнес</p>
+          </div>
+        </div>
+      </footer>
+      <script src="js/main.min.js"></script>
+    </div>
+  </body>
+</html>

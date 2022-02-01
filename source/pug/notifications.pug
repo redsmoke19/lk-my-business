@@ -1,0 +1,60 @@
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    include includes/viewport.pug
+    title ЛК Мой бизнес - Личный кабинет
+    link(rel="stylesheet", type="text/css", href="css/main.min.css")
+  body
+    div(class="container")
+      include includes/header.pug
+      main(class="page-main")
+        section(class="about")
+          header(class="about__header about__header--account")
+            div(class="about__wrapper")
+              h1(class="about__title about__title--account") Уведомления
+          div(class="about__wrapper about__wrapper--inner")
+            div(class="about__content about__content--notifications")
+              div(class="account account--content")
+                h2(class="account__subtitle") новые
+                ul(class="about__list about__list--account")
+                    li(class="about__item about__item--notifications")
+                      span(class="status status--notifications status--received")
+
+                      div(class="about__center about__center--notification")
+                        h3(class="about__notification-title") Заявка на займ одобрена!
+                        p(class="about__notification-text")
+                          | Ваша заявка на
+                          a(href="micro.html")  микрозайм «Недвижимость»
+                          |  одобрена.
+
+                      time(class="about__time about__time--notifications") 18:00, 24 ноября 2021
+
+              div(class="account account--content")
+                h2(class="account__subtitle") просмотренные
+                ul(class="about__list about__list--account")
+                    li(class="about__item about__item--notifications")
+                      span(class="status status--notifications status--warning")
+
+                      div(class="about__center about__center--notification")
+                        h3(class="about__notification-title") Требуются дополнительные документы
+                        p(class="about__notification-text")
+                          a(href="") Пришел ответ
+                          |  по заявке
+                          a(href="micro.html")  микрозайм «Недвижимость»
+                          |  — требуются дополнительные документы.
+
+                      time(class="about__time about__time--notifications") 15:30, 24 ноября 2021
+                    li(class="about__item about__item--notifications")
+                      span(class="status status--notifications status--in-processing")
+
+                      div(class="about__center about__center--notification")
+                        h3(class="about__notification-title") Заявка на займ отправлена на рассмотрение
+                        p(class="about__notification-text")
+                          |  Ваша заявка на
+                          a(href="micro.html")  микрозайм «Недвижимость»
+                          |  отправлена на рассмотрение.
+
+                      time(class="about__time about__time--notifications") 15:10, 24 ноября 2021
+
+      include includes/footer.pug

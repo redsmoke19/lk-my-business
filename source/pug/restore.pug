@@ -1,0 +1,52 @@
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    include includes/viewport.pug
+    title ЛК Мой бизнес - Восстановление пароля
+    link(rel="stylesheet", type="text/css", href="css/main.min.css")
+  body
+    div(class="container")
+      include includes/header-login.pug
+      main(class="page-main")
+        h1(class="visually-hidden") Восстановление пароля
+
+        section(class="promo promo--login")
+          div(class="promo__wrapper promo__wrapper--login")
+            form(class="promo__form promo__form--sign-in form form--login", action="restore.html", method="get")
+                  h2(class="form__title form__title--login") Восстановление пароля
+                  div(class="form__row form__row--field")
+                    div(class="form__field form__field--password")
+                      input(type="password", name="password", required="true", id="new-pass")
+                      label(class="form__placeholder", fot="new-pass") Новый пароль
+
+                      button(class="form__show-password", type="button")
+                        span(class="visually-hidden") Показать/скрыть пароль
+                    span(class="form__error") Пароли не совпадают
+
+                  div(class="form__row form__row--field")
+                    div(class="form__field form__field--password")
+                      input(type="password", name="password", required="true", id="confirm-pass")
+                      label(class="form__placeholder", fot="confirm-pass") Повторите новый пароль
+
+                      button(class="form__show-password", type="button")
+                        span(class="visually-hidden") Показать/скрыть пароль
+                    span(class="form__error") Пароли не совпадают
+
+                  button(class="form__button form__button--submit form__button--restore button button--red", type="submit") Изменить пароль
+
+            a(class="promo__link promo__link--login", href="sign-up.html") Зарегистрироваться
+
+            div(class="promo__social social")
+                - const socials = ['fb', 'insta', 'vk'];
+                  ul(class="social__list social__list--vertical")
+                    each val in socials
+                      li(class="social__item social__item--vertical")
+                        a(class="social__link social__link--brown", href="#", target="_blank")
+                          svg(width="24", height="24", aria-label= val)
+                              use(xlink:href="img/sprites/sprite-mono.svg#" + val)
+      include includes/footer.pug
+
+
+
+

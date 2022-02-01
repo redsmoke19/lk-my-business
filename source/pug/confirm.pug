@@ -1,0 +1,37 @@
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    include includes/viewport.pug
+    title ЛК Мой бизнес - Подтверждение e-mail
+    link(rel="stylesheet", type="text/css", href="css/main.min.css")
+  body
+    div(class="container")
+      include includes/header-login.pug
+      main(class="page-main")
+        h1(class="visually-hidden") Подтверждение e-mail
+
+        section(class="promo promo--login")
+          div(class="promo__wrapper promo__wrapper--login")
+            div(class="promo__form promo__form--sign-in form form--login")
+                  h2(class="form__title form__title--login form__title--left") Подтверждение e-mail
+
+                  div(class="form__text form__text--forgot-step2  form__text--left")
+                    p На указанный вами при регистрации адрес электронной почты было отправлено письмо с инструкцией для подтвержения. Для доступа к личному кабинету вам необходимо подтвердить свой e-mail.
+                    p В случае необнаружения письма проверьте папку «Спам».
+
+                  a(class="form__button form__button--submit form__button--confirm button button--white", href="forgot") Изменить e-mail
+
+            div(class="promo__social social")
+                - const socials = ['fb', 'insta', 'vk'];
+                  ul(class="social__list social__list--vertical")
+                    each val in socials
+                      li(class="social__item social__item--vertical")
+                        a(class="social__link social__link--brown", href="#", target="_blank")
+                          svg(width="24", height="24", aria-label= val)
+                              use(xlink:href="img/sprites/sprite-mono.svg#" + val)
+      include includes/footer.pug
+
+
+
+

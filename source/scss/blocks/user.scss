@@ -1,0 +1,200 @@
+.user {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  min-width: 240px;
+  max-width: 100%;
+}
+
+.user__toggle {
+  @extend %button-reset;
+
+  display: flex;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  width: rem(18);
+
+  margin: 0 rem(7) 0 rem(3);
+
+  border-radius: 50%;
+
+  background-color: $primary;
+
+  transition: background-color 0.3s;
+
+  * {
+    pointer-events: none;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+
+    transition: stroke 0.3s;
+
+    fill: none;
+    stroke: $red;
+  }
+
+  &.active {
+    background-color: $red;
+
+    transform: rotate(180deg);
+
+    transition: background-color 0.3s;
+
+    svg {
+      transition: stroke 0.3s;
+
+      stroke: $white;
+    }
+  }
+}
+
+.user__avatar {
+  position: relative;
+
+  width: rem(48);
+  height: rem(48);
+
+  margin-right: rem(15);
+
+  border-radius: 50%;
+
+  background-color: $gray;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.user__notification {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: rem(20);
+  height: rem(20);
+
+  @include description;
+
+  border-radius: 50%;
+
+  color: $white;
+
+  font-weight: 700;
+
+  background-color: $red;
+
+  transform: translate(50%);
+
+  &--list {
+    position: static;
+
+    margin-left: rem(10);
+
+    transform: none;
+  }
+}
+
+.user__img {
+  @extend %w100;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.user__name {
+  @extend %w100;
+
+  margin-bottom: rem(3);
+}
+
+.user__company {
+  @extend %w100;
+
+  @include text-small;
+
+  color: $black-60;
+}
+
+.user__list {
+  position: absolute;
+
+  top: calc(100% + rem(10));
+  left: 0;
+
+  z-index: 2;
+
+  @extend %w100;
+
+  border: 2px solid $gray;
+
+  border-radius: 10px;
+
+  list-style: none;
+
+  background: $white;
+
+  box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
+
+  transform: translateX(-100px);
+
+  opacity: 0;
+
+  transition: transform 0.3s ease-in, opacity 0.3s;
+
+  pointer-events: none;
+
+  &::before {
+    position: absolute;
+
+    top: rem(-15);
+    left: 0;
+
+    z-index: 1;
+
+    width: 100%;
+    height: rem(20);
+
+    background-color: transparent;
+
+    content: '';
+  }
+
+  &.active {
+    transform: translateX(0);
+
+    opacity: 1;
+
+    transition: transform 0.3s ease-in, opacity 0.3s;
+
+    pointer-events: all;
+  }
+}
+
+.user__item {
+  padding: rem(11) rem(16) rem(8) rem(16);
+
+  &:not(:last-of-type) {
+    border-bottom: 2px solid $gray;
+  }
+}

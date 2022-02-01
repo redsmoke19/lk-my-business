@@ -1,0 +1,68 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $red;
+
+    transition: color 0.3s;
+
+    .link__icon {
+      transition: stroke 0.3s;
+
+      stroke: $red;
+    }
+  }
+
+  &--red {
+    color: $red;
+
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: $red-80;
+
+      .link__icon {
+        stroke: $red-80;
+      }
+    }
+  }
+
+  &--mail {
+    @include text-small;
+
+    color: $brown;
+  }
+}
+
+.link__icon {
+  width: rem(20);
+  height: rem(20);
+
+  margin-right: rem(10);
+
+  transition: stroke 0.3s;
+
+  fill: none;
+
+  &--gray {
+    stroke: $black-40;
+  }
+
+  &--black {
+    stroke: $black;
+  }
+
+  &--red {
+    stroke: $red;
+  }
+}

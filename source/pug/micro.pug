@@ -1,0 +1,89 @@
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    include includes/viewport.pug
+    title ЛК Мой бизнес - О нас
+    link(rel="stylesheet", type="text/css", href="css/main.min.css")
+  body
+    div(class="container")
+      include includes/header.pug
+      main(class="page-main")
+        section(class="about")
+          header(class="about__header about__header--inner")
+            div(class="about__wrapper")
+              ul(class="pagination")
+                li(class="pagination__item")
+                  a(class="pagination__link", href="about.html") Финансовая поддержка бизнеса
+                li(class="pagination__item")
+                  a(class="pagination__link", href="micro.html") Микрозайм «Недвижимость»
+                li(class="pagination__item")
+                  span(class="pagination__current") Заявка на получение
+          div(class="about__wrapper about__wrapper--inner")
+            aside(class="about__aside")
+              h1(class="about__title about__title--inner") Микрозайм «Недвижимость»
+              dl(class="about__d-list")
+                div(class="about__d-row")
+                  dt(class="about__d-term") Сумма займа:
+                  dd(class="about__d-definition about__d-definition--red") от 100 000 до 1 500 000 руб.
+                div(class="about__d-row")
+                  dt(class="about__d-term") Срок займа:
+                  dd(class="about__d-definition") до 24 месяцев (включительно)
+                div(class="about__d-row")
+                  dt(class="about__d-term") Ставка:
+                  dd(class="about__d-definition") от 7,5% годовых
+            div(class="about__content about__content--inner")
+              div(class="faq")
+                ul(class="faq__list")
+                  li(class="faq__item")
+                    button(class="faq__button") Отсрочка платежа по основной сумме займа (для дифференцированных платежей)
+                    div(class="faq__content")
+                      p Предоставляется по заявлению клиента на срок не более 6 месяцев
+                  li(class="faq__item")
+                    button(class="faq__button") График погашения
+                    div(class="faq__content")
+                      p Предоставляется по заявлению клиента на срок не более 6 месяцев
+                      p График погашения
+                  li(class="faq__item")
+                    button(class="faq__button") Цель займа
+                    div(class="faq__content")
+                      p Предоставляется по заявлению клиента на срок не более 6 месяцев
+                form(class="about__form form", action="order.html", method="get")
+                  h2(class="form__title") Заявка на получение микрозайма «Недвижимость»
+                  div(class="form__row range")
+                    div(class="form__col form__col--left")
+                      h3(class="form__subtitle") Сумма займа
+                    div(class="form__col form__col--right")
+                      div(class="form__output range__output range__output--rub")
+                        input(name="range-input-money", type="text", value="10 000")
+                    div(class="form__col form__col--full")
+                      div(class="form__range-wrapper range__wrapper")
+                        input(class="range__input", type="range", name="money", value="10000", min="10000", max="5000000", step="5000")
+                        span(class="range__progress")
+                        span(class="range__track")
+                      div(class="form__labels")
+                        span 10 000 ₽
+                        span 2 500 000 ₽
+                        span 5 000 000 ₽
+                  div(class="form__row range")
+                    div(class="form__col form__col--left")
+                      h3(class="form__subtitle") Срок займа
+                    div(class="form__col form__col--right")
+                      div(class="form__output range__output range__output--term")
+                        input(name="range-input-term", type="text", value="12")
+                    div(class="form__col form__col--full")
+                      div(class="form__range-wrapper range__wrapper")
+                        input(class="range__input", type="range", name="term", value="12", min="12", max="48", step="1")
+                        span(class="range__progress")
+                        span(class="range__track")
+                      div(class="form__labels")
+                        span 12 месяцев
+                        span 30 месяцев
+                        span 48 месяцев
+                  button(class="form__button button button--red", type="submit") Создать заявку
+
+      include includes/footer.pug
+
+
+
+

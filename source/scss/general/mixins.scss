@@ -1,0 +1,68 @@
+@mixin text {
+  font: {
+    family: 'Circe', 'Arial', sans-serif;
+    style: normal;
+    weight: 400;
+    size: rem(16);
+  }
+  line-height: rem(22);
+}
+
+@mixin text-small {
+  font: {
+    size: rem(14);
+  }
+  line-height: rem(18);
+}
+
+@mixin text-big {
+  font: {
+    size: rem(18);
+  }
+  line-height: rem(24);
+}
+
+@mixin title {
+  font: {
+    size: rem(44);
+    style: normal;
+    weight: 400;
+  }
+  line-height: rem(60);
+}
+
+@mixin title-small {
+  font: {
+    size: rem(32);
+    style: normal;
+    weight: 400;
+  }
+  line-height: rem(48);
+}
+
+@mixin subtitle {
+  font: {
+    size: rem(24);
+    style: normal;
+    weight: 700;
+  }
+  line-height: rem(32);
+}
+
+@mixin notification {
+  font: {
+    size: rem(20);
+    style: normal;
+    weight: 700;
+  }
+  line-height: rem(28);
+}
+
+@mixin description {
+  font: {
+    size: rem(12);
+    style: normal;
+    weight: 400;
+  }
+  line-height: rem(16);
+}

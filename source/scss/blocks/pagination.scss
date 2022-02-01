@@ -1,0 +1,61 @@
+.pagination {
+  @extend %w100;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+
+  list-style: none;
+}
+
+.pagination__item {
+  margin: 0;
+  padding: 0;
+
+  &:not(:last-of-type) {
+    margin-right: rem(10);
+  }
+}
+
+.pagination__link,
+.pagination__current {
+  @include text-small;
+
+  color: inherit;
+}
+
+.pagination__link {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  font-weight: 700;
+
+  &::after {
+    width: rem(24);
+    height: rem(24);
+
+    margin-left: rem(10);
+
+    background-image: url('../img/icons/mono/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    opacity: 1;
+
+    transition: opacity 0.3s;
+
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    transition: opacity 0.3s;
+  }
+}

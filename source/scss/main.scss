@@ -1,0 +1,30 @@
+@import 'general/fonts';
+@import 'general/normalize';
+@import 'general/variables';
+@import 'general/mixins';
+@import 'general/functions';
+@import 'general/extends';
+@import 'general/global';
+@import 'general/visually-hidden';
+
+@import 'blocks/container';
+@import 'blocks/button';
+@import 'blocks/logo';
+@import 'blocks/navigation';
+@import 'blocks/user';
+@import 'blocks/link';
+@import 'blocks/pagination';
+@import 'blocks/social';
+@import 'blocks/status';
+@import 'blocks/info';
+@import 'blocks/form';
+@import 'blocks/range';
+@import 'blocks/faq';
+
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/account';
+
+@import 'blocks/page-header';
+@import 'blocks/page-main';
+@import 'blocks/page-footer';

@@ -1,0 +1,55 @@
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    include includes/viewport.pug
+    title ЛК Мой бизнес - О нас
+    link(rel="stylesheet", type="text/css", href="css/main.min.css")
+  body
+    div(class="container")
+      include includes/header.pug
+      main(class="page-main")
+        h1(class="visually-hidden") О нас
+        section(class="about")
+          header(class="about__header")
+            - var aboutIconList = ['finance', 'events', 'social', 'business', 'arctic', 'projects', 'consult', 'coworking'];
+
+            - var aboutTextList = ['Финансовая поддержка', 'Мероприятия', 'Социальное предпринимательство', 'Развитие бизнеса', 'Резидентство в арктической зоне', 'Инвестиционные проекты', 'Налоговый консультант', 'Коворкинг'];
+            ul(class="about__list about__list--tabs")
+              each val, i in aboutIconList
+               li(class="about__item about__item--tabs")
+                 button(class=(i==0) ? 'about__button active' : 'about__button')
+                    svg(class="about__icon", width="32", height="32")
+                        use(xlink:href="img/sprites/sprite-mono.svg#about-" + val)
+                    span(class="about__text")= aboutTextList[i]
+          div(class="about__wrapper")
+            each val, i in aboutTextList
+              div(class=(i==0) ? 'about__content active' : 'about__content')
+                h2(class="about__title")= val
+                - var aboutTextContentList = ['Микрозайм «Недвижимость»', 'Микрозайм «Старт»', 'Микрозайм «Экспресс»', 'Микрозайм «Универсальный»', 'Микрозайм «Антивирус»'];
+                ul(class="about__list about__list--content")
+                  each val, i in aboutTextContentList
+                    li(class="about__item about__item--content about__item--hover")
+                      a(class="about__link", href="micro.html")
+                        h3(class="about__subtitle")= val
+                        dl(class="about__d-list")
+                          div(class="about__d-row")
+                            dt(class="about__d-term") Сумма займа:
+                            dd(class="about__d-definition about__d-definition--red") от 100 000 до 1 500 000 руб.
+                          div(class="about__d-row")
+                            dt(class="about__d-term") Срок займа:
+                            dd(class="about__d-definition") до 24 месяцев
+                              div(class="info info--about")
+                                button(class="info__button")
+                                  svg(width="20", height="20")
+                                    use(xlink:href="img/sprites/sprite-mono.svg#info")
+                                p(class="info__text") Места ведения бизнеса, в случае использования нескольких точек укажите все.
+                          div(class="about__d-row")
+                            dt(class="about__d-term") Ставка:
+                            dd(class="about__d-definition") от 7,5% годовых
+
+      include includes/footer.pug
+
+
+
+

@@ -1,0 +1,60 @@
+.social,
+.social__item {
+  margin: 0;
+  padding: 0;
+}
+
+.social__list {
+  @extend %w100;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  list-style: none;
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  &--horisontal {
+    flex-direction: row;
+  }
+}
+
+.social__item {
+  &--vertical {
+    &:not(:last-of-type) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &--horisontal {
+    &:not(:last-of-type) {
+      margin-right: rem(20);
+    }
+  }
+}
+
+.social__link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    transition: fill 0.3s;
+
+    fill: $brown;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transition: fill 0.3s;
+
+      fill: $red;
+    }
+  }
+}

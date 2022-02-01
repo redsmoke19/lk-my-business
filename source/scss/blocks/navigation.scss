@@ -1,0 +1,33 @@
+.navigation,
+.navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  list-style: none;
+}
+
+.navigation__item {
+  &:not(:last-of-type) {
+    margin-right: rem(15);
+  }
+}
+
+.navigation__link {
+  color: $red;
+
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $red-80;
+
+    transition: color 0.3s;
+  }
+}

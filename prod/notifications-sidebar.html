@@ -1,0 +1,139 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>ЛК Мой бизнес - Личный кабинет</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header page-header--inner">
+        <div class="page-header__wrapper page-header__wrapper--inner">
+          <div class="page-header__user user">
+            <button class="user__toggle">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+              </svg>
+            </button>
+            <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><img width="24" height="24" src="img/avatar.svg" alt="Avatar"/></a></div>
+            <div class="user__description">
+              <h3 class="user__name">Петрова А.В.</h3>
+              <p class="user__company">ООО «Бизнес»</p>
+            </div>
+            <ul class="user__list">
+              <li class="user__item"><a class="link" href="account.html">
+                  <svg class="link__icon link__icon--gray" width="20" height="20">
+                    <use xlink:href="img/sprites/sprite-mono.svg#orders"></use>
+                  </svg><span class="link__text">Заявки</span><span class="user__notification user__notification--list">2</span></a></li>
+              <li class="user__item"><a class="link" href="account.html">
+                  <svg class="link__icon link__icon--gray" width="20" height="20">
+                    <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
+                  </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
+              <li class="user__item"><a class="link" href="account.html">
+                  <svg class="link__icon link__icon--gray" width="20" height="20">
+                    <use xlink:href="img/sprites/sprite-mono.svg#settings"></use>
+                  </svg><span class="link__text">Настройки</span></a></li>
+              <li class="user__item"><a class="link" href="account/sign-out.html">
+                  <svg class="link__icon link__icon--gray" width="20" height="20">
+                    <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
+                  </svg><span class="link__text">Выйти</span></a></li>
+            </ul>
+          </div><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+            <svg class="link__icon link__icon--black" width="20" height="20">
+              <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+            </svg><span class="link__text">8-800-350-00-89</span></a>
+        </div>
+      </header>
+      <main class="page-main">
+        <section class="about">
+          <header class="about__header about__header--account">
+            <div class="about__wrapper">
+              <h1 class="about__title about__title--account">Профиль</h1>
+            </div>
+          </header>
+          <div class="about__wrapper about__wrapper--inner">
+            <aside class="about__aside">
+              <nav class="account">
+                <ul class="account__list">
+                  <li class="account__item"><a class="account__link" href="account.html">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprites/sprite-mono.svg#account"></use>
+                      </svg><span>Учетная запись</span></a></li>
+                  <li class="account__item"><a class="account__link active" href="account.html">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprites/sprite-mono.svg#orders"></use>
+                      </svg><span>Заявки на получение микрозаймов</span></a></li>
+                  <li class="account__item"><a class="account__link" href="account.html">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprites/sprite-mono.svg#taxes"></use>
+                      </svg><span>Налоги</span></a></li>
+                  <li class="account__item"><a class="account__link" href="account.html">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprites/sprite-mono.svg#signature"></use>
+                      </svg><span>Электронная подпись</span></a></li>
+                  <li class="account__item"><a class="account__link" href="account.html">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprites/sprite-mono.svg#sequrity"></use>
+                      </svg><span>Безопасность</span></a></li>
+                </ul>
+              </nav>
+            </aside>
+            <div class="about__content about__content--inner">
+              <div class="account account--content">
+                <h2 class="account__subtitle">новые</h2>
+                <ul class="about__list about__list--account">
+                  <li class="about__item about__item--notifications"><span class="status status--notifications status--received"></span>
+                    <div class="about__center about__center--notification">
+                      <h3 class="about__notification-title">Заявка на займ одобрена!</h3>
+                      <p class="about__notification-text">Ваша заявка на<a href="micro.html"> микрозайм «Недвижимость»</a> одобрена.</p>
+                    </div>
+                    <time class="about__time about__time--notifications">18:00, 24 ноября 2021</time>
+                  </li>
+                </ul>
+              </div>
+              <div class="account account--content">
+                <h2 class="account__subtitle">просмотренные</h2>
+                <ul class="about__list about__list--account">
+                  <li class="about__item about__item--notifications"><span class="status status--notifications status--warning"></span>
+                    <div class="about__center about__center--notification">
+                      <h3 class="about__notification-title">Требуются дополнительные документы</h3>
+                      <p class="about__notification-text"><a href="">Пришел ответ</a> по заявке<a href="micro.html"> микрозайм «Недвижимость»</a> — требуются дополнительные документы.</p>
+                    </div>
+                    <time class="about__time about__time--notifications">15:30, 24 ноября 2021</time>
+                  </li>
+                  <li class="about__item about__item--notifications"><span class="status status--notifications status--in-processing"></span>
+                    <div class="about__center about__center--notification">
+                      <h3 class="about__notification-title">Заявка на займ отправлена на рассмотрение</h3>
+                      <p class="about__notification-text"> Ваша заявка на<a href="micro.html"> микрозайм «Недвижимость»</a> отправлена на рассмотрение.</p>
+                    </div>
+                    <time class="about__time about__time--notifications">15:10, 24 ноября 2021</time>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__top">
+          <div class="page-footer__wrapper">
+            <ul class="page-footer__list">
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Политика конфиденциальности</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Пользовательское соглашение</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Согласие на обработку персональных данных</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Форма обратной связи</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page-footer__wrapper">
+            <p class="page-footer__copyright">© 2021 Мой бизнес</p>
+          </div>
+        </div>
+      </footer>
+      <script src="js/main.min.js"></script>
+    </div>
+  </body>
+</html>

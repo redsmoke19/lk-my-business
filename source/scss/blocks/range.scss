@@ -1,0 +1,216 @@
+.range__wrapper,
+.range__input,
+.range__track {
+  @extend %w100;
+}
+
+.range__wrapper {
+  position: relative;
+
+  height: rem(16);
+}
+
+.range__input {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+
+  z-index: 3;
+
+  border: none;
+
+  vertical-align: middle;
+
+  background: none;
+
+  outline: none;
+
+  transform: translateY(-50%);
+
+  appearance: none;
+
+  &::-webkit-slider-runnable-track {
+    height: 3px;
+
+    border: 1px solid transparent;
+    border-radius: 0;
+
+    background: none;
+  }
+
+  &::-moz-range-track {
+    height: 2px;
+
+    border: none;
+
+    border-radius: 0;
+
+    background: none;
+  }
+
+  &::-ms-track {
+    height: 2px;
+
+    border: none;
+
+    color: transparent;
+
+    background: none;
+  }
+
+  &::-ms-fill-lower {
+    border-radius: 0;
+
+    background: none;
+  }
+
+  &::-ms-fill-upper {
+    border-radius: 0;
+
+    background: none;
+  }
+
+  &::-ms-tooltip {
+    display: none;
+
+    /* display and visibility only */
+  }
+
+  &::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+
+    margin-top: -8px;
+
+    border: 3px solid $red;
+
+    border-radius: 50%;
+
+    background-color: $white;
+
+    appearance: none !important;
+  }
+
+  &:active::-webkit-slider-thumb {
+    outline: none;
+  }
+
+  &::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+
+    border: 3px solid $red;
+
+    border-radius: 50%;
+
+    background: none;
+
+    background-color: $white;
+  }
+
+  &:active::-moz-range-thumb {
+    outline: none;
+  }
+
+  &::-ms-thumb {
+    width: 16px;
+    height: 16px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: $white;
+  }
+
+  &:active::-ms-thumb {
+    border: none;
+  }
+}
+
+.range__progress,
+.range__track {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+.range__progress {
+  z-index: 2;
+
+  background-color: $red;
+}
+
+.range__track {
+  z-index: 1;
+
+  background: linear-gradient(to right, transparent, $black-20 30%, $black-20 70%, transparent 100%);
+}
+
+.range__output {
+  position: relative;
+
+  width: 135px;
+  height: 48px;
+
+  padding: rem(13);
+
+  border-radius: 10px;
+
+  color: inherit;
+
+  font: inherit;
+
+  background-color: $gray;
+
+  &.error {
+    background-color: $red-10;
+  }
+
+  &::before {
+    position: absolute;
+
+    top: 50%;
+    left: rem(-20);
+
+    z-index: 1;
+
+    text-transform: uppercase;
+
+    transform: translate(-100%, -50%);
+  }
+
+  input {
+    width: 100%;
+
+    border: none;
+
+    color: inherit;
+
+    font: inherit;
+
+    background: none;
+
+    appearance: none;
+  }
+
+  &--rub {
+    &::before {
+      content: '₽';
+    }
+  }
+
+  &--term {
+    &::before {
+      content: 'месяцев';
+    }
+  }
+}
