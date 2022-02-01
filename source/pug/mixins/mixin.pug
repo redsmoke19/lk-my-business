@@ -1,0 +1,6 @@
+mixin icon(name, width, height)
+  svg(class!=attributes.class, width=width, height=height, aria-hidden="true")
+    use(xlink:href="img/sprites/sprite-mono.svg#" + name)
+
+//svg(width="20", height="20")
+//  use(xlink:href="img/sprites/sprite-mono.svg#info")

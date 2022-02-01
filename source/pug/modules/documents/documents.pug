@@ -4,16 +4,21 @@ section.documents
       .documents__row
         h2.documents__title Верификация личности
         p.documents__name Петров Александр Владимирович
-        p.documens__text Сделайте качественные фото или цветную копию паспорта и загрузите в форму ниже для продолжения регистрации на сервисе.
+        p.documents__text Сделайте качественные фото или цветную копию паспорта и загрузите в форму ниже для продолжения регистрации на сервисе.
       .documents__row
         h3.documents__heading Главный разворот паспорта:
         p.documents__note Изображение в формате jpg, png, jpeg размером не более 5 МБ.
-        button.documents__attach
+        button.documents__attach.btn.btn--attach
+          +icon("icon-attach", "18", "18").btn__icon
           span.documents__attach-text Прикрепить
       .documents__row
         h3.documents__heading Страницы 3-4 (отметка о прописке):
         p.documents__note Изображение в формате jpg, png, jpeg размером не более 5 МБ.
-        button.documents__attach
-          span.documents__attach-text Прикрепить
-      a.documents__button(href="#") Продолжить
+        .documents__attach-complete.attach-complete
+          +icon("icon-image", "22", "22").attach-complete__icon
+          span.attach-complete__text страницы прописка.jpg
+          button.attach-complete__delete
+            +icon("icon-delete", "20", "20").attach-complete__delete-icon
+      .documents__bottom
+        a.documents__button.button.button--red(href="#") Продолжить
 

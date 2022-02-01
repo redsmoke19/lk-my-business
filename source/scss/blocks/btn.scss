@@ -1,0 +1,39 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 10px;
+
+  color: $red;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: rgba($red, 0.1);
+
+  cursor: pointer;
+
+  transition: background-color ease-out 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($red, 0.2);
+  }
+
+  &:disabled,
+  &.disabled {
+    border: 2px solid $gray;
+
+    color: $black;
+
+    background-color: $gray;
+  }
+
+  &__icon {
+    margin: 0 6px 0 0;
+
+    fill: transparent;
+    stroke: $red;
+  }
+}

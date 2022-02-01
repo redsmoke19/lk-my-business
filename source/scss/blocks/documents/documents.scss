@@ -1,7 +1,7 @@
 .documents {
   position: relative;
 
-  padding: 140px 0 0;
+  padding: 140px 0 60px;
 
   .custom-container {
     width: 100%;
@@ -37,7 +37,54 @@
   }
 
   &__row {
-    padding: 0 60px;
+    padding: 0 60px 40px;
     border-bottom: 2px solid $gray;
+
+    &:not(:first-child) {
+      padding: 20px 60px 40px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  &__name {
+    margin: 0 0 20px;
+
+    color: $brown-color;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__heading {
+    margin: 0 0 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__note {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 60px 0;
   }
 }
+@import 'attach-complete/attach-complete';
