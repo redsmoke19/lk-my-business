@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "evolution",
   "scripts": {
-    "dev": "gulp watch",
+    "start": "gulp watch",
     "build:dev": "gulp build",
     "build:prod": "gulp build --prod",
     "prepare": "husky install",

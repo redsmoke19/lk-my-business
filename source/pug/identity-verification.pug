@@ -1,0 +1,13 @@
+extends layout/layout
+
+block variables
+  - var title = "Верификация пользователя"
+  - var pageClass = "identity-verification"
+
+block header
+  include includes/header-login
+block main
+  main.page-main(class=pageClass)
+    include modules/social/social-fix
+    include modules/documents/documents
+

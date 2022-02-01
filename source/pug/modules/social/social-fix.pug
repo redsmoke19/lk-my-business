@@ -1,0 +1,8 @@
+div(class="promo__social social")
+  - const socials = ['fb', 'insta', 'vk'];
+    ul(class="social__list social__list--vertical")
+      each val in socials
+        li(class="social__item social__item--vertical")
+          a(class="social__link social__link--brown", href="#", target="_blank")
+            svg(width="24", height="24", aria-label= val)
+                use(xlink:href="img/sprites/sprite-mono.svg#" + val)
