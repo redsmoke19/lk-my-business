@@ -1,0 +1,43 @@
+section.documents
+  .custom-container
+    .documents__content
+      .documents__row
+        h2.documents__title Учредительные документы
+        p.documents__name ИП Петров Александр Владимирович
+        p.documents__text Загрузите необходимые документы для регистрации организации на платформе.
+      .documents__row
+        h3.documents__heading Свидетельство о постановке на учёт в налоговом органе / уведомление о постановке на налоговый учет:
+        p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
+        .documents__attach-complete.attach-complete
+          +icon("icon-doc", "22", "22").attach-complete__icon
+          span.attach-complete__text Свидетельство о постановке на учет в налоговой.docx
+          button.attach-complete__delete
+            +icon("icon-delete", "20", "20").attach-complete__delete-icon
+      .documents__row
+        h3.documents__heading Свидетельство о государственной регистрации физического лица в налоговом органе в качестве индивидуального предпринимателя / лист записи ЕГРИП:
+        p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
+        .documents__attach-wrapper
+          .documents__attach-complete.attach-complete
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span.attach-complete__text свидетельство о регистрации ФЛ.docx
+            button.attach-complete__delete
+              +icon("icon-delete", "20", "20").attach-complete__delete-icon
+          .documents__attach-complete.attach-complete
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span.attach-complete__text лист записи ЕГРИП.docx
+            button.attach-complete__delete
+              +icon("icon-delete", "20", "20").attach-complete__delete-icon
+          button.documents__attach.btn.btn--attach
+            +icon("icon-attach", "18", "18").btn__icon
+            span.documents__attach-text Прикрепить
+      .documents__row
+        h3.documents__heading Информационное письмо с кодами статистики / уведомление о присвоении кодов статистики:
+        p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
+        .documents__attach-complete.attach-complete
+          +icon("icon-doc", "22", "22").attach-complete__icon
+          span.attach-complete__text Коды статистики.docx
+          button.attach-complete__delete
+            +icon("icon-delete", "20", "20").attach-complete__delete-icon
+      .documents__bottom
+        a.documents__button.button.button--red(href="#") Продолжить
+

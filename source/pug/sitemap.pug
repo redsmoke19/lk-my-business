@@ -1,0 +1,23 @@
+extends layout/layout
+
+block variables
+  - var title = "sitemap"
+  - var pageClass = "sitemap"
+
+block header
+  include includes/header-index
+block main
+  main.page-main(class=pageClass)
+    include modules/social/social-fix
+    ul
+      li
+        a(href="identity-verification.html") Верификация пользователя
+      li
+        a(href="founding-documents.html") Учредительные документы
+      li
+        a(href="founding-documents-2.html") Учредительные документы - 2
+      li
+        a(href="founding-documents-3.html") Учредительные документы - 3
+      li
+        a(href="founding-documents-4.html") Учредительные документы - 4
+

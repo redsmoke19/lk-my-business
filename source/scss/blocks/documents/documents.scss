@@ -62,8 +62,14 @@
   }
 
   &__text {
+    margin: 0;
+
     font-size: 18px;
     line-height: 24px;
+
+    &--mmb {
+      margin: 0 0 10px 0;
+    }
   }
 
   &__heading {
@@ -79,6 +85,12 @@
 
     font-size: 16px;
     line-height: 22px;
+  }
+
+  &__attach-wrapper {
+    .documents__attach-complete {
+      margin: 0 0 20px;
+    }
   }
 
   &__bottom {
