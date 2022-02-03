@@ -1,0 +1,14 @@
+extends layout/layout
+
+block variables
+  - var title = "Займы"
+  - var pageClass = "loans-page"
+
+block header
+  include includes/header
+block main
+  main.page-main(class=pageClass)
+    //include modules/social/social-fix
+    include modules/tabs-nav/tabs-nav
+
+

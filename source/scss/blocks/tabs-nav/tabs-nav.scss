@@ -1,0 +1,5 @@
+.tabs-nav {
+  &__list {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}

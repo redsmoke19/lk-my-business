@@ -6,7 +6,7 @@ import form from './form';
 
 document.addEventListener('DOMContentLoaded', () => {
   user();
-  about();
+  // about();
   faq();
   range();
   form();
