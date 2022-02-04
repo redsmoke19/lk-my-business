@@ -1,0 +1,80 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>ЛК Мой бизнес - Восстановление пароля</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header page-header--inner">
+        <div class="page-header__wrapper page-header__wrapper--inner"><a class="page-header__link link link--red" href="https://mb89.ru"><span class="link__text link__text--red link__text--left">mb89.ru</span>
+            <svg class="link__icon link__icon--red link__icon--right" width="20" height="20">
+              <use xlink:href="img/sprites/sprite-mono.svg#arrow-top"></use>
+            </svg></a><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+            <svg class="link__icon link__icon--black" width="20" height="20">
+              <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+            </svg><span class="link__text">8-800-350-00-89</span></a></div>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Восстановление пароля</h1>
+        <section class="promo promo--login">
+          <div class="promo__wrapper promo__wrapper--login">
+            <form class="promo__form promo__form--sign-in form form--login" action="forgot-step2.html" method="get"><a class="promo__link promo__link--back" href="sign-in.html">
+                <svg class="promo__link-icon promo__link-icon--left" width="20" height="20">
+                  <use xlink:href="img/sprites/sprite-mono.svg#arrow-back"></use>
+                </svg>Назад ко входу</a>
+              <h2 class="form__title form__title--login">Восстановление пароля</h2>
+              <div class="form__row form__row--field">
+                <div class="form__field">
+                  <input type="email" name="email" required="true" id-="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}"/>
+                  <label class="form__placeholder" fot="email">E-mail</label>
+                </div><span class="form__error">Неккорректный e-mail</span>
+              </div>
+              <div class="form__text form__text--forgot">
+                <p>Укажите, куда отправить инструкции для восстановления пароля.</p>
+              </div>
+              <button class="form__button form__button--submit button button--red" type="submit">Отправить</button>
+            </form><a class="promo__link promo__link--login" href="sign-up.html">Зарегистрироваться</a>
+            <div class="promo__social social">
+              <ul class="social__list social__list--vertical">
+                <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                    <svg width="24" height="24" aria-label="fb">
+                      <use xlink:href="img/sprites/sprite-mono.svg#fb"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                    <svg width="24" height="24" aria-label="insta">
+                      <use xlink:href="img/sprites/sprite-mono.svg#insta"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                    <svg width="24" height="24" aria-label="vk">
+                      <use xlink:href="img/sprites/sprite-mono.svg#vk"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__top">
+          <div class="page-footer__wrapper">
+            <ul class="page-footer__list">
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Политика конфиденциальности</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Пользовательское соглашение</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Согласие на обработку персональных данных</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Форма обратной связи</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page-footer__wrapper">
+            <p class="page-footer__copyright">© 2021 Мой бизнес</p>
+          </div>
+        </div>
+      </footer>
+      <script src="js/main.min.js"></script>
+    </div>
+  </body>
+</html>
