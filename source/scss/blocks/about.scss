@@ -81,7 +81,7 @@
   }
 
   &--content {
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(3, 1fr);
 
     column-gap: rem(30);
 

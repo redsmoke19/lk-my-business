@@ -74,6 +74,12 @@
   img {
     border-radius: 50%;
   }
+
+  span {
+    color: rgba($black, 0.5);
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .user__notification {
