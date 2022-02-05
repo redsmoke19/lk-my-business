@@ -162,8 +162,6 @@
 
   box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
 
-  transform: translateX(-100px);
-
   opacity: 0;
 
   transition: transform 0.3s ease-in, opacity 0.3s;
@@ -187,7 +185,6 @@
   }
 
   &.active {
-    transform: translateX(0);
 
     opacity: 1;
 
@@ -202,5 +199,26 @@
 
   &:not(:last-of-type) {
     border-bottom: 2px solid $gray;
+  }
+}
+
+.user {
+  &__inner {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-inner {
+    position: relative;
+  }
+
+  &__toggle--right {
+    margin: 0 0 0 10px;
+  }
+
+  &__list--right {
+    min-width: 160px;
   }
 }

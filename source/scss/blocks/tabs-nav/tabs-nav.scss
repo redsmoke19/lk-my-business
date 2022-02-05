@@ -2,4 +2,20 @@
   &__list {
     grid-template-columns: repeat(7, 1fr);
   }
+  &__link {
+    &:hover {
+      .tabs-nav__text {
+        color: rgba($red, 0.5);
+      }
+      .tabs-nav__icon {
+        stroke: rgba($red, 0.5);
+      }
+    }
+  }
+  &__text {
+    transition: color ease-out 0.15s;
+  }
+  &__icon {
+    transition: all ease-out 0.15s;
+  }
 }
