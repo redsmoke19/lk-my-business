@@ -76,4 +76,21 @@
       color: $gray;
     }
   }
+
+  &__calendar {
+    padding: 20px 0;
+
+    background-color: $white;
+  }
+
+  &__choose-date {
+    margin: 0 0 15px;
+    padding: 0 10px 0 20px;
+
+    color: $red;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

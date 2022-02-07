@@ -78,5 +78,9 @@
     "stylelint-selector-bem-pattern": "^2.1.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "js-datepicker": "^5.18.0"
   }
 }

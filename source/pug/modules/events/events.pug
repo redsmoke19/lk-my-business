@@ -25,53 +25,65 @@ section.events
             span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]
     p.events__subtitle Все мероприятия
     .events__wrapper
-      .events__filter
-        form.filters(action="#" method="GET")
-          .filters__fieldset
-            h4.filters__title Фильтры
-          .filters__fieldset
-            h5.filters__heading Тип мероприятия
-            .filters__checkbox-wrapper
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="typeAll" name="typeAll" value="typeAll" checked)
-                label.filters__checkbox-label(for="typeAll") Все
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="typeTitle" name="typeTitle" value="typeTitle")
-                label.filters__checkbox-label(for="typeTitle") Название
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="typeSeminar" name="typeSeminar" value="typeSeminar")
-                label.filters__checkbox-label(for="typeSeminar") #Семинар
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="typeForum" name="typeForum" value="typeForum")
-                label.filters__checkbox-label(for="typeForum") #Форум
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="typeAward" name="typeAward" value="typeAward")
-                label.filters__checkbox-label(for="typeAward") #Премия
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="typeExhibition" name="typeExhibition" value="typeExhibition")
-                label.filters__checkbox-label(for="typeExhibition") #Выставка
-          .filters__fieldset
-            h5.filters__heading Дата проведения
-              .filters__calendar
-          .filters__fieldset
-            h5.filters__heading Место проведения
-            .filters__checkbox-wrapper
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="placeAll" name="placeAll" value="placeAll" checked)
-                label.filters__checkbox-label(for="placeAll") Все
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="placeSalekhard" name="placeSalekhard" value="placeSalekhard")
-                label.filters__checkbox-label(for="placeSalekhard") Салехард
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="placeMoscow" name="placeMoscow" value="placeMoscow")
-                label.filters__checkbox-label(for="placeMoscow") Москва
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="placeOnline" name="placeOnline" value="placeOnline")
-                label.filters__checkbox-label(for="placeOnline") Онлайн
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="placePetersburg" name="placePetersburg" value="placePetersburg")
-                label.filters__checkbox-label(for="placePetersburg") Санкт-Петербург
-              .filters__checkbox-box
-                input.filters__checkbox-input(type="checkbox" id="placeTyumen" name="placeTyumen" value="placeTyumen")
-                label.filters__checkbox-label(for="placeTyumen") Тюмень
-
+      include filters
+      ul.events__list.events__list--col
+        li.events__item.events__item--col
+          picture.events__picture.events__picture--col
+            img.events__img(src="img/events-img-2.png" width="350" height="200" alt="Картинка мероприятия")
+          .events__inner
+            span.events__hashtag #Форум
+            h3.events__heading Дни малого бизнеса на Ямале
+            p.events__text Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тен...
+            .events__info
+              span.events__info-value Дата проведения: #[span.events__info-value--bold 31 января 2022]
+              span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]
+        li.events__item.events__item--col
+          picture.events__picture.events__picture--col
+            img.events__img(src="img/events-img-3.png" width="350" height="200" alt="Картинка мероприятия")
+          .events__inner
+            span.events__hashtag #Выставка
+            h3.events__heading Лучшее на Ямале
+            p.events__text Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тен...
+            .events__info
+              span.events__info-value Дата проведения: #[span.events__info-value--bold 31 января 2022]
+              span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]
+        li.events__item.events__item--col
+          picture.events__picture.events__picture--col
+            img.events__img(src="img/events-img-4.png" width="350" height="200" alt="Картинка мероприятия")
+          .events__inner
+            span.events__hashtag #Курс
+            h3.events__heading Лучшее на Ямале
+            p.events__text Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тен...
+            .events__info
+              span.events__info-value Дата проведения: #[span.events__info-value--bold 31 января 2022]
+              span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]
+        li.events__item.events__item--col
+          picture.events__picture.events__picture--col
+            img.events__img(src="img/events-img-5.png" width="350" height="200" alt="Картинка мероприятия")
+          .events__inner
+            span.events__hashtag #Премия
+            h3.events__heading Региональный отбор Национальной предпринимательской премии “Бизнес-Успех”
+            p.events__text Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тен...
+            .events__info
+              span.events__info-value Дата проведения: #[span.events__info-value--bold 31 января 2022]
+              span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]
+        li.events__item.events__item--col
+          picture.events__picture.events__picture--col
+            img.events__img(src="img/events-img-6.png" width="350" height="200" alt="Картинка мероприятия")
+          .events__inner
+            span.events__hashtag #Премия
+            h3.events__heading Региональный отбор Национальной предпринимательской премии “Бизнес-Успех”
+            p.events__text Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тен...
+            .events__info
+              span.events__info-value Дата проведения: #[span.events__info-value--bold 31 января 2022]
+              span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]
+        li.events__item.events__item--col
+          picture.events__picture.events__picture--col
+            img.events__img(src="img/events-img-7.png" width="350" height="200" alt="Картинка мероприятия")
+          .events__inner
+            span.events__hashtag #Курс
+            h3.events__heading Лучшее на Ямале
+            p.events__text Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тен...
+            .events__info
+              span.events__info-value Дата проведения: #[span.events__info-value--bold 31 января 2022]
+              span.events__info-value Место проведения: #[span.events__info-value--bold г. Салехард]

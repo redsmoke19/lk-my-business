@@ -8,6 +8,7 @@ import { sassBuild, sassWatch } from './gulp/tasks/styles';
 import { assetsBuild, assetsWatch } from './gulp/tasks/assets';
 import { imagesBuild, imagesWatch } from './gulp/tasks/images';
 import { spritesBuild, spritesWatch } from './gulp/tasks/sprites';
+import { vendorBuild } from './gulp/tasks/vendor';
 
 config.setEnv();
 
@@ -20,6 +21,7 @@ export const build = gulp.series(
     assetsBuild,
     imagesBuild,
     spritesBuild,
+    vendorBuild,
   ),
 );
 
