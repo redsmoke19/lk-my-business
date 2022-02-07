@@ -43,6 +43,10 @@ body {
   }
 }
 
+.root {
+  min-width: unset;
+}
+
 *,
 *::before,
 *::after {

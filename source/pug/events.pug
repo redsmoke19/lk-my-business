@@ -1,0 +1,13 @@
+extends layout/layout
+
+block variables
+  - var title = "Мероприятия"
+  - var pageClass = "events-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    include modules/tabs-nav/tabs-nav
+    include modules/events/events
