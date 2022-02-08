@@ -148,6 +148,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+
   //text-transform: uppercase;
 
   background-color: #f4f4f4;
@@ -208,11 +209,12 @@
 }
 
 .qs-datepicker .qs-month-year {
-  font-weight: 600;
   display: flex;
+  align-items: center;
+
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  align-items: center;
 
   cursor: pointer;
 }
@@ -235,9 +237,9 @@
 }
 
 .qs-datepicker .qs-squares {
-  padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  padding: 0 20px;
 
   filter: blur(0);
 
@@ -267,6 +269,11 @@
   cursor: pointer;
 
   transition: background 0.1s;
+
+  @media screen and (max-width: 1200px) {
+    width: 30px;
+    height: 20px;
+  }
 }
 
 .qs-datepicker .qs-square.qs-current {
@@ -281,7 +288,7 @@
   color: $red;
   font-weight: 700;
 
-  background: rgba(238, 82, 56, 0.1);
+  background: rgba(238, 82, 56, 10%);
 }
 
 .qs-datepicker .qs-square.qs-outside-current-month {
@@ -335,9 +342,9 @@
 
 .qs-datepicker .qs-square.qs-day {
   color: rgba($black, 0.5);
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 700;
   text-transform: uppercase;
 
   cursor: default;

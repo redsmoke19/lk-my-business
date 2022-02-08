@@ -10,6 +10,11 @@
 
     font-size: 32px;
     line-height: 48px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &__subtitle {
@@ -18,12 +23,25 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__wrapper {
     display: grid;
     grid-template-columns: 410px 1fr;
     gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+      grid-template-columns: 40% 1fr;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__list {
@@ -37,6 +55,10 @@
 
     &--col {
       grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
@@ -48,6 +70,11 @@
 
     background-color: $white;
     box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      padding: 15px;
+    }
 
     &--col {
       flex-direction: column;
@@ -61,6 +88,11 @@
     margin: 0 30px 0 0;
     border-radius: 10px;
     overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+      max-width: unset;
+      margin: 0 0 30px;
+    }
 
     &--col {
       max-width: unset;
@@ -95,6 +127,11 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__text {
@@ -102,6 +139,11 @@
 
     font-size: 16px;
     line-height: 22px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__info {
@@ -113,6 +155,11 @@
   &__info-value {
     font-size: 16px;
     line-height: 22px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
 
     &--bold {
       margin: 0 0 0 10px;

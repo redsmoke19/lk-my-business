@@ -12,7 +12,10 @@ html(lang="ru")
     .container
       block header
       block main
-      include ../includes/footer.pug
+      block footer
+    block scripts
+      script(src="js/libs.js")
+      script(src="js/main.min.js")
 
 
 
