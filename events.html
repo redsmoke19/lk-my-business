@@ -12,10 +12,91 @@
   <body class="root">
     <div class="container">
       <header>
-        <!--include includes/header-->
+        <!--svg(width="20", height="20")-->
+        <!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
+        <header class="page-header page-header--inner">
+          <div class="page-header__wrapper page-header__wrapper--inner">
+            <div class="page-header__user user">
+              <button class="user__toggle">
+                        <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                        </svg>
+              </button>
+              <ul class="user__list _js-user-list">
+                <li class="user__item"><a class="link" href="account.html">
+                            <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#icon-profile"></use>
+                            </svg><span class="link__text">Профиль</span></a></li>
+                <li class="user__item"><a class="link" href="account.html">
+                            <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
+                            </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
+                <li class="user__item"><a class="link" href="account/sign-out.html">
+                            <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
+                            </svg><span class="link__text">Выйти</span></a></li>
+              </ul>
+              <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><span class="user__img-name">ПА</span></a></div>
+              <div class="user__description">
+                <h3 class="user__name">Петрова А.В.</h3>
+                <div class="user__inner">
+                  <p class="user__company">ООО «Бизнес»</p>
+                  <div class="user__menu-inner">
+                    <button class="user__toggle user__toggle--right">
+                              <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                              </svg>
+                    </button>
+                    <ul class="user__list user__list--right _js-user-list">
+                      <li class="user__item"><a class="link" href="account.html"><span class="link__text">ООО "Бизнес"</span></a></li>
+                      <li class="user__item"><a class="link" href="account.html"><span class="link__text">Самозанятый</span></a></li>
+                      <li class="user__item"><a class="link" href="account/sign-out.html"><span class="link__text">ИП Петров</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+                      <svg class="link__icon link__icon--black" width="20" height="20" aria-hidden="true">
+                        <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+                      </svg><span class="link__text">8-800-350-00-89</span></a>
+          </div>
+        </header>
       </header>
       <main class="page-main events-page">
-        <!--include modules/tabs-nav/tabs-nav-->
+        <section class="about tabs-nav">
+          <div class="about__header tabs-nav__header">
+            <ul class="about__list about__list--tabs tabs-nav__list">
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link" href="loans.html">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-finance"></use>
+                          </svg><span class="about__text tabs-nav__text">Займы</span></a></li>
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link active" href="">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-events"></use>
+                          </svg><span class="about__text tabs-nav__text">Мероприятия</span></a></li>
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link" href="compensation.html">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-refund"></use>
+                          </svg><span class="about__text tabs-nav__text">Компенсации</span></a></li>
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link" href="grant.html">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-grant"></use>
+                          </svg><span class="about__text tabs-nav__text">Гранты</span></a></li>
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link" href="ecp.html">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-ecp"></use>
+                          </svg><span class="about__text tabs-nav__text">ЭЦП</span></a></li>
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link" href="guarantee.html">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-lock"></use>
+                          </svg><span class="about__text tabs-nav__text">Поручительство</span></a></li>
+              <li class="about__item about__item--tabs"><a class="about__button tabs-nav__link" href="leasing.html">
+                          <svg class="about__icon tabs-nav__icon" width="32" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#about-lizing"></use>
+                          </svg><span class="about__text tabs-nav__text">Лизинг</span></a></li>
+            </ul>
+          </div>
+        </section>
         <section class="events">
           <div class="custom-container">
             <h2 class="events__title">Образование и мероприятия</h2>
@@ -183,8 +264,8 @@
           </div>
         </div>
       </footer>
-      <script src="js/libs.js"></script>
-      <script src="js/main.min.js"></script>
     </div>
+    <script src="js/libs.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
