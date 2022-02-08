@@ -1,0 +1,21 @@
+extends layout/layout
+
+block variables
+  - var title = "Дни малого бизнеса на Ямале"
+  - var pageClass = "events-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    .breadcrumbs
+      .custom-container
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="events.html") Образование и мероприятия
+          li.breadcrumbs__item
+            span.breadcrumbs__current Заявка на получение
+    include modules/events/events-full
+block footer
+  include modules/footer/footer
