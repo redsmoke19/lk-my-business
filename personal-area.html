@@ -1,0 +1,106 @@
+
+<!--svg(width="20", height="20")-->
+<!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>ЛК Мой бизнес - О нас</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css"/>
+  </head>
+  <body class="root">
+    <div class="container">
+      <header>
+        <!--include includes/header-->
+      </header>
+      <main class="page-main personal-area-page">
+        <section class="personal-area">
+          <div class="custom-container">
+            <h1 class="personal-area__title">Личный кабинет</h1>
+            <div class="events__wrapper">
+              <ul class="personal-area__link-list">
+                <li class="personal-area__link-item"><a class="personal-area__link personal-area__link--active" href="#">
+                    <svg class="personal-area__link-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#icon-user"></use>
+                    </svg><span class="personal-area__link-text">Учетная запись</span></a></li>
+                <li class="personal-area__link-item"><a class="personal-area__link" href="#">
+                    <svg class="personal-area__link-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#icon-case"></use>
+                    </svg><span class="personal-area__link-text">Компании и реквизиты</span></a></li>
+                <li class="personal-area__link-item"><a class="personal-area__link" href="#">
+                    <svg class="personal-area__link-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#icon-list"></use>
+                    </svg><span class="personal-area__link-text">Мои заявки</span></a></li>
+              </ul>
+              <div class="personal-area__data">
+                <div class="personal-area__box">
+                  <h2 class="personal-area__name">Петров Александр Владимирович</h2>
+                  <dl class="personal-area__dl-list">
+                    <div class="personal-area__dl-wrap">
+                      <dt class="personal-area__dl-term">Телефон:</dt>
+                      <dd class="personal-area__dl-def">+7 (999) 227-23-23</dd>
+                    </div>
+                    <div class="personal-area__dl-wrap">
+                      <dt class="personal-area__dl-term">E-mail:</dt>
+                      <dd class="personal-area__dl-def">ivan.ivanov@gmail.com</dd>
+                    </div>
+                  </dl><a class="personal-area__data-link" href="#">Управление учетной записью ЕСИА</a>
+                </div>
+                <div class="personal-area__box">
+                  <h3 class="personal-area__data-title">Паспортные данные</h3>
+                  <ul class="personal-area__attach-list">
+                    <li class="personal-area__attach-item">
+                      <h4 class="personal-area__heading">Главный разворот:</h4>
+                      <div class="personal-area__upload">
+                        <div class="attach-complete">
+                          <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-image"></use>
+                          </svg><span class="attach-complete__text">страницы прописка.jpg</span>
+                        </div>
+                        <button class="btn btn--attach btn--attach-border">
+                          <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                          </svg><span class="btn__text">Заменить документ</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="personal-area__attach-item">
+                      <h4 class="personal-area__heading">Страницы 3-4 (отметка о прописке):</h4>
+                      <div class="personal-area__upload">
+                        <div class="attach-complete">
+                          <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-image"></use>
+                          </svg><span class="attach-complete__text">страницы прописка.jpg</span>
+                        </div>
+                        <button class="btn btn--attach btn--attach-border">
+                          <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                          </svg><span class="btn__text">Заменить документ</span>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="personal-area__box">
+                  <h3 class="personal-area__data-title">Настройки уведомлений</h3>
+                  <div class="checkbox__box">
+                    <input class="checkbox__slice-input" type="checkbox" name="notificationEmail" id="notificationEmail"/>
+                    <label class="checkbox__slice-label" for="notificationEmail">Получать уведомления по E-mail</label>
+                  </div>
+                  <div class="checkbox__box">
+                    <input class="checkbox__slice-input" type="checkbox" name="notificationText" id="notificationText"/>
+                    <label class="checkbox__slice-label" for="notificationText">Получать уведомления по СМС</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--include modules/footer/footer-->
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
