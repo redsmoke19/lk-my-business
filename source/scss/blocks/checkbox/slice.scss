@@ -1,0 +1,83 @@
+.checkbox {
+  &__box {
+    position: relative;
+
+    &:not(:last-child) {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__slice-input {
+    position: absolute;
+    left: -9999px;
+
+    appearance: none;
+
+    &:checked + label::before {
+      background-color: $red;
+    }
+
+    &:checked + label::after {
+      transform: translate(8px, -50%);
+    }
+  }
+
+  &__slice-label {
+    padding: 0 0 0 48px;
+
+    font-weight: 700;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    cursor: pointer;
+
+    &:hover::after {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 50%);
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 0 0 0 35px;
+
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 30px;
+      height: 22px;
+      border-radius: 34px;
+
+      background-color: rgba($black, 0.4);
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      transition: all ease-out 0.4s;
+
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 3px;
+
+      width: 16px;
+      height: 16px;
+      border: none;
+      border-radius: 50%;
+
+      background-color: $white;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      transition: all ease-out 0.4s;
+
+      content: '';
+    }
+  }
+}

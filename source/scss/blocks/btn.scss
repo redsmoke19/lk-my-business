@@ -36,4 +36,10 @@
     fill: transparent;
     stroke: $red;
   }
+
+  &--attach-border {
+    border: 1px solid rgba(238, 82, 56, 10%);
+
+    background-color: transparent;
+  }
 }

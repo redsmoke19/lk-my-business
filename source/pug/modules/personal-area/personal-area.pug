@@ -1,0 +1,57 @@
+section.personal-area
+  .custom-container
+    h1.personal-area__title Личный кабинет
+    .events__wrapper
+      ul.personal-area__link-list
+        li.personal-area__link-item
+          a.personal-area__link.personal-area__link--active(href="#")
+            +icon("icon-user", "24", "24").personal-area__link-icon
+            span.personal-area__link-text Учетная запись
+        li.personal-area__link-item
+          a.personal-area__link(href="#")
+            +icon("icon-case", "24", "24").personal-area__link-icon
+            span.personal-area__link-text Компании и реквизиты
+        li.personal-area__link-item
+          a.personal-area__link(href="#")
+            +icon("icon-list", "24", "24").personal-area__link-icon
+            span.personal-area__link-text Мои заявки
+      .personal-area__data
+        .personal-area__box
+          h2.personal-area__name Петров Александр Владимирович
+          dl.personal-area__dl-list
+            .personal-area__dl-wrap
+              dt.personal-area__dl-term Телефон:
+              dd.personal-area__dl-def +7 (999) 227-23-23
+            .personal-area__dl-wrap
+              dt.personal-area__dl-term E-mail:
+              dd.personal-area__dl-def ivan.ivanov@gmail.com
+          a.personal-area__data-link(href="#") Управление учетной записью ЕСИА
+        .personal-area__box
+          h3.personal-area__data-title Паспортные данные
+          ul.personal-area__attach-list
+            li.personal-area__attach-item
+              h4.personal-area__heading Главный разворот:
+              .personal-area__upload
+                .attach-complete
+                  +icon("icon-image", "22", "22").attach-complete__icon
+                  span.attach-complete__text страницы прописка.jpg
+                button.btn.btn--attach.btn--attach-border
+                  +icon("icon-attach", "18", "18").btn__icon
+                  span.btn__text Заменить документ
+            li.personal-area__attach-item
+              h4.personal-area__heading Страницы 3-4 (отметка о прописке):
+              .personal-area__upload
+                .attach-complete
+                  +icon("icon-image", "22", "22").attach-complete__icon
+                  span.attach-complete__text страницы прописка.jpg
+                button.btn.btn--attach.btn--attach-border
+                  +icon("icon-attach", "18", "18").btn__icon
+                  span.btn__text Заменить документ
+        .personal-area__box
+          h3.personal-area__data-title Настройки уведомлений
+          .checkbox__box
+            input.checkbox__slice-input(type="checkbox" name="notificationEmail" id="notificationEmail")
+            label.checkbox__slice-label(for="notificationEmail") Получать уведомления по E-mail
+          .checkbox__box
+            input.checkbox__slice-input(type="checkbox" name="notificationText" id="notificationText")
+            label.checkbox__slice-label(for="notificationText") Получать уведомления по СМС

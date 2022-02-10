@@ -1,0 +1,14 @@
+extends layout/layout
+
+block variables
+  - var title = "Личный кабинет"
+  - var pageClass = "personal-area-page"
+
+block header
+  header
+    //include includes/header
+block main
+  main.page-main(class=pageClass)
+    include modules/personal-area/personal-area
+block footer
+  //include modules/footer/footer
