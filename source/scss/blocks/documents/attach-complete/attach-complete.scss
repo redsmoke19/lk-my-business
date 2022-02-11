@@ -2,7 +2,14 @@
   display: flex;
   align-items: center;
 
+  .events-full & {
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
   &__icon {
+    flex-shrink: 0;
     margin: 0 8px 0 0;
 
     fill: transparent;
@@ -11,10 +18,14 @@
   }
 
   &__text {
+    overflow: hidden;
+
     color: $red;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &__delete {

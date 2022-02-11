@@ -68,6 +68,23 @@
     }
   }
 
+  &__documents {
+    margin: 40px 0 0;
+    padding: 15px 20px 20px;
+    border-radius: 10px;
+
+    background-color: $white;
+    box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
+  }
+
+  &__subheading {
+    margin: 0 0 20px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   &__description {
     padding: 30px 40px 40px;
     border-radius: 10px;
