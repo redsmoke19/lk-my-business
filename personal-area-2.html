@@ -62,70 +62,93 @@
           </div>
         </header>
       </header>
-      <main class="page-main events-page">
-        <div class="breadcrumbs">
+      <main class="page-main personal-area-page">
+        <section class="personal-area">
           <div class="custom-container">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="events.html">Образование и мероприятия</a></li>
-              <li class="breadcrumbs__item"><span class="breadcrumbs__current">Заявка на получение</span></li>
-            </ul>
-          </div>
-        </div>
-        <section class="events events-full">
-          <div class="custom-container">
-            <div class="events-full__wrapper events__wrapper">
-              <div class="events-full__info">
-                <h2 class="events-full__title">Дни малого бизнеса на&nbsp;Ямале</h2><span class="events__hashtag events-full__hashtag">#Выставка</span>
-                <dl class="events-full__dl-list">
-                  <div class="events-full__dl-wrap">
-                    <dt class="events-full__dl-term">Дата проведения:</dt>
-                    <dd class="events-full__dl-def events-full__dl-def--brown">31 января 2022, 18:00</dd>
-                  </div>
-                  <div class="events-full__dl-wrap">
-                    <dt class="events-full__dl-term">Место проведения:</dt>
-                    <dd class="events-full__dl-def">Онлайн</dd>
-                  </div>
-                  <div class="events-full__dl-wrap">
-                    <dt class="events-full__dl-term">Спикер:</dt>
-                    <dd class="events-full__dl-def">директор ООО "Бухгалтерия" Шайымова Лилия Рахманкуловна</dd>
-                  </div>
-                  <div class="events-full__dl-wrap">
-                    <dt class="events-full__dl-term">Продолжительность:</dt>
-                    <dd class="events-full__dl-def">2 часа</dd>
-                  </div>
-                </dl>
-                <div class="events-full__documents">
-                  <h3 class="events-full__subheading">Документы</h3>
-                  <div class="attach-complete">
-                            <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
-                              <use xlink:href="img/sprites/sprite-mono.svg#icon-doc"></use>
-                            </svg><span class="attach-complete__text">Заявление.docx</span>
-                  </div>
-                  <div class="attach-complete">
-                            <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
-                              <use xlink:href="img/sprites/sprite-mono.svg#icon-doc"></use>
-                            </svg><span class="attach-complete__text">Паспорт проекта.docx</span>
-                  </div>
-                  <div class="attach-complete">
-                            <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
-                              <use xlink:href="img/sprites/sprite-mono.svg#icon-doc"></use>
-                            </svg><span class="attach-complete__text">Согласие на обработку персональных данных.docx</span>
+            <h1 class="personal-area__title">Личный кабинет</h1>
+            <div class="events__wrapper">
+              <ul class="personal-area__link-list">
+                <li class="personal-area__link-item"><a class="personal-area__link" href="personal-area.html">
+                            <svg class="personal-area__link-icon" width="24" height="24" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#icon-user"></use>
+                            </svg><span class="personal-area__link-text">Учетная запись</span></a></li>
+                <li class="personal-area__link-item"><a class="personal-area__link personal-area__link--active">
+                            <svg class="personal-area__link-icon" width="24" height="24" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#icon-case"></use>
+                            </svg><span class="personal-area__link-text">Компании и реквизиты</span></a></li>
+                <li class="personal-area__link-item"><a class="personal-area__link" href="#">
+                            <svg class="personal-area__link-icon" width="24" height="24" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#icon-list"></use>
+                            </svg><span class="personal-area__link-text">Мои заявки</span></a></li>
+              </ul>
+              <div class="events__data-wrapper">
+                <div class="personal-area__data">
+                  <div class="personal-area__box personal-area__box--no-border">
+                    <div class="personal-area__top">
+                      <h2 class="personal-area__name">ООО «Бизнес»</h2><span class="personal-area__hashtag">#Юр. лицо</span>
+                    </div>
+                    <dl class="personal-area__dl-list personal-area__dl-list--no-margin">
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">ИНН:</dt>
+                        <dd class="personal-area__dl-def">234 546 345 400</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">Адрес:</dt>
+                        <dd class="personal-area__dl-def">г. Москва, ул. 3-я Строителей, д. 14</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">Телефон:</dt>
+                        <dd class="personal-area__dl-def">+7 (999) 227-23-23</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">E-mail:</dt>
+                        <dd class="personal-area__dl-def">ivan.ivanov@gmail.com</dd>
+                      </div>
+                    </dl>
                   </div>
                 </div>
-              </div>
-              <div class="events-full__description">
-                <p class="events-full__text">Получи ответы на сложные вопросы!</p>
-                <p class="events-full__text">Мир непрерывно меняется и вместе с ним меняются механизмы налогового и бухгалтерского учёта. Чтобы разобраться в тенденциях этого года и не упустить важные направления для трансформации вашего бизнеса предлагаем стать онлайн-участником круглого стола "Изменения в налоговом и бухгалтерском учёте в 2022 году", организованного Центром "Мой бизнес" г. Губкинский.</p>
-                <h3 class="events-full__heading events__heading">Программа:</h3>
-                <ul class="events-full__list">
-                  <li class="events-full__item"><span class="events-full__name">Изменения ПБУ</span></li>
-                  <li class="events-full__item"><span class="events-full__name">Изменения КБК</span></li>
-                  <li class="events-full__item"><span class="events-full__name">Введение единого КБК для уплаты и исчисления налогов</span></li>
-                  <li class="events-full__item"><span class="events-full__name">Расчеты с бюджетом и ЭЦП</span></li>
-                  <li class="events-full__item"><span class="events-full__name">Отчётность</span></li>
-                  <li class="events-full__item"><span class="events-full__name">Зарплата и кадры</span></li>
-                </ul>
-                <div class="events-full__bottom"><a class="button button--red" href="#">Отправить заявку</a></div>
+                <div class="personal-area__data">
+                  <div class="personal-area__box personal-area__box--no-border">
+                    <div class="personal-area__top">
+                      <h2 class="personal-area__name">ИП Петров А. В.</h2><span class="personal-area__hashtag">#ИП</span>
+                    </div>
+                    <dl class="personal-area__dl-list personal-area__dl-list--no-margin">
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">ИНН:</dt>
+                        <dd class="personal-area__dl-def">234 546 345 400</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">Телефон:</dt>
+                        <dd class="personal-area__dl-def">+7 (999) 227-23-23</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">E-mail:</dt>
+                        <dd class="personal-area__dl-def">ivan.ivanov@gmail.com</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+                <div class="personal-area__data">
+                  <div class="personal-area__box personal-area__box--no-border">
+                    <div class="personal-area__top">
+                      <h2 class="personal-area__name">Петров Александр Владимирович</h2><span class="personal-area__hashtag">#Самозанятый</span>
+                    </div>
+                    <dl class="personal-area__dl-list personal-area__dl-list--no-margin">
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">ИНН:</dt>
+                        <dd class="personal-area__dl-def">234 546 345 400</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">Телефон:</dt>
+                        <dd class="personal-area__dl-def">+7 (999) 227-23-23</dd>
+                      </div>
+                      <div class="personal-area__dl-wrap">
+                        <dt class="personal-area__dl-term">E-mail:</dt>
+                        <dd class="personal-area__dl-def">ivan.ivanov@gmail.com</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
