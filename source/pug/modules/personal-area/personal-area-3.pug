@@ -1,0 +1,191 @@
+section.personal-area
+  .custom-container
+    h1.personal-area__title Личный кабинет
+    .personal-area__wrapper
+      ul.personal-area__link-list
+        li.personal-area__link-item
+          a.personal-area__link(href="personal-area.html")
+            +icon("icon-user", "24", "24").personal-area__link-icon
+            span.personal-area__link-text Учетная запись
+        li.personal-area__link-item
+          a.personal-area__link(href="personal-area-2.html")
+            +icon("icon-case", "24", "24").personal-area__link-icon
+            span.personal-area__link-text Компании и реквизиты
+        li.personal-area__link-item
+          a.personal-area__link.personal-area__link--active
+            +icon("icon-list", "24", "24").personal-area__link-icon
+            span.personal-area__link-text Мои заявки
+      .personal-area__data-wrapper
+        .personal-area__group
+          h2.personal-area__data-title.personal-area__data-title--grey Черновик
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 24.11.2021
+                .personal-area__status-box
+                  a.personal-area__btn.btn(href="#")
+                    +icon("pen", "18", "18").btn__icon
+                    span Продолжить заполнение
+                  buttom.personal-area__btn.btn.btn--attach-border
+                    +icon("cross", "18", "18").btn__icon
+                    span Удалить заявку
+              h2.personal-area__name Микрозайм «Недвижимость»
+              dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Сумма займа:
+                  dd.personal-area__dl-def 1 840 000 руб.
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Срок займа:
+                  dd.personal-area__dl-def 38 месяцев
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Ставка:
+                  dd.personal-area__dl-def 7,5% годовых
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Заемщик:
+                  dd.personal-area__dl-def ООО «Бизнес»
+        .personal-area__group
+          h2.personal-area__data-title.personal-area__data-title--grey Исходящие заявки
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 10.10.2021
+                .personal-area__status-box
+                  span.personal-area__btn.btn.btn--white
+                    +icon("icon-clock", "18", "18").btn__icon
+                    span Статус
+                  a.personal-area__btn.btn(href="#")
+                    span Действие 1
+                  buttom.personal-area__btn.btn.btn--attach-border
+                    span Действие 2
+              h2.personal-area__name Название заявки
+              dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Название атрибута:
+                  dd.personal-area__dl-def Значение атрибута
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Название атрибута:
+                  dd.personal-area__dl-def Значение атрибута
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Название атрибута:
+                  dd.personal-area__dl-def Значение атрибута
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Название атрибута:
+                  dd.personal-area__dl-def Значение атрибута
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 10.10.2021
+                .personal-area__status-box
+                  span.personal-area__btn.btn.btn--white
+                    +icon("icon-attantion", "18", "18").btn__icon
+                    span Необходимо подписать документы
+                  a.personal-area__btn.btn(href="#")
+                    span Подробнее
+              h2.personal-area__name Грант на развитие социально ориентированного бизнес-проекта
+              dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Сумма займа:
+                  dd.personal-area__dl-def 1 250 000 руб.
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Срок займа:
+                  dd.personal-area__dl-def 24 месяца
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Ставка:
+                  dd.personal-area__dl-def 7,5% годовых
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Заемщик:
+                  dd.personal-area__dl-def ООО «Бизнес»
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 10.10.2021
+                .personal-area__status-box
+                  span.personal-area__btn.btn.btn--white
+                    +icon("icon-attantion", "18", "18").btn__icon
+                    span Требуются дополнительные документы
+                  a.personal-area__btn.btn(href="#")
+                    +icon("icon-pan", "18", "18").btn__icon
+                    span Редактировать
+              h2.personal-area__name Микрозайм «Универсальный»
+              .personal-area__inner-box
+                dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                  .personal-area__dl-wrap
+                    dt.personal-area__dl-term Сумма займа:
+                    dd.personal-area__dl-def 1 250 000 руб.
+                  .personal-area__dl-wrap
+                    dt.personal-area__dl-term Срок займа:
+                    dd.personal-area__dl-def 24 месяца
+                  .personal-area__dl-wrap
+                    dt.personal-area__dl-term Ставка:
+                    dd.personal-area__dl-def 7,5% годовых
+                  .personal-area__dl-wrap
+                    dt.personal-area__dl-term Заемщик:
+                    dd.personal-area__dl-def ООО «Бизнес»
+                p.personal-area__additionally Приложите к заявке заполненное по форме заявление. В заявлении укажите адрес регистрации юридического лица, а также адрес места осуществления предпринимательской деятельности.
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 10.10.2021
+                .personal-area__status-box
+                  span.personal-area__btn.btn.btn--white.btn--color-green
+                    +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
+                    span Получен
+              h2.personal-area__name Микрозайм «Антивирус»
+              dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Сумма займа:
+                  dd.personal-area__dl-def 1 250 000 руб.
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Срок займа:
+                  dd.personal-area__dl-def 24 месяца
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Ставка:
+                  dd.personal-area__dl-def 7,5% годовых
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Заемщик:
+                  dd.personal-area__dl-def ООО «Бизнес»
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 10.10.2021
+                .personal-area__status-box
+                  span.personal-area__btn.btn.btn--white
+                    +icon("icon-clock", "18", "18").btn__icon
+                    span В обработке
+              h2.personal-area__name Микрозайм «Антивирус»
+              dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Сумма займа:
+                  dd.personal-area__dl-def 1 250 000 руб.
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Срок займа:
+                  dd.personal-area__dl-def 24 месяца
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Ставка:
+                  dd.personal-area__dl-def 7,5% годовых
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Заемщик:
+                  dd.personal-area__dl-def ООО «Бизнес»
+          .personal-area__data
+            .personal-area__box.personal-area__box--no-border
+              .personal-area__top.personal-area__top--small
+                time.personal-area__time 10.10.2021
+                .personal-area__status-box
+                  span.personal-area__btn.btn.btn--white.btn--error
+                    +icon("icon-error", "18", "18").btn__icon.btn__icon--error
+                    span Отказ
+              h2.personal-area__name Микрозайм «Старт»
+              dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Сумма займа:
+                  dd.personal-area__dl-def 1 250 000 руб.
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Срок займа:
+                  dd.personal-area__dl-def 24 месяца
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Ставка:
+                  dd.personal-area__dl-def 7,5% годовых
+                .personal-area__dl-wrap
+                  dt.personal-area__dl-term Заемщик:
+                  dd.personal-area__dl-def ООО «Бизнес»
+

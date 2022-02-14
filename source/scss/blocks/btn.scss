@@ -9,12 +9,13 @@
   color: $red;
   font-size: 14px;
   line-height: 18px;
+  flex-shrink: 0;
 
   background-color: rgba($red, 0.1);
 
   cursor: pointer;
 
-  transition: background-color ease-out 0.3s;
+  transition: all ease-out 0.3s;
 
   &:hover,
   &:focus {
@@ -35,11 +36,58 @@
 
     fill: transparent;
     stroke: $red;
+
+    &--green {
+      stroke: $green;
+    }
+
+    &--error {
+      stroke: $red-system;
+    }
   }
 
   &--attach-border {
     border: 1px solid rgba(238, 82, 56, 10%);
 
     background-color: transparent;
+  }
+
+  &--white {
+    background-color: $white;
+
+    svg {
+      transition: all ease-out 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+      border: none;
+
+      color: rgba($red, 0.6);
+
+      background-color: transparent;
+
+      svg {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &--color-green {
+    color: $green;
+
+    &:hover,
+    &:focus {
+      color: rgba($green, 0.6);
+    }
+  }
+
+  &--error {
+    color: $red-system;
+
+    &:hover,
+    &:focus {
+      color: rgba($red-system, 0.6);
+    }
   }
 }

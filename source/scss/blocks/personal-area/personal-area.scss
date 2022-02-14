@@ -5,6 +5,32 @@
     @extend %wrapper;
   }
 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+      grid-template-columns: 40% 1fr;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__group {
+    &:not(:last-child) {
+      margin: 0 0 60px;
+    }
+  }
+
+  &__inner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
   &__title {
     margin: 0 0 40px;
 
@@ -81,7 +107,7 @@
     box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
 
     &:not(:last-child) {
-      margin: 0 0 10px 0;
+      margin: 0 0 10px;
     }
 
     @media screen and (max-width: 767px) {
@@ -99,35 +125,39 @@
     }
 
     &--no-border {
-      border: none;
       margin: 0;
       padding: 0 40px;
+      border: none;
     }
   }
 
   &__top {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
+
+    &--small {
+      margin: 0 0 20px;
+    }
 
     @media screen and (max-width: 1024px) {
       display: grid;
-      gap: 10px;
       grid-template-columns: 1fr;
+      gap: 10px;
     }
 
     @media screen and (max-width: 767px) {
-      margin: 0 0 20px 0;
+      margin: 0 0 20px;
     }
   }
 
   &__name {
+    margin: 0;
 
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    margin: 0;
 
     @media screen and (max-width: 767px) {
 
@@ -138,8 +168,8 @@
 
   &__hashtag {
     color: $brown-color;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 24px;
   }
 
@@ -154,6 +184,10 @@
 
     &--no-margin {
       margin: 0;
+    }
+
+    &--margin-top {
+      margin: 30px 0 0;
     }
   }
 
@@ -215,6 +249,12 @@
       font-size: 14px;
       line-height: 18px;
     }
+
+    &--grey {
+      margin: 0 0 20px;
+
+      color: rgba($black, 0.6);
+    }
   }
 
   &__attach-list {
@@ -253,11 +293,34 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    &:not(:last-child) {
+      margin: 0 0 15px 0;
+    }
   }
 
   .attach-complete {
     @media screen and (max-width: 1023px) {
       margin: 0 0 20px;
     }
+  }
+
+  &__status-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &__additionally {
+    background-color: $gray;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px;
   }
 }
