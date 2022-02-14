@@ -99,14 +99,16 @@
                   <li class="about__item about__item--account">
                     <div class="about__top">
                       <time class="about__time">24.11.2021</time>
-                      <buttom class="about__delete button button--white button--white-small">
-                        <svg width="18" height="18">
-                          <use xlink:href="img/sprites/sprite-mono.svg#cross"></use>
-                        </svg><span>Удалить заявку</span>
-                      </buttom><a class="about__continue button button--primary" href="#">
-                        <svg width="18" height="18">
-                          <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
-                        </svg><span>Продолжить заполнение</span></a>
+                      <div class="about__btn-box"><a class="about__btn btn" href="#">
+                                <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                                  <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
+                                </svg><span>Продолжить заполнение</span></a>
+                        <buttom class="about__btn btn btn--attach-border">
+                                <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                                  <use xlink:href="img/sprites/sprite-mono.svg#cross"></use>
+                                </svg><span>Удалить заявку</span>
+                        </buttom>
+                      </div>
                     </div>
                     <h3 class="about__subtitle about__subtitle--account">Микрозайм «Недвижимость»</h3>
                     <dl class="about__d-list">
@@ -131,10 +133,11 @@
                 <ul class="about__list about__list--account">
                   <li class="about__item about__item--account">
                     <div class="about__top about__top--status">
-                      <time class="about__time">10.10.2021</time><span class="about__status about__status--warning status status--warning">Требуются дополнительные документы</span><a class="about__continue button button--primary" href="#">
-                        <svg width="18" height="18">
-                          <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
-                        </svg><span>Редактировать</span></a>
+                      <time class="about__time">10.10.2021</time>
+                      <div class="about__btn-box"><span class="about__btn status status--warning">Требуются дополнительные документы</span><a class="about__btn btn" href="#">
+                                <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                                  <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
+                                </svg><span>Редактировать</span></a></div>
                     </div>
                     <h3 class="about__subtitle about__subtitle--account">Микрозайм «Недвижимость»</h3>
                     <dl class="about__d-list">
