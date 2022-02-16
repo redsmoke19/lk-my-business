@@ -1,0 +1,21 @@
+extends layout/layout
+
+block variables
+  - var title = "Компенсация на приобретение и ремонт оборудования"
+  - var pageClass = "grant-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    .breadcrumbs
+      .custom-container
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="grant.html") Гранты
+          li.breadcrumbs__item
+            span.breadcrumbs__current Грант на развитие молодежного бизнес-проекта “Свое дело”
+    include modules/grants/grants-full
+block footer
+  include modules/footer/footer

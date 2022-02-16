@@ -1,0 +1,17 @@
+extends layout/layout
+
+block variables
+  - var title = "Гранты"
+  - var pageClass = "grant-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    include modules/tabs-nav/tabs-nav
+    include modules/grants/gratns
+block footer
+  include modules/footer/footer
+
+
