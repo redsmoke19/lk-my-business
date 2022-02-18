@@ -1,0 +1,21 @@
+extends layout/layout
+
+block variables
+  - var title = "Универсальное поручительство"
+  - var pageClass = "guarantee-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    .breadcrumbs
+      .custom-container
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="grant.html") Поручительство
+          li.breadcrumbs__item
+            span.breadcrumbs__current Универсальное поручительство
+    include modules/guarantee/guarantee-full
+block footer
+  include modules/footer/footer

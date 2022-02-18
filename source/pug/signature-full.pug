@@ -1,0 +1,21 @@
+extends layout/layout
+
+block variables
+  - var title = "Получение электронной цифровой подписи"
+  - var pageClass = "ecp-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    .breadcrumbs
+      .custom-container
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="grant.html") ЭЦП
+          li.breadcrumbs__item
+            span.breadcrumbs__current Получение электронной цифровой подписи
+    include modules/signature/signature-full
+block footer
+  include modules/footer/footer

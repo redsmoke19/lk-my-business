@@ -1,0 +1,17 @@
+extends layout/layout
+
+block variables
+  - var title = "Поручительство"
+  - var pageClass = "guarantee-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    include modules/tabs-nav/tabs-nav
+    include modules/guarantee/guarantee
+block footer
+  include modules/footer/footer
+
+
