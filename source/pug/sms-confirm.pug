@@ -1,0 +1,16 @@
+extends layout/layout
+
+block variables
+  - var title = "Подтверждение по смс"
+  - var pageClass = "sms-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    include modules/confirm-sms/confirm-sms
+block footer
+  include modules/footer/footer
+
+

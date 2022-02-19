@@ -1,0 +1,16 @@
+extends layout/layout
+
+block variables
+  - var title = "Подписать документы"
+  - var pageClass = "to-sign-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    include modules/to-sign/to-sign
+block footer
+  include modules/footer/footer
+
+

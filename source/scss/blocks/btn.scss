@@ -37,6 +37,10 @@
     fill: transparent;
     stroke: $red;
 
+    &--right {
+      margin: 0 0 0 6px;
+    }
+
     &--green {
       stroke: $green;
     }

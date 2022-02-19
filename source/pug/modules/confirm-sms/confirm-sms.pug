@@ -1,0 +1,20 @@
+.form__wrapper
+  .form__inner
+    form.form.form--confirm(action="#", method="get")
+      h2.form__title.form__title--confirm Подтверждение по СМС
+      p.form__description На ваш телефон отправлено СМС сообщение с кодом для потверждения заявки на услугу
+      .form__row.form__row--field.form__row--confirm
+        .form__field.form__field
+          input(type="confirmSMS", name="confirmSMS", required="true", id-="confirmSMS")
+          label(class="form__placeholder", fot="confirmSMS") Код из СМС
+        span.form__error Неккорректный код
+      .form__status
+        button.button.button--primary.button--primary-small Отправить еще раз
+        p.form__note Отправить повторно через 0:59
+      .form__buttons.form__buttons--confirm
+        a.button.button--white(href="#")
+          +icon("icon-left-arrow", "24", "24").button__icon--red.button__icon--left
+          span.button__text Назад
+        a.button.button--red(href="#")
+          span.button__text Отправить
+
