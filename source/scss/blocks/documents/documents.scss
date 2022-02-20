@@ -34,14 +34,31 @@
 
     background-color: $white;
     box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
+
+    @media screen and (max-width: 1023px) {
+      padding: 20px 0;
+    }
   }
 
   &__row {
     padding: 0 60px 40px;
     border-bottom: 2px solid $gray;
+    @media screen and (max-width: 1023px) {
+      padding: 0 30px 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 0 15px 15px;
+    }
 
     &:not(:first-child) {
       padding: 20px 60px 40px;
+      @media screen and (max-width: 1023px) {
+        padding: 15px 30px 20px;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 15px;
+      }
     }
   }
 
@@ -50,6 +67,16 @@
 
     font-size: 44px;
     line-height: 60px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
   }
 
   &__name {
@@ -59,6 +86,16 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__text {
@@ -66,6 +103,16 @@
 
     font-size: 18px;
     line-height: 24px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
 
     &--mmb {
       margin: 0 0 10px;
@@ -78,6 +125,16 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__note {
@@ -85,6 +142,11 @@
 
     font-size: 16px;
     line-height: 22px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__attach-wrapper {
@@ -97,6 +159,14 @@
     display: flex;
     justify-content: flex-end;
     padding: 30px 60px 0;
+
+    @media screen and (max-width: 1023px) {
+      padding: 20px 30px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 15px 15px 0;
+    }
   }
 }
 @import 'attach-complete/attach-complete';

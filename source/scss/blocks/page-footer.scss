@@ -85,13 +85,23 @@
   display: grid;
 
   grid-row: auto;
-  grid-template-columns: repeat(4, max-content);
+  grid-template-columns: repeat(4, 1fr);
 
   justify-content: center;
 
   column-gap: rem(40);
 
   list-style: none;
+
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
   &--vertical {
     grid-template-columns: auto;

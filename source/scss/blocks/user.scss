@@ -220,5 +220,10 @@
 
   &__list--right {
     min-width: 160px;
+
+    @media screen and (max-width: 767px) {
+      left: unset;
+      right: 0;
+    }
   }
 }
