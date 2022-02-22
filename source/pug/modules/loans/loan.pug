@@ -1,0 +1,76 @@
+section.events.events-full
+  .custom-container
+    .events-full__wrapper.events__wrapper
+      .events-full__info
+        h2.events-full__title Микрозайм «Недвижимость»
+        dl.events-full__dl-list
+          .events-full__dl-wrap
+            dt.events-full__dl-term Сумма займа:
+            dd.events-full__dl-def.events-full__dl-def--brown до 5 000 000 руб.
+          .events-full__dl-wrap
+            dt.events-full__dl-term Срок займа:
+            dd.events-full__dl-def до 3 лет
+          .events-full__dl-wrap
+            dt.events-full__dl-term Ставка:
+            dd.events-full__dl-def от 7,5% годовых
+        .events-full__documents
+          h3.events-full__subheading Документы
+          .attach-complete
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span.attach-complete__text Заявление.docx
+          .attach-complete
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span.attach-complete__text Паспорт проекта.docx
+          .attach-complete
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span.attach-complete__text Согласие на обработку персональных данных.docx
+      .events-full__description.events-full__description--transparent
+        .faq
+          ul.faq__list
+            li.faq__item
+              button.faq__button Отсрочка платежа по основной сумме займа (для дифференцированных платежей)
+              .faq__content
+                p Предоставляется по заявлению клиента на срок не более 6 месяцев
+            li.faq__item
+              button.faq__button График погашения
+              .faq__content
+                p Предоставляется по заявлению клиента на срок не более 6 месяцев
+                p График погашения
+            li.faq__item
+              button.faq__button Цель займа
+              .faq__content
+                p Предоставляется по заявлению клиента на срок не более 6 месяцев
+          form.about__form.form(action="order.html", method="get")
+            h2.form__title Заявка на получение микрозайма «Недвижимость»
+            .form__row.form__row--adaptive.range
+              .form__col.form__col--left
+                h3.form__subtitle Сумма займа
+              .form__col.form__col--right
+                .form__output.range__output.range__output--rub
+                  input(name="range-input-money", type="text", value="10 000")
+              .form__col.form__col--full
+                .form__range-wrapper.range__wrapper
+                  input.range__input(type="range", name="money", value="10000", min="10000", max="5000000", step="5000")
+                  span.range__progress
+                  span.range__track
+                .form__labels
+                  span 10 000 ₽
+                  span 2 500 000 ₽
+                  span 5 000 000 ₽
+            .form__row.form__row--adaptive.range
+              .form__col.form__col--left
+                h3.form__subtitle Срок займа
+              .form__col.form__col--right
+                .form__output.range__output.range__output--term
+                  input(name="range-input-term", type="text", value="12")
+              .form__col.form__col--full
+                .form__range-wrapper.range__wrapper
+                  input.range__input(type="range", name="term", value="12", min="12", max="48", step="1")
+                  span.range__progress
+                  span.range__track
+                .form__labels
+                  span 12 месяцев
+                  span 30 месяцев
+                  span 48 месяцев
+            button.form__button.button.button--red(type="submit") Создать заявку
+

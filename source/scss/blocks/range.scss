@@ -186,6 +186,12 @@
     text-transform: uppercase;
 
     transform: translate(-100%, -50%);
+
+    @media screen and (max-width: 1023px) {
+      left: calc(100% + 20px);
+      top: unset;
+      transform: unset;
+    }
   }
 
   input {

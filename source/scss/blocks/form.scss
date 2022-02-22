@@ -32,6 +32,10 @@
 
   box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
 
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+
   &--login {
     justify-content: center;
 
@@ -93,6 +97,12 @@
 
   margin-bottom: rem(40);
 
+  &--adaptive {
+    @media screen and (max-width: 1023px) {
+      align-items: center;
+    }
+  }
+
   &--field {
     margin-bottom: 0;
 
@@ -129,10 +139,19 @@
 
   &--left {
     justify-content: flex-start;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      margin: 0 0 15px;
+    }
   }
 
   &--right {
     justify-content: flex-end;
+
+    @media screen and (max-width: 1023px) {
+      justify-content: flex-start;
+      width: 100%;
+    }
   }
 
   &--full {
@@ -579,6 +598,7 @@ input[type='checkbox']:checked + .form__label {
   &__title {
     &--confirm {
       margin: 0 0 20px;
+
       font-weight: 400;
       font-size: 32px;
       line-height: 48px;
@@ -607,25 +627,26 @@ input[type='checkbox']:checked + .form__label {
   }
 
   &__status {
-    margin: 0 0 60px 0;
+    margin: 0 0 60px;
   }
 
   &__note {
     margin: 0;
+
     font-size: 16px;
     line-height: 22px;
   }
 
   &__buttons {
     &--confirm {
-      border-top: 2px solid $gray;
       padding: 30px 0 0;
+      border-top: 2px solid $gray;
       @media screen and (max-width: 767px) {
         flex-direction: column;
 
         > * {
           &:not(:last-child) {
-            margin: 0 0 15px 0;
+            margin: 0 0 15px;
           }
         }
       }
