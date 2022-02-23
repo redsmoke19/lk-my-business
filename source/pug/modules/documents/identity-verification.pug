@@ -15,8 +15,9 @@ section.documents
         h3.documents__heading Страницы 3-4 (отметка о прописке):
         p.documents__note Изображение в формате jpg, png, jpeg размером не более 5 МБ.
         .documents__attach-complete.attach-complete
-          +icon("icon-image", "22", "22").attach-complete__icon
-          span.attach-complete__text страницы прописка.jpg
+          a.attach-complete__text(href="#")
+            +icon("icon-image", "22", "22").attach-complete__icon
+            span страницы прописка.jpg
           button.attach-complete__delete
             +icon("icon-delete", "20", "20").attach-complete__delete-icon
       .documents__bottom

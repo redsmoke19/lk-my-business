@@ -9,8 +9,9 @@ section.documents
         h3.documents__heading Свидетельство о постановке на учёт в налоговом органе / уведомление о постановке на налоговый учет:
         p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
         .documents__attach-complete.attach-complete
-          +icon("icon-doc", "22", "22").attach-complete__icon
-          span.attach-complete__text Свидетельство о постановке на учет в налоговой.docx
+          a.attach-complete__text(href="#")
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span Свидетельство о постановке на учет в налоговой.docx
           button.attach-complete__delete
             +icon("icon-delete", "20", "20").attach-complete__delete-icon
       .documents__row
@@ -18,13 +19,15 @@ section.documents
         p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
         .documents__attach-wrapper
           .documents__attach-complete.attach-complete
-            +icon("icon-doc", "22", "22").attach-complete__icon
-            span.attach-complete__text свидетельство о регистрации ФЛ.docx
+            a.attach-complete__text(href="#")
+              +icon("icon-doc", "22", "22").attach-complete__icon
+              span свидетельство о регистрации ФЛ.docx
             button.attach-complete__delete
               +icon("icon-delete", "20", "20").attach-complete__delete-icon
           .documents__attach-complete.attach-complete
-            +icon("icon-doc", "22", "22").attach-complete__icon
-            span.attach-complete__text лист записи ЕГРИП.docx
+            a.attach-complete__text(href="#")
+              +icon("icon-doc", "22", "22").attach-complete__icon
+              span лист записи ЕГРИП.docx
             button.attach-complete__delete
               +icon("icon-delete", "20", "20").attach-complete__delete-icon
           button.documents__attach.btn.btn--attach
@@ -34,8 +37,9 @@ section.documents
         h3.documents__heading Информационное письмо с кодами статистики / уведомление о присвоении кодов статистики:
         p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
         .documents__attach-complete.attach-complete
-          +icon("icon-doc", "22", "22").attach-complete__icon
-          span.attach-complete__text Коды статистики.docx
+          a.attach-complete__text(href="#")
+            +icon("icon-doc", "22", "22").attach-complete__icon
+            span Коды статистики.docx
           button.attach-complete__delete
             +icon("icon-delete", "20", "20").attach-complete__delete-icon
       .documents__bottom

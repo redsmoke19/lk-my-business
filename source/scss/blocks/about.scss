@@ -112,6 +112,7 @@
 .about__item {
   min-width: 0;
   padding: 0;
+  position: relative;
 
   &--content,
   &--account,
@@ -139,6 +140,12 @@
     align-items: start;
 
     column-gap: rem(20);
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      padding: 15px;
+    }
   }
 
   &--hover {
@@ -147,6 +154,13 @@
     &:hover {
       box-shadow: 0 10px 40px rgba(35, 31, 32, 0%);
     }
+  }
+}
+
+.about__center--notification {
+  @media screen and (max-width: 767px) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
   }
 }
 
@@ -297,6 +311,15 @@
   display: block;
 
   color: inherit;
+
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &:hover,
   &:focus {
