@@ -11,14 +11,54 @@
   </head>
   <body class="root">
     <div class="container">
+      <!--svg(width="20", height="20")-->
+      <!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
       <header class="page-header page-header--inner">
-        <div class="page-header__wrapper page-header__wrapper--inner"><a class="page-header__link link link--red" href="https://mb89.ru"><span class="link__text link__text--red link__text--left">mb89.ru</span>
-            <svg class="link__icon link__icon--red link__icon--right" width="20" height="20">
-              <use xlink:href="img/sprites/sprite-mono.svg#arrow-top"></use>
-            </svg></a><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
-            <svg class="link__icon link__icon--black" width="20" height="20">
-              <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
-            </svg><span class="link__text">8-800-350-00-89</span></a></div>
+        <div class="page-header__wrapper page-header__wrapper--inner">
+          <div class="page-header__user user">
+            <button class="user__toggle">
+                    <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                    </svg>
+            </button>
+            <ul class="user__list _js-user-list">
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-profile"></use>
+                        </svg><span class="link__text">Профиль</span></a></li>
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
+                        </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
+              <li class="user__item"><a class="link" href="account/sign-out.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
+                        </svg><span class="link__text">Выйти</span></a></li>
+            </ul>
+            <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><span class="user__img-name">ПА</span></a></div>
+            <div class="user__description">
+              <h3 class="user__name">Петрова А.В.</h3>
+              <div class="user__inner">
+                <p class="user__company">ООО «Бизнес»</p>
+                <div class="user__menu-inner">
+                  <button class="user__toggle user__toggle--right">
+                          <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                          </svg>
+                  </button>
+                  <ul class="user__list user__list--right _js-user-list">
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">ООО "Бизнес"</span></a></li>
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">Самозанятый</span></a></li>
+                    <li class="user__item"><a class="link" href="account/sign-out.html"><span class="link__text">ИП Петров</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+                  <svg class="link__icon link__icon--black" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+                  </svg><span class="link__text">8-800-350-00-89</span></a>
+        </div>
       </header>
       <main class="page-main identity-verification">
         <div class="promo__social social">
@@ -49,22 +89,22 @@
                 <h3 class="documents__heading">Главный разворот паспорта:</h3>
                 <p class="documents__note">Изображение в формате jpg, png, jpeg размером не более 5 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Страницы 3-4 (отметка о прописке):</h3>
                 <p class="documents__note">Изображение в формате jpg, png, jpeg размером не более 5 МБ.</p>
-                <div class="documents__attach-complete attach-complete">
-                  <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-image"></use>
-                  </svg><span class="attach-complete__text">страницы прописка.jpg</span>
+                <div class="documents__attach-complete attach-complete"><a class="attach-complete__text" href="#">
+                          <svg class="attach-complete__icon" width="22" height="22" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-image"></use>
+                          </svg><span>страницы прописка.jpg</span></a>
                   <button class="attach-complete__delete">
-                    <svg class="attach-complete__delete-icon" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="img/sprites/sprite-mono.svg#icon-delete"></use>
-                    </svg>
+                          <svg class="attach-complete__delete-icon" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-delete"></use>
+                          </svg>
                   </button>
                 </div>
               </div>

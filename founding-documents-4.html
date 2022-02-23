@@ -11,14 +11,54 @@
   </head>
   <body class="root">
     <div class="container">
+      <!--svg(width="20", height="20")-->
+      <!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
       <header class="page-header page-header--inner">
-        <div class="page-header__wrapper page-header__wrapper--inner"><a class="page-header__link link link--red" href="https://mb89.ru"><span class="link__text link__text--red link__text--left">mb89.ru</span>
-            <svg class="link__icon link__icon--red link__icon--right" width="20" height="20">
-              <use xlink:href="img/sprites/sprite-mono.svg#arrow-top"></use>
-            </svg></a><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
-            <svg class="link__icon link__icon--black" width="20" height="20">
-              <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
-            </svg><span class="link__text">8-800-350-00-89</span></a></div>
+        <div class="page-header__wrapper page-header__wrapper--inner">
+          <div class="page-header__user user">
+            <button class="user__toggle">
+                    <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                    </svg>
+            </button>
+            <ul class="user__list _js-user-list">
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-profile"></use>
+                        </svg><span class="link__text">Профиль</span></a></li>
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
+                        </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
+              <li class="user__item"><a class="link" href="account/sign-out.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
+                        </svg><span class="link__text">Выйти</span></a></li>
+            </ul>
+            <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><span class="user__img-name">ПА</span></a></div>
+            <div class="user__description">
+              <h3 class="user__name">Петрова А.В.</h3>
+              <div class="user__inner">
+                <p class="user__company">ООО «Бизнес»</p>
+                <div class="user__menu-inner">
+                  <button class="user__toggle user__toggle--right">
+                          <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                          </svg>
+                  </button>
+                  <ul class="user__list user__list--right _js-user-list">
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">ООО "Бизнес"</span></a></li>
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">Самозанятый</span></a></li>
+                    <li class="user__item"><a class="link" href="account/sign-out.html"><span class="link__text">ИП Петров</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+                  <svg class="link__icon link__icon--black" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+                  </svg><span class="link__text">8-800-350-00-89</span></a>
+        </div>
       </header>
       <main class="page-main founding-documents">
         <div class="promo__social social">
@@ -50,54 +90,54 @@
                 <p class="documents__text documents__text--mmb">Если устав в новой редакции, то предоставляется только устав в последней редакции, предыдущие редакции устава с изменениями не предоставляются</p>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Свидетельство о постановке на учёт юридического лица в налоговом органе:</h3>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Свидетельство о государственной регистрации юридического лица / лист записи ЕГРЮЛ:</h3>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Протокол (решение) о создании общества:</h3>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Информационное письмо с кодами статистики / уведомление о присвоении кодов статистики</h3>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Лицензии на осуществление специальных видов деятельности, подлежащих лицензированию:</h3>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__row">
@@ -105,9 +145,9 @@
                 <p class="documents__text documents__text--mmb">Протокол общего собрания / решение единственного учредителя / участника об избрании руководителя и т.п., а также доверенность, если Договор подписывает лицо, не являющееся руководителем организации. Если руководитель назначается (избирается) советом директоров необходимо также представить копию протокола общего собрания акционеров (участников) об избрании состава совета директоров, избравшего руководителя.</p>
                 <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
                 <button class="documents__attach btn btn--attach">
-                  <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                  </svg><span class="documents__attach-text">Прикрепить</span>
+                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                        </svg><span class="documents__attach-text">Прикрепить</span>
                 </button>
               </div>
               <div class="documents__bottom"><a class="documents__button button button--red" href="#">Продолжить</a></div>
