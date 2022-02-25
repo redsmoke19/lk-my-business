@@ -5,6 +5,7 @@ import about from './about';
 import faq from './faq';
 import range from './range';
 import form from './form';
+import { initDropZone } from './dropzone';
 
 document.addEventListener('DOMContentLoaded', () => {
   // user();
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   faq();
   range();
   form();
+  initDropZone();
 });

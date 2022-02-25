@@ -8,15 +8,17 @@ section.documents
       .documents__row
         h3.documents__heading Свидетельство о постановке на учёт в налоговом органе / уведомление о постановке на налоговый учет:
         p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
-        button.documents__attach.btn.btn--attach
-          +icon("icon-attach", "18", "18").btn__icon
-          span.documents__attach-text Прикрепить
+        .dropzone-form.dropzone(data-dz data-dz-text)
+          button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+            +icon("icon-attach", "18", "18").btn__icon
+            span.documents__attach-text Прикрепить
       .documents__row
         h3.documents__heading Справка о постановке на учет (снятии с учета) физического лица в качестве налогоплательщика налога на профессиональный доход (КНД 1122035):
         p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
-        button.documents__attach.btn.btn--attach
-          +icon("icon-attach", "18", "18").btn__icon
-          span.documents__attach-text Прикрепить
+        .dropzone-form.dropzone(data-dz data-dz-text)
+          button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+            +icon("icon-attach", "18", "18").btn__icon
+            span.documents__attach-text Прикрепить
       .documents__bottom
         a.documents__button.button.button--red(href="#") Продолжить
 

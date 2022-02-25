@@ -37,9 +37,10 @@ section.personal-area
                   a.attach-complete__text(href="#")
                     +icon("icon-image", "22", "22").attach-complete__icon
                     span страницы прописка.jpg
-                button.btn.btn--attach.btn--attach-border
-                  +icon("icon-attach", "18", "18").btn__icon
-                  span.btn__text Заменить документ
+                .dropzone-form.dropzone(data-dz)
+                  button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                    +icon("icon-attach", "18", "18").btn__icon
+                    span.documents__attach-text Заменить документ
             li.personal-area__attach-item
               h4.personal-area__heading Страницы 3-4 (отметка о прописке):
               .personal-area__upload
@@ -47,9 +48,10 @@ section.personal-area
                   a.attach-complete__text(href="#")
                     +icon("icon-image", "22", "22").attach-complete__icon
                     span страницы прописка.jpg
-                button.btn.btn--attach.btn--attach-border
-                  +icon("icon-attach", "18", "18").btn__icon
-                  span.btn__text Заменить документ
+                .dropzone-form.dropzone(data-dz)
+                  button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                    +icon("icon-attach", "18", "18").btn__icon
+                    span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__data-title Настройки уведомлений
           .checkbox__box

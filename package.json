@@ -80,6 +80,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "dropzone": "^6.0.0-beta.2",
     "gulp-concat": "^2.6.1",
     "js-datepicker": "^5.18.0"
   }

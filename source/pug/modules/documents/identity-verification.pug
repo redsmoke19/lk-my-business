@@ -8,9 +8,10 @@ section.documents
       .documents__row
         h3.documents__heading Главный разворот паспорта:
         p.documents__note Изображение в формате jpg, png, jpeg размером не более 5 МБ.
-        button.documents__attach.btn.btn--attach
-          +icon("icon-attach", "18", "18").btn__icon
-          span.documents__attach-text Прикрепить
+        .dropzone-form.dropzone(data-dz)
+          button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+            +icon("icon-attach", "18", "18").btn__icon
+            span.documents__attach-text Прикрепить
       .documents__row
         h3.documents__heading Страницы 3-4 (отметка о прописке):
         p.documents__note Изображение в формате jpg, png, jpeg размером не более 5 МБ.

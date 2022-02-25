@@ -26,9 +26,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span Свидетельство о регистрации юридического лица или лист записи ЕГРЮСвидетельство о регистрации юридического лица или лист записи ЕГРЮСвидетельство о регистрации юридического лица или лист записи ЕГРЮСвидетельство о регистрации юридического лица или лист записи ЕГРЮ
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Свидетельство о постановке на учет в налоговой инспекции по юридическому адресу:
           .personal-area__upload
@@ -36,9 +37,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span свидетельство о постановке по адресу.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Устав:
           .personal-area__upload
@@ -46,9 +48,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span устав.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Протокол (решение) о создании общества:
           .personal-area__upload
@@ -56,9 +59,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span Протокол(решение).docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Договор об учреждении:
           .personal-area__upload
@@ -66,9 +70,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span учреждение.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Список участников:
           .personal-area__upload
@@ -76,9 +81,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span список участников.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Протокол (приказ) о назначении гендиректора:
           .personal-area__upload
@@ -86,9 +92,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span приказ о назначении гендира.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Выписка из ЕГРЮЛ:
           .personal-area__upload
@@ -96,9 +103,10 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span Выписка из ЕГРЮЛ от 24.01.2022.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Коды статистики:
           .personal-area__upload
@@ -106,15 +114,17 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span Коды статистики.docx
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
         .personal-area__box
           h3.personal-area__heading Информация о филиалах и обособленных подразделениях ООО, если они открыты:
           .personal-area__upload
-            button.btn.btn--attach
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Прикрепить
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Прикрепить
         .personal-area__box.personal-area__box--no-border
           h3.personal-area__heading Доверенности:
           .personal-area__upload
@@ -122,18 +132,21 @@ section.personal-area
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span доверенность 1.pdf
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
           .personal-area__upload
             .attach-complete
               a.attach-complete__text(href="#")
                 +icon("icon-doc", "22", "22").attach-complete__icon
                 span доверенность 2.pdf
-            button.btn.btn--attach.btn--attach-border
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Заменить документ
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Заменить документ
           .personal-area__upload
-            button.btn.btn--attach
-              +icon("icon-attach", "18", "18").btn__icon
-              span.btn__text Прикрепить
+            .dropzone-form.dropzone(data-dz data-dz-text)
+              button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+                +icon("icon-attach", "18", "18").btn__icon
+                span.documents__attach-text Прикрепить

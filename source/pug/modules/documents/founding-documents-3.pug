@@ -30,9 +30,10 @@ section.documents
               span лист записи ЕГРИП.docx
             button.attach-complete__delete
               +icon("icon-delete", "20", "20").attach-complete__delete-icon
-          button.documents__attach.btn.btn--attach
-            +icon("icon-attach", "18", "18").btn__icon
-            span.documents__attach-text Прикрепить
+          .dropzone-form.dropzone(data-dz data-dz-text)
+            button.documents__attach.btn.btn--attach(type="button" data-dz-add)
+              +icon("icon-attach", "18", "18").btn__icon
+              span.documents__attach-text Прикрепить
       .documents__row
         h3.documents__heading Информационное письмо с кодами статистики / уведомление о присвоении кодов статистики:
         p.documents__note Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.
