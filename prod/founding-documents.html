@@ -1,0 +1,119 @@
+
+<!--svg(width="20", height="20")-->
+<!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>ЛК Мой бизнес - О нас</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css"/>
+  </head>
+  <body class="root">
+    <div class="container">
+      <!--svg(width="20", height="20")-->
+      <!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
+      <header class="page-header page-header--inner">
+        <div class="page-header__wrapper page-header__wrapper--inner">
+          <div class="page-header__user user">
+            <button class="user__toggle">
+                    <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                    </svg>
+            </button>
+            <ul class="user__list _js-user-list">
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-profile"></use>
+                        </svg><span class="link__text">Профиль</span></a></li>
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
+                        </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
+              <li class="user__item"><a class="link" href="account/sign-out.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
+                        </svg><span class="link__text">Выйти</span></a></li>
+            </ul>
+            <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><span class="user__img-name">ПА</span></a></div>
+            <div class="user__description">
+              <h3 class="user__name">Петрова А.В.</h3>
+              <div class="user__inner">
+                <p class="user__company">ООО «Бизнес»</p>
+                <div class="user__menu-inner">
+                  <button class="user__toggle user__toggle--right">
+                          <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                          </svg>
+                  </button>
+                  <ul class="user__list user__list--right _js-user-list">
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">ООО "Бизнес"</span></a></li>
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">Самозанятый</span></a></li>
+                    <li class="user__item"><a class="link" href="account/sign-out.html"><span class="link__text">ИП Петров</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
+                  <svg class="link__icon link__icon--black" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+                  </svg><span class="link__text">8-800-350-00-89</span></a>
+        </div>
+      </header>
+      <main class="page-main founding-documents">
+        <div class="promo__social social">
+          <ul class="social__list social__list--vertical">
+            <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                <svg width="24" height="24" aria-label="fb">
+                  <use xlink:href="img/sprites/sprite-mono.svg#fb"></use>
+                </svg></a></li>
+            <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                <svg width="24" height="24" aria-label="insta">
+                  <use xlink:href="img/sprites/sprite-mono.svg#insta"></use>
+                </svg></a></li>
+            <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
+                <svg width="24" height="24" aria-label="vk">
+                  <use xlink:href="img/sprites/sprite-mono.svg#vk"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <section class="documents">
+          <div class="custom-container">
+            <div class="documents__content">
+              <div class="documents__row">
+                <h2 class="documents__title">Учредительные документы</h2>
+                <p class="documents__name">Петров Александр Владимирович</p>
+                <p class="documents__text">Загрузите необходимые документы для регистрации организации на платформе.</p>
+              </div>
+              <div class="documents__row">
+                <h3 class="documents__heading">Свидетельство о постановке на учёт в налоговом органе / уведомление о постановке на налоговый учет:</h3>
+                <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
+                <div class="dropzone-form dropzone" data-dz="data-dz" data-dz-text="data-dz-text">
+                  <button class="documents__attach btn btn--attach" type="button" data-dz-add="data-dz-add">
+                          <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                          </svg><span class="documents__attach-text">Прикрепить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="documents__row">
+                <h3 class="documents__heading">Справка о постановке на учет (снятии с учета) физического лица в качестве налогоплательщика налога на профессиональный доход (КНД 1122035):</h3>
+                <p class="documents__note">Прикрепите файл в формате pdf, doc, docx размером не более 30 МБ.</p>
+                <div class="dropzone-form dropzone" data-dz="data-dz" data-dz-text="data-dz-text">
+                  <button class="documents__attach btn btn--attach" type="button" data-dz-add="data-dz-add">
+                          <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                          </svg><span class="documents__attach-text">Прикрепить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="documents__bottom"><a class="documents__button button button--red" href="#">Продолжить</a></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

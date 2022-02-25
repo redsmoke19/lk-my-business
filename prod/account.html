@@ -9,41 +9,53 @@
   </head>
   <body>
     <div class="container">
+      <!--svg(width="20", height="20")-->
+      <!--  use(xlink:href="img/sprites/sprite-mono.svg#info")-->
       <header class="page-header page-header--inner">
         <div class="page-header__wrapper page-header__wrapper--inner">
           <div class="page-header__user user">
             <button class="user__toggle">
-              <svg width="20" height="20">
-                <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
-              </svg>
+                    <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                    </svg>
             </button>
-            <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><img width="24" height="24" src="img/avatar.svg" alt="Avatar"/></a></div>
+            <ul class="user__list _js-user-list">
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#icon-profile"></use>
+                        </svg><span class="link__text">Профиль</span></a></li>
+              <li class="user__item"><a class="link" href="account.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
+                        </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
+              <li class="user__item"><a class="link" href="account/sign-out.html">
+                        <svg class="link__icon link__icon--gray" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
+                        </svg><span class="link__text">Выйти</span></a></li>
+            </ul>
+            <div class="user__avatar"><a class="user__notification" href="notifications.html">2</a><a class="user__img" href="account.html"><span class="user__img-name">ПА</span></a></div>
             <div class="user__description">
               <h3 class="user__name">Петрова А.В.</h3>
-              <p class="user__company">ООО «Бизнес»</p>
+              <div class="user__inner">
+                <p class="user__company">ООО «Бизнес»</p>
+                <div class="user__menu-inner">
+                  <button class="user__toggle user__toggle--right">
+                          <svg class="user__toggle-icon" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#drop-down"></use>
+                          </svg>
+                  </button>
+                  <ul class="user__list user__list--right _js-user-list">
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">ООО "Бизнес"</span></a></li>
+                    <li class="user__item"><a class="link" href="account.html"><span class="link__text">Самозанятый</span></a></li>
+                    <li class="user__item"><a class="link" href="account/sign-out.html"><span class="link__text">ИП Петров</span></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <ul class="user__list">
-              <li class="user__item"><a class="link" href="account.html">
-                  <svg class="link__icon link__icon--gray" width="20" height="20">
-                    <use xlink:href="img/sprites/sprite-mono.svg#orders"></use>
-                  </svg><span class="link__text">Заявки</span><span class="user__notification user__notification--list">2</span></a></li>
-              <li class="user__item"><a class="link" href="account.html">
-                  <svg class="link__icon link__icon--gray" width="20" height="20">
-                    <use xlink:href="img/sprites/sprite-mono.svg#notification"></use>
-                  </svg><span class="link__text">Уведомления</span><span class="user__notification user__notification--list">2</span></a></li>
-              <li class="user__item"><a class="link" href="account.html">
-                  <svg class="link__icon link__icon--gray" width="20" height="20">
-                    <use xlink:href="img/sprites/sprite-mono.svg#settings"></use>
-                  </svg><span class="link__text">Настройки</span></a></li>
-              <li class="user__item"><a class="link" href="account/sign-out.html">
-                  <svg class="link__icon link__icon--gray" width="20" height="20">
-                    <use xlink:href="img/sprites/sprite-mono.svg#sign-out"></use>
-                  </svg><span class="link__text">Выйти</span></a></li>
-            </ul>
           </div><a class="page-header__logo page-header__logo--inner logo" href="index.html"><img width="364" height="70" src="img/logo.svg" alt="Logo"/></a><a class="page-header__phone link" href="tel:88003500089">
-            <svg class="link__icon link__icon--black" width="20" height="20">
-              <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
-            </svg><span class="link__text">8-800-350-00-89</span></a>
+                  <svg class="link__icon link__icon--black" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
+                  </svg><span class="link__text">8-800-350-00-89</span></a>
         </div>
       </header>
       <main class="page-main">
@@ -87,14 +99,16 @@
                   <li class="about__item about__item--account">
                     <div class="about__top">
                       <time class="about__time">24.11.2021</time>
-                      <buttom class="about__delete button button--white button--white-small">
-                        <svg width="18" height="18">
-                          <use xlink:href="img/sprites/sprite-mono.svg#cross"></use>
-                        </svg><span>Удалить заявку</span>
-                      </buttom><a class="about__continue button button--primary" href="#">
-                        <svg width="18" height="18">
-                          <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
-                        </svg><span>Продолжить заполнение</span></a>
+                      <div class="about__btn-box"><a class="about__btn btn" href="#">
+                                <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                                  <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
+                                </svg><span>Продолжить заполнение</span></a>
+                        <buttom class="about__btn btn btn--attach-border">
+                                <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                                  <use xlink:href="img/sprites/sprite-mono.svg#cross"></use>
+                                </svg><span>Удалить заявку</span>
+                        </buttom>
+                      </div>
                     </div>
                     <h3 class="about__subtitle about__subtitle--account">Микрозайм «Недвижимость»</h3>
                     <dl class="about__d-list">
@@ -119,10 +133,11 @@
                 <ul class="about__list about__list--account">
                   <li class="about__item about__item--account">
                     <div class="about__top about__top--status">
-                      <time class="about__time">10.10.2021</time><span class="about__status about__status--warning status status--warning">Требуются дополнительные документы</span><a class="about__continue button button--primary" href="#">
-                        <svg width="18" height="18">
-                          <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
-                        </svg><span>Редактировать</span></a>
+                      <time class="about__time">10.10.2021</time>
+                      <div class="about__btn-box"><span class="about__btn status status--warning">Требуются дополнительные документы</span><a class="about__btn btn" href="#">
+                                <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                                  <use xlink:href="img/sprites/sprite-mono.svg#pen"></use>
+                                </svg><span>Редактировать</span></a></div>
                     </div>
                     <h3 class="about__subtitle about__subtitle--account">Микрозайм «Недвижимость»</h3>
                     <dl class="about__d-list">
@@ -223,6 +238,7 @@
           </div>
         </div>
       </footer>
+      <script src="js/libs.js"></script>
       <script src="js/main.min.js"></script>
     </div>
   </body>
