@@ -29,7 +29,25 @@
 
     padding: rem(40) 0 0;
 
-    column-gap: rem(30);
+    gap: rem(30);
+
+    @media screen and (max-width: 1440px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.page-footer__col--logo {
+  @media screen and (max-width: 1440px) {
+    grid-column: 1 / -1;
   }
 }
 

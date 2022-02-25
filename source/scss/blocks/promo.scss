@@ -47,22 +47,27 @@
 .promo__img {
   position: absolute;
 
-  top: rem(121);
-  left: 0;
+  top: 121px;
+  right: 0;
 
   z-index: 0;
 
   width: 100%;
-  height: 100%;
+  max-width: 1300px;
+  height: calc(100% - 121px);
 
   pointer-events: none;
+
+  @media screen and (max-width: 767px) {
+    opacity: 0.5;
+  }
 
   img {
     width: 100%;
     height: 100%;
 
-    object-fit: contain;
-    object-position: right center;
+    object-fit: cover;
+    object-position: left;
   }
 }
 
@@ -92,6 +97,12 @@
   margin-left: 0;
 
   padding-left: rem(75);
+
+  @media screen and (max-width: 767px) {
+    max-width: unset;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .promo__logo {
@@ -102,6 +113,11 @@
   height: auto;
 
   margin: 0 auto rem(115) 0;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 0 0 100px;
+  }
 }
 
 .promo__title {
@@ -126,12 +142,22 @@
   justify-content: flex-start;
 
   margin-bottom: rem(30);
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin: 0;
+  }
 }
 
 .promo__button {
   &:not(:last-of-type) {
     margin-right: rem(20);
   }
+}
+
+.promo__gos-button {
+  border: 2px solid $red;
+  border-radius: 10px;
 }
 
 .promo__link {

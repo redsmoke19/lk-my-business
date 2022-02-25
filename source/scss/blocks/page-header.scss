@@ -19,9 +19,13 @@
 }
 
 .page-header__wrapper {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 
   @extend %wrapper;
 
@@ -40,9 +44,28 @@
   }
 }
 
+.page-header__contacts {
+  margin: 0 0 0 auto;
+
+  @media screen and (max-width: 1023px) {
+    grid-column: 3 / -1;
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-column: 1 / -1;
+    margin: 0;
+    justify-self: center;
+  }
+}
+
 .page-header__navigation {
   margin-right: auto;
   margin-left: rem(20);
+
+  @media screen and (max-width: 767px) {
+    justify-self: center;
+    margin: 0 0 20px 0;
+  }
 }
 
 .page-header__user,

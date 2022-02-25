@@ -17,8 +17,6 @@ const initDropZone = () => {
       dictCancelUpload: '',
       maxFilesize: isDoc ? 30 : 5,
       acceptedFiles: isDoc ? '.pdf, .doc, docx' : '.jpg, .png, jpeg',
-      // acceptedFiles: '.jpg, .png, jpeg',
-      // createImageThumbnails: false,
       dictFileTooBig: 'Вы пытаетесь загрузить слушком большой файл ({{filesize}}Mb). Максимальный размер: {{maxFilesize}}Mb.',
       init() {
         this.on('addedfile', (file) => {
