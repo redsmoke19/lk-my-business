@@ -123,11 +123,13 @@
                             </svg>
                     </button>
                   </div>
-                  <button class="documents__attach btn btn--attach">
-                          <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                            <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                          </svg><span class="documents__attach-text">Прикрепить</span>
-                  </button>
+                  <div class="dropzone-form dropzone" data-dz="data-dz" data-dz-text="data-dz-text">
+                    <button class="documents__attach btn btn--attach" type="button" data-dz-add="data-dz-add">
+                            <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                              <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                            </svg><span class="documents__attach-text">Прикрепить</span>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="documents__row">

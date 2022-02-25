@@ -88,11 +88,13 @@
               <div class="documents__row">
                 <h3 class="documents__heading">Главный разворот паспорта:</h3>
                 <p class="documents__note">Изображение в формате jpg, png, jpeg размером не более 5 МБ.</p>
-                <button class="documents__attach btn btn--attach">
-                        <svg class="btn__icon" width="18" height="18" aria-hidden="true">
-                          <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
-                        </svg><span class="documents__attach-text">Прикрепить</span>
-                </button>
+                <div class="dropzone-form dropzone" data-dz="data-dz">
+                  <button class="documents__attach btn btn--attach" type="button" data-dz-add="data-dz-add">
+                          <svg class="btn__icon" width="18" height="18" aria-hidden="true">
+                            <use xlink:href="img/sprites/sprite-mono.svg#icon-attach"></use>
+                          </svg><span class="documents__attach-text">Прикрепить</span>
+                  </button>
+                </div>
               </div>
               <div class="documents__row">
                 <h3 class="documents__heading">Страницы 3-4 (отметка о прописке):</h3>
