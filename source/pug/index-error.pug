@@ -1,0 +1,38 @@
+include mixins/mixin
+
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    include includes/viewport.pug
+    title ЛК Мой бизнес - Главная
+    link(rel="stylesheet", type="text/css", href="css/main.min.css")
+  body.root
+    div(class="container")
+      include includes/header-index.pug
+      main.page-main
+        h1.visually-hidden ЛК Мой бизнес
+
+        section.promo
+          .promo__wrapper
+            .promo__content
+              .promo__error.promo-error
+                +icon("icon-error-index", "100", "100").promo-error__icon
+                p.promo-error__title Ошибка авторизации
+                p.promo-error__text Ошибка авторизации, некорректный запрос.  Пожалуйста, свяжитесь с технической поддержкой
+
+              .promo__social.social
+                - const socials = ['fb', 'insta', 'vk'];
+                  ul.social__list.social__list--vertical
+                    each val in socials
+                      li.social__item.social__item--vertical
+                        a.social__link.social__link--brown(href="#", target="_blank")
+                          svg(width="24", height="24", aria-label= val)
+                              use(xlink:href="img/sprites/sprite-mono.svg#" + val)
+          .promo__img.promo__img--error
+            img(src="img/promo.png", alt="Фоновая картинка офиса" width="1300" height="852")
+      include includes/footer-index.pug
+
+
+
+

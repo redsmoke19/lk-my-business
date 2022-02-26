@@ -1,0 +1,21 @@
+extends layout/layout
+
+block variables
+  - var title = "Микрозайм"
+  - var pageClass = "loans-page"
+
+block header
+  header
+    include includes/header
+block main
+  main.page-main(class=pageClass)
+    .breadcrumbs
+      .custom-container
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="loans.html") Финансовая поддержка бизнеса
+          li.breadcrumbs__item
+            span.breadcrumbs__current Микрозайм «Недвижимость»
+    include modules/loans/loan-error
+block footer
+  include modules/footer/footer

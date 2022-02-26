@@ -29,19 +29,19 @@ section.events.events-full
               span Согласие на обработку персональных данных.docx
       .events-full__description.events-full__description--transparent
         .faq
-          ul.faq__list
-            li.faq__item
-              button.faq__button Отсрочка платежа по основной сумме займа (для дифференцированных платежей)
-              .faq__content
+          ul.faq__list.accordion(data-accordion='parent' data-single)
+            li.faq__item.accordion__element(data-accordion='element')
+              button.faq__button(type='button', data-accordion='button') Отсрочка платежа по основной сумме займа (для дифференцированных платежей)
+              .faq__content.accordion__content(data-accordion='content')
                 p Предоставляется по заявлению клиента на срок не более 6 месяцев
-            li.faq__item
-              button.faq__button График погашения
-              .faq__content
+            li.faq__item.accordion__element(data-accordion='element')
+              button.faq__button(type='button', data-accordion='button') График погашения
+              .faq__content.accordion__content(data-accordion='content')
                 p Предоставляется по заявлению клиента на срок не более 6 месяцев
                 p График погашения
-            li.faq__item
-              button.faq__button Цель займа
-              .faq__content
+            li.faq__item.accordion__element(data-accordion='element')
+              button.faq__button(type='button', data-accordion='button') Цель займа
+              .faq__content.accordion__content(data-accordion='content')
                 p Предоставляется по заявлению клиента на срок не более 6 месяцев
           form.about__form.form(action="order.html", method="get")
             h2.form__title Заявка на получение микрозайма «Недвижимость»

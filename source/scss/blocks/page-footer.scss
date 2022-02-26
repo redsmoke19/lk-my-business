@@ -136,6 +136,11 @@
     line-height: rem(22.4);
 
     text-align: left;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 

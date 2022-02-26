@@ -1,0 +1,58 @@
+section.events.events-full
+  .custom-container
+    .events-full__wrapper.events__wrapper
+      .events-full__info
+        h2.events-full__title Микрозайм «Недвижимость»
+        dl.events-full__dl-list
+          .events-full__dl-wrap
+            dt.events-full__dl-term Сумма займа:
+            dd.events-full__dl-def.events-full__dl-def--brown до 5 000 000 руб.
+          .events-full__dl-wrap
+            dt.events-full__dl-term Срок займа:
+            dd.events-full__dl-def до 3 лет
+          .events-full__dl-wrap
+            dt.events-full__dl-term Ставка:
+            dd.events-full__dl-def от 7,5% годовых
+        .events-full__documents
+          h3.events-full__subheading Документы
+          .attach-complete
+            a.attach-complete__text(href="#")
+              +icon("icon-doc", "22", "22").attach-complete__icon
+              span Заявление.docx
+          .attach-complete
+            a.attach-complete__text(href="#")
+              +icon("icon-doc", "22", "22").attach-complete__icon
+              span Паспорт проекта.docx
+          .attach-complete
+            a.attach-complete__text(href="#")
+              +icon("icon-doc", "22", "22").attach-complete__icon
+              span Согласие на обработку персональных данных.docx
+      .events-full__description.events-full__description--transparent
+        .faq
+          ul.faq__list
+            li.faq__item
+              button.faq__button Отсрочка платежа по основной сумме займа (для дифференцированных платежей)
+              .faq__content
+                p Предоставляется по заявлению клиента на срок не более 6 месяцев
+            li.faq__item
+              button.faq__button График погашения
+              .faq__content
+                p Предоставляется по заявлению клиента на срок не более 6 месяцев
+                p График погашения
+            li.faq__item
+              button.faq__button Цель займа
+              .faq__content
+                p Предоставляется по заявлению клиента на срок не более 6 месяцев
+          .about__form.form
+            h2.form__title Заявка на получение микрозайма «Недвижимость»
+            .form__content
+              svg.form__icon.form__icon--error(width="100", height="92")
+                use(xlink:href="img/sprites/sprite-multi.svg#error")
+              .form__text.form__text--error
+                p
+                  | У вас уже есть активная заявка по данному займу.
+                  br
+                  | Пожалуйста, дождитесь ее рассмотрения.
+              .form__buttons.form__buttons--error
+                a.form__button.form__button--back.button.button--red(href="#") Назад к списку услуг
+                a.form__button.form__button--show.button.button--white(href="#") Посмотреть заявку

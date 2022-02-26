@@ -180,10 +180,26 @@
 
   &--2 {
     width: calc(50% - rem(10));
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+    }
   }
 
   &--3 {
     width: calc(33.3% - rem(10));
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+    }
   }
 }
 
@@ -651,7 +667,28 @@ input[type='checkbox']:checked + .form__label {
     line-height: 22px;
   }
 
+  &__content {
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+
   &__buttons {
+    &--error,
+    &--sign-up {
+      @media screen and (max-width: 1023px) {
+        flex-direction: column;
+
+        > * {
+          margin: 0;
+
+          &:not(:last-child) {
+            margin: 0 0 20px;
+          }
+        }
+      }
+    }
+
     &--confirm {
       padding: 30px 0 0;
       border-top: 2px solid $gray;

@@ -1,0 +1,33 @@
+.accordion {
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element.is-active {
+    .accordion__content {
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element.is-active > &__button {
+    opacity: 0.5;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    padding: 10px;
+  }
+}
