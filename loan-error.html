@@ -108,63 +108,39 @@
               </div>
               <div class="events-full__description events-full__description--transparent">
                 <div class="faq">
-                  <ul class="faq__list accordion" data-accordion="parent" data-single="data-single">
-                    <li class="faq__item accordion__element" data-accordion="element">
-                      <button class="faq__button" type="button" data-accordion="button">Отсрочка платежа по основной сумме займа (для дифференцированных платежей)</button>
-                      <div class="faq__content accordion__content" data-accordion="content">
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      <button class="faq__button">Отсрочка платежа по основной сумме займа (для дифференцированных платежей)</button>
+                      <div class="faq__content">
                         <p>Предоставляется по заявлению клиента на срок не более 6 месяцев</p>
                       </div>
                     </li>
-                    <li class="faq__item accordion__element" data-accordion="element">
-                      <button class="faq__button" type="button" data-accordion="button">График погашения</button>
-                      <div class="faq__content accordion__content" data-accordion="content">
+                    <li class="faq__item">
+                      <button class="faq__button">График погашения</button>
+                      <div class="faq__content">
                         <p>Предоставляется по заявлению клиента на срок не более 6 месяцев</p>
                         <p>График погашения</p>
                       </div>
                     </li>
-                    <li class="faq__item accordion__element" data-accordion="element">
-                      <button class="faq__button" type="button" data-accordion="button">Цель займа</button>
-                      <div class="faq__content accordion__content" data-accordion="content">
+                    <li class="faq__item">
+                      <button class="faq__button">Цель займа</button>
+                      <div class="faq__content">
                         <p>Предоставляется по заявлению клиента на срок не более 6 месяцев</p>
                       </div>
                     </li>
                   </ul>
-                  <form class="about__form form" action="order.html" method="get">
+                  <div class="about__form form">
                     <h2 class="form__title">Заявка на получение микрозайма «Недвижимость»</h2>
-                    <div class="form__row form__row--adaptive range">
-                      <div class="form__col form__col--left">
-                        <h3 class="form__subtitle">Сумма займа</h3>
+                    <div class="form__content">
+                      <svg class="form__icon form__icon--error" width="100" height="92">
+                        <use xlink:href="img/sprites/sprite-multi.svg#error"></use>
+                      </svg>
+                      <div class="form__text form__text--error">
+                        <p>У вас уже есть активная заявка по данному займу.<br/>Пожалуйста, дождитесь ее рассмотрения.</p>
                       </div>
-                      <div class="form__col form__col--right">
-                        <div class="form__output range__output range__output--rub">
-                          <input name="range-input-money" type="text" value="10 000"/>
-                        </div>
-                      </div>
-                      <div class="form__col form__col--full">
-                        <div class="form__range-wrapper range__wrapper">
-                          <input class="range__input" type="range" name="money" value="10000" min="10000" max="5000000" step="5000"/><span class="range__progress"></span><span class="range__track"></span>
-                        </div>
-                        <div class="form__labels"><span>10 000 ₽</span><span>2 500 000 ₽</span><span>5 000 000 ₽</span></div>
-                      </div>
+                      <div class="form__buttons form__buttons--error"><a class="form__button form__button--back button button--red" href="#">Назад к списку услуг</a><a class="form__button form__button--show button button--white" href="#">Посмотреть заявку</a></div>
                     </div>
-                    <div class="form__row form__row--adaptive range">
-                      <div class="form__col form__col--left">
-                        <h3 class="form__subtitle">Срок займа</h3>
-                      </div>
-                      <div class="form__col form__col--right">
-                        <div class="form__output range__output range__output--term">
-                          <input name="range-input-term" type="text" value="12"/>
-                        </div>
-                      </div>
-                      <div class="form__col form__col--full">
-                        <div class="form__range-wrapper range__wrapper">
-                          <input class="range__input" type="range" name="term" value="12" min="12" max="48" step="1"/><span class="range__progress"></span><span class="range__track"></span>
-                        </div>
-                        <div class="form__labels"><span>12 месяцев</span><span>30 месяцев</span><span>48 месяцев</span></div>
-                      </div>
-                    </div>
-                    <button class="form__button button button--red" type="submit">Создать заявку</button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
