@@ -1,20 +1,24 @@
 section.personal-area
   .custom-container
-    h1.personal-area__title Личный кабинет
     .personal-area__wrapper
-      ul.personal-area__link-list
-        li.personal-area__link-item
-          a.personal-area__link(href="personal-area.html")
-            +icon("icon-user", "24", "24").personal-area__link-icon
-            span.personal-area__link-text Учетная запись
-        li.personal-area__link-item
-          a.personal-area__link(href="personal-area-2.html")
-            +icon("icon-case", "24", "24").personal-area__link-icon
-            span.personal-area__link-text Компании и реквизиты
-        li.personal-area__link-item
-          a.personal-area__link.personal-area__link--active
-            +icon("icon-list", "24", "24").personal-area__link-icon
-            span.personal-area__link-text Мои заявки
+      .events__inner
+        h2.personal-area__title Личный кабинет
+        ul.personal-area__link-list
+          li.personal-area__link-item
+            a.personal-area__link(href="personal-area.html")
+              +icon("icon-user", "24", "24").personal-area__link-icon
+              span.personal-area__link-text Учетная запись
+          li.personal-area__link-item
+            a.personal-area__link(href="personal-area-2.html")
+              +icon("icon-case", "24", "24").personal-area__link-icon
+              span.personal-area__link-text Компании и реквизиты
+          li.personal-area__link-item
+            a.personal-area__link.personal-area__link--active
+              +icon("icon-list", "24", "24").personal-area__link-icon
+              span.personal-area__link-text Мои заявки
+        a.button.button--red.button-back(href="index.html")
+          +icon("icon-back", "24", "24").button__icon--back
+          span.button__text Все услуги
       .personal-area__data-wrapper
         .personal-area__group
           h2.personal-area__data-title.personal-area__data-title--grey Черновик
