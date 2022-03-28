@@ -31,6 +31,7 @@
   }
 
   &__wrapper {
+    align-items: start;
     display: grid;
     grid-template-columns: 410px 1fr;
     gap: 30px;
