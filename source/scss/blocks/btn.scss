@@ -13,13 +13,17 @@
 
   background-color: rgba($red, 0.1);
 
-  cursor: pointer;
+  //cursor: pointer;
 
   transition: all ease-out 0.3s;
 
-  &:hover,
-  &:focus {
+  &:hover:not(span),
+  &:focus:not(span) {
     background-color: rgba($red, 0.2);
+  }
+
+  &:not(span) {
+    cursor: pointer;
   }
 
   &:disabled,
@@ -63,8 +67,8 @@
       transition: all ease-out 0.3s;
     }
 
-    &:hover,
-    &:focus {
+    &:hover:not(span),
+    &:focus:not(span) {
       border: none;
 
       color: rgba($red, 0.6);
@@ -80,8 +84,8 @@
   &--color-green {
     color: $green;
 
-    &:hover,
-    &:focus {
+    &:hover:not(span),
+    &:focus:not(span) {
       color: rgba($green, 0.6);
     }
   }
@@ -89,8 +93,8 @@
   &--error {
     color: $red-system;
 
-    &:hover,
-    &:focus {
+    &:hover:not(span),
+    &:focus:not(span) {
       color: rgba($red-system, 0.6);
     }
   }

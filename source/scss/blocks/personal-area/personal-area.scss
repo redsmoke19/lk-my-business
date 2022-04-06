@@ -349,6 +349,13 @@
     }
   }
 
+  &__btn:not(a):not(button) {
+    &:hover {
+      //cursor: default;
+
+    }
+  }
+
   &__additionally {
     padding: 15px;
     border-radius: 10px;
