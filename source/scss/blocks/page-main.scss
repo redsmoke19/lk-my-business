@@ -1,5 +1,6 @@
 .page-main {
   @extend %w100;
+  overflow: hidden;
 
   grid-area: main;
   @media screen and (max-width: 1023px) {

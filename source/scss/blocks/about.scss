@@ -54,6 +54,7 @@
 
 .about__wrapper {
   @extend %wrapper;
+  overflow: hidden;
 
   &--inner {
     display: flex;
@@ -234,7 +235,7 @@
     }
 
     .about__icon {
-      stroke: $red;
+      //stroke: $red;
     }
 
     .about__text {
@@ -247,7 +248,7 @@
   margin-bottom: rem(15);
 
   fill: none;
-  stroke: $black;
+  //stroke: $black;
 }
 
 .about__text {
