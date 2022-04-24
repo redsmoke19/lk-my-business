@@ -1,0 +1,53 @@
+include ../mixins/mixin
+
+header.page-header.page-header--inner
+  .page-header__wrapper.page-header__wrapper--inner
+    .page-header__user.user
+      button.user__toggle
+        +icon("drop-down", "20", "20").user__toggle-icon
+      ul.user__list._js-user-list
+        li.user__item
+          a.link(href="account.html")
+            +icon("icon-profile", "20", "20").link__icon.link__icon--gray
+            span.link__text Профиль
+        li.user__item
+          a.link(href="account.html")
+            +icon("notification", "20", "20").link__icon.link__icon--gray
+            span.link__text Уведомления
+            span.user__notification.user__notification--list 2
+        li.user__item
+          a.link(href="account/sign-out.html")
+            +icon("sign-out", "20", "20").link__icon.link__icon--gray
+            span.link__text Выйти
+      .user__avatar
+        a.user__notification(href="notifications.html") 2
+        a.user__img(href="account.html")
+          span.user__img-name ПА
+      .user__description
+        h3.user__name Петрова А.В.
+        .user__inner
+          p.user__company ООО «Бизнес»
+          .user__menu-inner
+            button.user__toggle.user__toggle--right
+              +icon("drop-down", "20", "20").user__toggle-icon
+            ul.user__list.user__list--right._js-user-list
+              li.user__item
+                a.link(href="account.html")
+                  span.link__text ООО "Бизнес"
+              li.user__item
+                a.link(href="account.html")
+                  span.link__text Самозанятый
+              li.user__item
+                a.link(href="account/sign-out.html")
+                  span.link__text ИП Петров
+
+
+    a.page-header__logo.page-header__logo--inner.logo(href="index.html" data-header-logo)
+      img(width="364", height="70", src="img/index-logo.svg", alt="Logo")
+
+    a.page-header__phone.link(href="tel:88003500089")
+      +icon("phone", "20", "20").link__icon.link__icon--black
+      span.link__text 8-800-350-00-89
+
+    button.sandwich(type="button", aria-label="Переключатель отображения меню", aria-pressed="false", data-sandwich)
+      span.sandwich__menu

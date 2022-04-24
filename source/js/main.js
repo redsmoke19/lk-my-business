@@ -7,6 +7,7 @@ import range from './range';
 import form from './form';
 import { initDropZone } from './dropzone';
 import { initAccordions } from './init-accordions';
+import { initSandwichMenu } from './sandwich';
 
 document.addEventListener('DOMContentLoaded', () => {
   // user();
@@ -18,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   form();
   initDropZone();
   initAccordions();
+  initSandwichMenu();
 });

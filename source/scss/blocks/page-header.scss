@@ -76,7 +76,7 @@
 .page-header__user {
   @media screen and (max-width: 767px) {
     grid-row: 2 / 3;
-    grid-column: 1 / -1;
+    grid-column: 1 / -2;
     justify-content: center;
     width: 100%;
     margin: 0 0 20px;
@@ -126,6 +126,11 @@
   }
   @media screen and (max-width: 767px) {
     width: 100%;
+  }
+
+  &.is-menu {
+    position: relative;
+    z-index: 50;
   }
 
   &--inner {
