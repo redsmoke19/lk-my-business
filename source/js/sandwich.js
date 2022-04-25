@@ -23,7 +23,7 @@ const closeMenu = () => {
 };
 
 const breakpointChecker = () => {
-  if (breakpointMd.matches) {
+  if (breakpointMd.matches && nav) {
     if (nav.classList.contains('is-active')) {
       closeMenu();
     }
