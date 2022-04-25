@@ -12,9 +12,6 @@ const openMenu = () => {
   sandwich.ariaPressed = 'true';
   nav.classList.add('is-active');
   headerLogo.classList.add('is-menu');
-  // navItem.forEach((item, index) => {
-  //   item.style.transitionDelay = `${0.3 + index * 0.2}s`;
-  // });
 };
 
 const closeMenu = () => {
@@ -23,9 +20,6 @@ const closeMenu = () => {
   sandwich.ariaPressed = 'false';
   nav.classList.remove('is-active');
   headerLogo.classList.remove('is-menu');
-  // navItem.forEach((item) => {
-  //   item.style.transitionDelay = '';
-  // });
 };
 
 const breakpointChecker = () => {
@@ -38,7 +32,7 @@ const breakpointChecker = () => {
 };
 
 const initSandwichMenu = () => {
-  if (sandwich) {
+  if (sandwich && nav) {
     sandwich.addEventListener('click', () => {
       if (sandwich.ariaPressed === 'true') {
         closeMenu();
