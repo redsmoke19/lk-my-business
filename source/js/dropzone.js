@@ -4,28 +4,52 @@ const dzDeleteIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height=
 
 const initDropZone = () => {
   const dropZoneElements = document.querySelectorAll('[data-dz]');
+  var myStopReload = false;
   dropZoneElements.forEach((item) => {
     const isDoc = item.hasAttribute('data-dz-text');
-    console.log(isDoc);
     const addButton = item.querySelector('[data-dz-add]');
     const dropzone = new Dropzone(item, {
-      url: 'http://httpbin.org/anything',
+      url: item.getAttribute('data-upload-link'),
       method: 'post',
+      headers: {
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+      },
       clickable: addButton,
       addRemoveLinks: true,
       dictRemoveFile: dzDeleteIcon,
       dictCancelUpload: '',
-      maxFilesize: isDoc ? 30 : 5,
-      acceptedFiles: isDoc ? '.pdf, .doc, docx' : '.jpg, .png, jpeg',
+      maxFilesize: isDoc ? 25 : 5,
+      //acceptedFiles: isDoc ? '.pdf, .doc, docx' : '.jpg, .png, jpeg',
       dictFileTooBig: 'Вы пытаетесь загрузить слушком большой файл ({{filesize}}Mb). Максимальный размер: {{maxFilesize}}Mb.',
-      init() {
-        this.on('addedfile', (file) => {
+      init: function init() {
+        this.on('addedfile', function (file) {
           addButton.style.display = 'none';
         });
-        this.on('removedfile', (file) => {
+        this.on('removedfile', function (file) {
           addButton.style.display = 'flex';
         });
-      },
+        this.on("queuecomplete", function (file) {
+            if (!myStopReload) {
+                location.reload();
+            } else {
+                myStopReload = false;
+            }
+
+        });
+
+          this.on('error', function(file, error) {
+              addButton.style.display = 'flex';
+              if (typeof dzCustomDisplayError === "function") {
+                  dzCustomDisplayError(file, error);
+                  $('.dz-error').hide();
+                  myStopReload = true;
+              }
+
+              //console.log(error.message);
+              //window.alert(errorMessage);
+          });
+
+      }
     });
   });
 };
