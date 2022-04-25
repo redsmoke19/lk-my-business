@@ -6,10 +6,6 @@ const sandwich = document.querySelector('[data-sandwich]');
 const nav = document.querySelector('[data-main-nav]');
 const scrollLock = new ScrollLock();
 
-if (!nav) {
-  return;
-}
-
 const openMenu = () => {
   scrollLock.disableScrolling();
   sandwich.classList.add('is-active');
