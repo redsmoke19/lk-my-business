@@ -1,78 +1,48 @@
-footer(class="page-footer page-footer--index")
-  div(class="page-footer__wrapper page-footer__wrapper--index")
-    div(class="page-footer__top page-footer__top--index")
-      div(class="page-footer__col page-footer__col--logo")
-        a(class="page-footer__logo logo logo--index", href="index.html")
-          img(width="25", height="50", src="img/logo-rocket-footer.svg", alt="Logo")
-          img(width="131", height="51", src="img/logo-index-footer.svg", alt="Logo")
-
-      div(class="page-footer__col page-footer__col--first-col")
-        h3(class="page-footer__title")
-          a(href="") О компании
-
-        ul(class="page-footer__list page-footer__list--vertical")
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") Фонд «Агентство ЯНАО «Мой бизнес» (МКК)»
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") ИНН 8901023569
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") ОГРН 1098900000814
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="tel:88003500089") 8-800-350-0089
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="mailto:info@mb89.ru") info@mb89.ru
-
-        div(class="page-footer__social social")
-          ul(class="social__list social__list--horisontal")
-            each val in socials
-              li(class="social__item social__item--horisontal")
-                a(class="social__link social__link--brown", href="#", target="_blank")
-                  svg(width="24", height="24", aria-label= val)
-                      use(xlink:href="img/sprites/sprite-mono.svg#" + val)
-
-      div(class="page-footer__col page-footer__col--second-col")
-        h3(class="page-footer__title")
-          a(href="") Документы
-
-        ul(class="page-footer__list page-footer__list--vertical")
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Уставные документы
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Стандарты
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Персональные данные
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") О противодействии коррупции
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Правила
-
-      div(class="page-footer__col page-footer__col--third-col")
-        h3(class="page-footer__title")
-          a(href="") Раскрытие информации
-
-        ul(class="page-footer__list page-footer__list--vertical")
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Банк России
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Интернет-приемная Банка России
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Государственный реестр МФО
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") Регистрационный номер в реестре 6110689000209
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") Дата регистрации 19.07.2011
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") СРО Союз "МИКРОФИНАНСОВЫЙ АЛЬЯНС"
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") Регистрационный номер в реестре 0714034890014
-          li(class="page-footer__item page-footer__item--vertical")
-            span(class="page-footer__text") Протокол №2 от 21.07.2014
-          li(class="page-footer__item page-footer__item--vertical")
-            a(class="page-footer__link page-footer__link--index", href="#") Карта сайта
-
-
-  div(class="page-footer__bottom page-footer__bottom--index")
-    div(class="page-footer__wrapper page-footer__wrapper--index")
-      p(class="page-footer__copyright page-footer__copyright--index") © 2021 — Фонд «Агентство инвестиционного развития и поддержки предпринимательства Ямало-Ненецкого автономного округа «Мой бизнес» (микрокредитная компания)»
+footer.index-footer
+  .index-footer__wrapper
+    .index-footer__box
+      a.index-footer__logo(href="index.html")
+        img(width="131", height="51", src="img/logo-index-footer.svg", alt="Logo")
+      .index-footer__inner
+        h2.index-footer__title О Компании
+        .index-footer__row
+          .index-footer__col
+            span.index-footer__value Фонд «Агентство ЯНАО «Мой бизнес» (МКК)»
+            span.index-footer__value ИНН 8901023569
+            span.index-footer__value ОГРН 1098900000814
+          .index-footer__col
+            a.index-footer__value.index-footer__value--phone(href="tel:88003500089")
+              +icon("phone", "30", "30")
+              span 8-800-350-0089
+            a.index-footer__value(href="tel:+73492299499") Телефон приемной 8 (34922) 99499
+            a.index-footer__value(href="mailto:+73492299499") info@mb89.ru
+          .index-footer__col
+            span.index-footer__value Режим работы:
+            span.index-footer__value ПН - ПТ 8:30-18:00, перерыв 12:30-14:00
+            span.index-footer__value СБ, ВС выходной
+        ul.index-footer__social
+          li.index-footer__social-item
+            a.index-footer__social-link(href="#")
+              +icon("vk", "30", "30")
+              span.visually-hidden Ссылка на Вконтакте
+          li.index-footer__social-item
+            a.index-footer__social-link(href="#")
+              +icon("icon-tg", "24", "24")
+              span.visually-hidden Ссылка на Телеграм
+        h2.index-footer__title Документы
+        .index-footer__row
+          .index-footer__col
+            a.index-footer__value(href="#") Уставные документы
+            a.index-footer__value(href="#") Стандарты
+            a.index-footer__value(href="#") Персональные данные
+          .index-footer__col
+            a.index-footer__value(href="#") О противодействии коррупции
+            a.index-footer__value(href="#") Правила
+            a.index-footer__value(href="#") Программа
+          .index-footer__col
+            a.index-footer__value(href="#") Реестр организаций
+            a.index-footer__value(href="#") Имущественная поддержка
+    p.index-footer__copyright © 2022 — Фонд «Агентство инвестиционного развития и поддержки предпринимательства Ямало-Ненецкого автономного округа «Мой бизнес» (микрокредитная компания)»
+  .page-footer__bottom.page-footer__bottom--index
 
 script(src="js/main.min.js")
