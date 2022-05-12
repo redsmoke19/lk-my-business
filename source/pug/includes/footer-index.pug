@@ -2,20 +2,21 @@ footer.index-footer
   .index-footer__wrapper
     .index-footer__box
       a.index-footer__logo(href="index.html")
+        img(width="25", height="50", src="img/logo-rocket-footer.svg", alt="Logo")
         img(width="131", height="51", src="img/logo-index-footer.svg", alt="Logo")
       .index-footer__inner
-        h2.index-footer__title О Компании
+        a.index-footer__title(href="#") О Компании
         .index-footer__row
           .index-footer__col
             span.index-footer__value Фонд «Агентство ЯНАО «Мой бизнес» (МКК)»
             span.index-footer__value ИНН 8901023569
             span.index-footer__value ОГРН 1098900000814
           .index-footer__col
-            a.index-footer__value.index-footer__value--phone(href="tel:88003500089")
-              +icon("phone", "30", "30")
+            a.index-footer__value.index-footer__value--contacts.index-footer__value--phone(href="tel:88003500089")
+              +icon("phone", "20", "20")
               span 8-800-350-0089
-            a.index-footer__value(href="tel:+73492299499") Телефон приемной 8 (34922) 99499
-            a.index-footer__value(href="mailto:+73492299499") info@mb89.ru
+            a.index-footer__value.index-footer__value--contacts(href="tel:+73492299499") Телефон приемной 8 (34922) 99499
+            a.index-footer__value.index-footer__value--contacts(href="mailto:+73492299499") info@mb89.ru
           .index-footer__col
             span.index-footer__value Режим работы:
             span.index-footer__value ПН - ПТ 8:30-18:00, перерыв 12:30-14:00
@@ -29,19 +30,19 @@ footer.index-footer
             a.index-footer__social-link(href="#")
               +icon("icon-tg", "24", "24")
               span.visually-hidden Ссылка на Телеграм
-        h2.index-footer__title Документы
+        a.index-footer__title(href="#") Документы
         .index-footer__row
           .index-footer__col
-            a.index-footer__value(href="#") Уставные документы
-            a.index-footer__value(href="#") Стандарты
-            a.index-footer__value(href="#") Персональные данные
+            a.index-footer__value.index-footer__value--docs(href="#") Уставные документы
+            a.index-footer__value.index-footer__value--docs(href="#") Стандарты
+            a.index-footer__value.index-footer__value--docs(href="#") Персональные данные
           .index-footer__col
-            a.index-footer__value(href="#") О противодействии коррупции
-            a.index-footer__value(href="#") Правила
-            a.index-footer__value(href="#") Программа
+            a.index-footer__value.index-footer__value--docs(href="#") О противодействии коррупции
+            a.index-footer__value.index-footer__value--docs(href="#") Правила
+            a.index-footer__value.index-footer__value--docs(href="#") Программа
           .index-footer__col
-            a.index-footer__value(href="#") Реестр организаций
-            a.index-footer__value(href="#") Имущественная поддержка
+            a.index-footer__value.index-footer__value--docs(href="#") Реестр организаций
+            a.index-footer__value.index-footer__value--docs(href="#") Имущественная поддержка
     p.index-footer__copyright © 2022 — Фонд «Агентство инвестиционного развития и поддержки предпринимательства Ямало-Ненецкого автономного округа «Мой бизнес» (микрокредитная компания)»
   .page-footer__bottom.page-footer__bottom--index
 
