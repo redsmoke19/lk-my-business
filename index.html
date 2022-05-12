@@ -38,22 +38,14 @@
 <path d="M83.2064 12.3331C83.171 12.2379 83.2427 12.1372 83.3459 12.1372H86.2378C86.3001 12.1372 86.3559 12.1754 86.3773 12.2329L89.2924 20.0537C90.2381 17.732 91.0539 15.3232 91.9388 12.2455C91.957 12.1821 92.0158 12.1372 92.0824 12.1372H94.9497C95.0508 12.1372 95.1217 12.2371 95.0905 12.3322C92.7921 19.5311 91.1111 23.6192 88.8268 28.2311C88.8015 28.2806 88.7498 28.3124 88.6937 28.3124H85.6066C85.4951 28.3124 85.4242 28.1939 85.4751 28.0958C86.2532 26.5972 86.9336 25.2527 87.5459 23.9753L83.2064 12.3331Z" fill="#EE2F53"/>
 <path d="M114.657 12.1372H117.511C117.595 12.1372 117.66 12.202 117.657 12.2845V23.1496C117.657 23.2144 117.618 23.2732 117.556 23.2939C116.233 23.7946 114.003 24.2981 112.004 24.2981C108.582 24.2981 107.196 22.8137 107.128 19.0232C107.125 19.0144 107.125 12.3021 107.125 12.3021V12.2845C107.125 12.202 107.19 12.1372 107.274 12.1372H110.128C110.211 12.1372 110.277 12.202 110.277 12.2845V18.9584C110.342 20.9729 110.845 21.4561 112.575 21.4561C113.271 21.4561 113.89 21.3736 114.508 21.2027V12.2845C114.508 12.202 114.573 12.1372 114.657 12.1372Z" fill="#EE2F53"/>
 </svg></a></div>
-              <div class="promo__social social">
-                <ul class="social__list social__list--vertical">
-                  <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
-                      <svg width="24" height="24" aria-label="fb">
-                        <use xlink:href="img/sprites/sprite-mono.svg#fb"></use>
-                      </svg></a></li>
-                  <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
-                      <svg width="24" height="24" aria-label="insta">
-                        <use xlink:href="img/sprites/sprite-mono.svg#insta"></use>
-                      </svg></a></li>
-                  <li class="social__item social__item--vertical"><a class="social__link social__link--brown" href="#" target="_blank">
-                      <svg width="24" height="24" aria-label="vk">
-                        <use xlink:href="img/sprites/sprite-mono.svg#vk"></use>
-                      </svg></a></li>
-                </ul>
-              </div>
+              <!--.promo__social.social-->
+              <!--  - const socials = ['fb', 'insta', 'vk'];-->
+              <!--    ul.social__list.social__list--vertical-->
+              <!--      each val in socials-->
+              <!--        li.social__item.social__item--vertical-->
+              <!--          a.social__link.social__link--brown(href="#", target="_blank")-->
+              <!--            svg(width="24", height="24", aria-label= val)-->
+              <!--                use(xlink:href="img/sprites/sprite-mono.svg#" + val)-->
             </div>
           </div>
           <div class="promo__img"><img src="img/promo.png" alt="Фоновая картинка офиса" width="1300" height="852"/></div>
@@ -61,15 +53,14 @@
       </main>
       <footer class="index-footer">
         <div class="index-footer__wrapper">
-          <div class="index-footer__box"><a class="index-footer__logo" href="index.html"><img width="131" height="51" src="img/logo-index-footer.svg" alt="Logo"/></a>
-            <div class="index-footer__inner">
-              <h2 class="index-footer__title">О Компании</h2>
+          <div class="index-footer__box"><a class="index-footer__logo" href="index.html"><img width="25" height="50" src="img/logo-rocket-footer.svg" alt="Logo"/><img width="131" height="51" src="img/logo-index-footer.svg" alt="Logo"/></a>
+            <div class="index-footer__inner"><a class="index-footer__title" href="#">О Компании</a>
               <div class="index-footer__row">
                 <div class="index-footer__col"><span class="index-footer__value">Фонд «Агентство ЯНАО «Мой бизнес» (МКК)»</span><span class="index-footer__value">ИНН 8901023569</span><span class="index-footer__value">ОГРН 1098900000814</span></div>
-                <div class="index-footer__col"><a class="index-footer__value index-footer__value--phone" href="tel:88003500089">
-                    <svg width="30" height="30" aria-hidden="true">
+                <div class="index-footer__col"><a class="index-footer__value index-footer__value--contacts index-footer__value--phone" href="tel:88003500089">
+                    <svg width="20" height="20" aria-hidden="true">
                       <use xlink:href="img/sprites/sprite-mono.svg#phone"></use>
-                    </svg><span>8-800-350-0089</span></a><a class="index-footer__value" href="tel:+73492299499">Телефон приемной 8 (34922) 99499</a><a class="index-footer__value" href="mailto:+73492299499">info@mb89.ru</a></div>
+                    </svg><span>8-800-350-0089</span></a><a class="index-footer__value index-footer__value--contacts" href="tel:+73492299499">Телефон приемной 8 (34922) 99499</a><a class="index-footer__value index-footer__value--contacts" href="mailto:+73492299499">info@mb89.ru</a></div>
                 <div class="index-footer__col"><span class="index-footer__value">Режим работы:</span><span class="index-footer__value">ПН - ПТ 8:30-18:00, перерыв 12:30-14:00</span><span class="index-footer__value">СБ, ВС выходной</span></div>
               </div>
               <ul class="index-footer__social">
@@ -81,12 +72,11 @@
                     <svg width="24" height="24" aria-hidden="true">
                       <use xlink:href="img/sprites/sprite-mono.svg#icon-tg"></use>
                     </svg><span class="visually-hidden">Ссылка на Телеграм</span></a></li>
-              </ul>
-              <h2 class="index-footer__title">Документы</h2>
+              </ul><a class="index-footer__title" href="#">Документы</a>
               <div class="index-footer__row">
-                <div class="index-footer__col"><a class="index-footer__value" href="#">Уставные документы</a><a class="index-footer__value" href="#">Стандарты</a><a class="index-footer__value" href="#">Персональные данные</a></div>
-                <div class="index-footer__col"><a class="index-footer__value" href="#">О противодействии коррупции</a><a class="index-footer__value" href="#">Правила</a><a class="index-footer__value" href="#">Программа</a></div>
-                <div class="index-footer__col"><a class="index-footer__value" href="#">Реестр организаций</a><a class="index-footer__value" href="#">Имущественная поддержка</a></div>
+                <div class="index-footer__col"><a class="index-footer__value index-footer__value--docs" href="#">Уставные документы</a><a class="index-footer__value index-footer__value--docs" href="#">Стандарты</a><a class="index-footer__value index-footer__value--docs" href="#">Персональные данные</a></div>
+                <div class="index-footer__col"><a class="index-footer__value index-footer__value--docs" href="#">О противодействии коррупции</a><a class="index-footer__value index-footer__value--docs" href="#">Правила</a><a class="index-footer__value index-footer__value--docs" href="#">Программа</a></div>
+                <div class="index-footer__col"><a class="index-footer__value index-footer__value--docs" href="#">Реестр организаций</a><a class="index-footer__value index-footer__value--docs" href="#">Имущественная поддержка</a></div>
               </div>
             </div>
           </div>
