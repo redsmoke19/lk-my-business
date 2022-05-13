@@ -30,6 +30,14 @@
     }
   }
 
+  &__inner {
+    margin: 0 auto;
+
+    @media screen and (max-width: 1023px) {
+      margin: 0;
+    }
+  }
+
   &__title {
     color: $white;
     display: inline-block;
