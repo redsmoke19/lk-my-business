@@ -1,115 +1,123 @@
-section.about.tabs-nav(data-main-nav)
-  .about__header.tabs-nav__header
-    ul.about__list.about__list--tabs.tabs-nav__list
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "compensation-page" ? "active" : "" href= pageClass === "compensation-page" ? "" : "compensation.html")
-          if pageClass === "compensation-page"
-            +icon-multi("icon-compensation-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-compensation", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Компенсации
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "grant-page" ? "active" : "" href= pageClass === "grant-page" ? "" : "grants.html")
-          if pageClass === "grant-page"
-            +icon-multi("icon-grants-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-grants", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Гранты
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "loans-page" ? "active" : "" href= pageClass === "loans-page" ? "" : "loans.html")
-          if pageClass === "loans-page"
-            +icon-multi("icon-loans-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-loans", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Займы
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "events-page" ? "active" : "" href= pageClass === "events-page" ? "" : "events.html")
-          if pageClass === "events-page"
-            +icon-multi("icon-events-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-events", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Мероприятия
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "leasing-page" ? "active" : "" href= pageClass === "leasing-page" ? "" : "leasing.html")
-          if pageClass === "leasing-page"
-            +icon-multi("icon-lizing-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-lizing", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Лизинг
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "invest-page" ? "active" : "" href= pageClass === "invest-page" ? "" : "invest.html")
-          if pageClass === "invest-page"
-            +icon-multi("icon-invest-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-invest", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Инвестиционные проекты
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "ecp-page" ? "active" : "" href= pageClass === "ecp-page" ? "" : "signature.html")
-          if pageClass === "ecp-page"
-            +icon-multi("icon-ecp-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-ecp", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text ЭЦП
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "guarantee-page" ? "active" : "" href= pageClass === "guarantee-page" ? "" : "guarantee.html")
-          if pageClass === "guarantee-page"
-            +icon-multi("icon-hand-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-hand", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Поручительство
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "leasing-page" ? "active" : "" href= pageClass === "leasing-page" ? "" : "leasing.html")
-          if pageClass === "leasing-page"
-            +icon-multi("icon-lizing-2-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-lizing-2", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Лизинг
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "leasing-page" ? "active" : "" href= pageClass === "leasing-page" ? "" : "leasing.html")
-          if pageClass === "leasing-page"
-            +icon-multi("icon-lizing-3-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-lizing-3", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Лизинг
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "kovorking-page" ? "active" : "" href= pageClass === "kovorking-page" ? "" : "kovorking.html")
-          if pageClass === "kovorking-page"
-            +icon-multi("icon-people-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-people", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Коворкинг
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "escort-page" ? "active" : "" href= pageClass === "escort-page" ? "" : "escort.html")
-          if pageClass === "escort-page"
-            +icon-multi("icon-house-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-house", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Сопровождение проектов
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "rezident-page" ? "active" : "" href= pageClass === "rezident-page" ? "" : "rezident.html")
-          if pageClass === "rezident-page"
-            +icon-multi("icon-tree-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-tree", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Резидентство в арктической зоне
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "rezident-page" ? "active" : "" href= pageClass === "rezident-page" ? "" : "rezident.html")
-          if pageClass === "rezident-page"
-            +icon-multi("icon-snow-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-snow", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Резидентство в арктической зоне
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "nalog-page" ? "active" : "" href= pageClass === "nalog-page" ? "" : "nalog.html")
-          if pageClass === "nalog-page"
-            +icon-multi("icon-nalog-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-nalog", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Налоговый консультант
-      li.about__item.about__item--tabs.tabs-nav__item
-        a.about__button.tabs-nav__link(class= pageClass === "social-page" ? "active" : "" href= pageClass === "social-page" ? "" : "social.html")
-          if pageClass === "social-page"
-            +icon-multi("icon-social-active", "36", "36").about__icon.tabs-nav__icon
-          else
-            +icon-multi("icon-social", "36", "36").about__icon.tabs-nav__icon
-          span.about__text.tabs-nav__text Социальное предпринимательство
+section.tabs-nav(data-main-nav)
+  .custom-container
+    .tabs-nav__container
+      .about__header.tabs-nav__header.swiper
+        ul.about__list.about__list--tabs.tabs-nav__list.swiper-wrapper
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "compensation-page" ? "active" : "" href= pageClass === "compensation-page" ? "" : "compensation.html")
+              if pageClass === "compensation-page"
+                +icon-multi("icon-compensation-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-compensation", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Компенсации
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "grant-page" ? "active" : "" href= pageClass === "grant-page" ? "" : "grants.html")
+              if pageClass === "grant-page"
+                +icon-multi("icon-grants-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-grants", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Гранты
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "loans-page" ? "active" : "" href= pageClass === "loans-page" ? "" : "loans.html")
+              if pageClass === "loans-page"
+                +icon-multi("icon-loans-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-loans", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Займы
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "events-page" ? "active" : "" href= pageClass === "events-page" ? "" : "events.html")
+              if pageClass === "events-page"
+                +icon-multi("icon-events-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-events", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Мероприятия
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "leasing-page" ? "active" : "" href= pageClass === "leasing-page" ? "" : "leasing.html")
+              if pageClass === "leasing-page"
+                +icon-multi("icon-lizing-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-lizing", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Лизинг
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "invest-page" ? "active" : "" href= pageClass === "invest-page" ? "" : "invest.html")
+              if pageClass === "invest-page"
+                +icon-multi("icon-invest-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-invest", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Инвестиционные проекты
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "ecp-page" ? "active" : "" href= pageClass === "ecp-page" ? "" : "signature.html")
+              if pageClass === "ecp-page"
+                +icon-multi("icon-ecp-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-ecp", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text ЭЦП
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "guarantee-page" ? "active" : "" href= pageClass === "guarantee-page" ? "" : "guarantee.html")
+              if pageClass === "guarantee-page"
+                +icon-multi("icon-hand-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-hand", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Поручительство
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "leasing-page" ? "active" : "" href= pageClass === "leasing-page" ? "" : "leasing.html")
+              if pageClass === "leasing-page"
+                +icon-multi("icon-lizing-2-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-lizing-2", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Лизинг
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "leasing-page" ? "active" : "" href= pageClass === "leasing-page" ? "" : "leasing.html")
+              if pageClass === "leasing-page"
+                +icon-multi("icon-lizing-3-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-lizing-3", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Лизинг
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "kovorking-page" ? "active" : "" href= pageClass === "kovorking-page" ? "" : "kovorking.html")
+              if pageClass === "kovorking-page"
+                +icon-multi("icon-people-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-people", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Коворкинг
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "escort-page" ? "active" : "" href= pageClass === "escort-page" ? "" : "escort.html")
+              if pageClass === "escort-page"
+                +icon-multi("icon-house-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-house", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Сопровождение проектов
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "rezident-page" ? "active" : "" href= pageClass === "rezident-page" ? "" : "rezident.html")
+              if pageClass === "rezident-page"
+                +icon-multi("icon-tree-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-tree", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Резидентство в арктической зоне
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "rezident-page" ? "active" : "" href= pageClass === "rezident-page" ? "" : "rezident.html")
+              if pageClass === "rezident-page"
+                +icon-multi("icon-snow-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-snow", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Резидентство в арктической зоне
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "nalog-page" ? "active" : "" href= pageClass === "nalog-page" ? "" : "nalog.html")
+              if pageClass === "nalog-page"
+                +icon-multi("icon-nalog-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-nalog", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Налоговый консультант
+          li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
+            a.about__button.tabs-nav__link(class= pageClass === "social-page" ? "active" : "" href= pageClass === "social-page" ? "" : "social.html")
+              if pageClass === "social-page"
+                +icon-multi("icon-social-active", "36", "36").about__icon.tabs-nav__icon
+              else
+                +icon-multi("icon-social", "36", "36").about__icon.tabs-nav__icon
+              span.about__text.tabs-nav__text Социальное предпринимательство
+        .tabs-nav__scrollbar
+        .tabs-nav__arrows
+          button.tabs-nav__arrow.tabs-nav__arrow--prev
+            +icon("icon-arrow-slider", "7", "12")
+          button.tabs-nav__arrow.tabs-nav__arrow--next
+            +icon("icon-arrow-slider", "7", "12")

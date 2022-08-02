@@ -1,9 +1,44 @@
 .page-main {
   @extend %w100;
-  overflow: hidden;
 
   grid-area: main;
+  overflow: hidden;
   @media screen and (max-width: 1023px) {
     overflow: hidden;
+  }
+
+  &__wrapper {
+    .tabs-nav {
+      //padding: rem(40) 0 0 rem(440);
+
+      &__container {
+        padding: 0 0 0 rem(440);
+      }
+
+      &__header {
+        padding: 0 rem(30) 0;
+      }
+
+      &__scrollbar {
+        display: none;
+      }
+
+      &__arrows {
+        display: flex;
+      }
+    }
+
+    .page-main__half-content {
+      padding: 60px 0 70px rem(440);
+    }
+
+    .page-main__half-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about__wrapper {
+      position: relative;
+      overflow: inherit;
+    }
   }
 }

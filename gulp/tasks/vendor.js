@@ -3,6 +3,7 @@ import concat from 'gulp-concat';
 
 const vendorsScripts = [
   'node_modules/js-datepicker/dist/datepicker.min.js',
+  'node_modules/swiper/swiper-bundle.min.js',
 ];
 
 export const vendorBuild = (cb) => {

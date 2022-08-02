@@ -8,6 +8,8 @@ import form from './form';
 import { initDropZone } from './dropzone';
 import { initAccordions } from './init-accordions';
 import { initSandwichMenu } from './sandwich';
+import { tabsSlider } from './tabs-slider';
+import { asideInfo } from './aside-info';
 
 document.addEventListener('DOMContentLoaded', () => {
   // user();
@@ -20,4 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initDropZone();
   initAccordions();
   initSandwichMenu();
+  tabsSlider();
+  asideInfo();
 });

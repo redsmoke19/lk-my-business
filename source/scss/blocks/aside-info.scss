@@ -1,0 +1,176 @@
+.aside-info {
+  position: absolute;
+  top: 0;
+  left: 15px;
+
+  width: 27.2%;
+  z-index: 50;
+
+  &__block {
+    padding: 0 20px 30px;
+    border-radius: 10px;
+
+    background-color: $white;
+    box-shadow: 0 4px 30px rgba(35, 31, 32, 10%);
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__heading {
+    position: relative;
+
+    margin: 0 -20px 20px;
+    padding: 20px 20px 15px;
+
+    color: $black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-image: linear-gradient(to right, rgba(35, 31, 32, 10%) 0%, rgba(35, 31, 32, 50%) 50%, rgba(35, 31, 32, 10%) 100%);
+
+      content: '';
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+
+    padding: 0 0 0 40px;
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
+      padding: 0 0 20px 40px;
+
+      &::after {
+        bottom: 0;
+        @extend %line;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    margin: 0 0 16px;
+
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__title-text {
+    margin: 0;
+  }
+
+  &__title-icon {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+
+    transform: translateY(-50%);
+
+    fill: none;
+    stroke: $brown-color;
+  }
+
+  &__dl-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  &__dl-list-inner {
+    display: flex;
+  }
+
+  &__dl-list-term {
+    color: $black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__dl-list-definition {
+    margin: 0 0 0 6px;
+
+    color: $black;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__link {
+    position: relative;
+
+    display: flex;
+
+    color: $red;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    transition: all ease-out 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__link-icon {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    flex: 0 0 auto;
+
+    fill: none;
+    stroke: $red;
+  }
+
+  &__banner {
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+
+    color: $white;
+
+    background: linear-gradient(180deg, #C79569 21.35%, rgba(199, 149, 105, 20%) 100%), url('../img/aside-banner.png');
+    background-size: cover;
+  }
+
+  &__banner-title {
+    margin: 0 0 20px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__banner-text {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

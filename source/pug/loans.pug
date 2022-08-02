@@ -9,8 +9,9 @@ block header
     include includes/header-burger
 block main
   main.page-main(class=pageClass)
-    include modules/tabs-nav/tabs-nav
-    include modules/loans/loans
+    .page-main__wrapper(data-main-wrapper)
+      include modules/tabs-nav/tabs-nav
+      include modules/loans/loans
 block footer
   include modules/footer/footer
 

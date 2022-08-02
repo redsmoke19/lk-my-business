@@ -28,7 +28,7 @@
   &::after {
     top: 0;
 
-    @extend %line;
+    //@extend %line;
   }
 
   &--inner,
