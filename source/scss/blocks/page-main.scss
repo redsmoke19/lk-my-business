@@ -9,14 +9,20 @@
 
   &__wrapper {
     .tabs-nav {
-      //padding: rem(40) 0 0 rem(440);
-
       &__container {
-        padding: 0 0 0 rem(440);
+        padding: 0 0 0 34%;
+
+        @media screen and (max-width: 1023px) {
+          padding: 0;
+        }
       }
 
       &__header {
         padding: 0 rem(30) 0;
+
+        @media screen and (max-width: 1023px) {
+          padding: 0 20px 5px 0;
+        }
       }
 
       &__scrollbar {
@@ -29,16 +35,30 @@
     }
 
     .page-main__half-content {
-      padding: 60px 0 70px rem(440);
+      padding: 60px 0 70px 34%;
+
+      @media screen and (max-width: 1023px) {
+        padding: 60px 0 70px;
+      }
     }
 
     .page-main__half-grid {
       grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
     }
 
     .about__wrapper {
       position: relative;
+
       overflow: inherit;
+
+      @media screen and (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }

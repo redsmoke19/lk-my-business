@@ -20,9 +20,9 @@
     z-index: 20;
 
     margin: 0;
-    padding: 180px 20px 50px;
+    padding: 180px 0 50px;
 
-    background-color: $bg;
+    //background-color: $bg;
     visibility: hidden;
     opacity: 0;
 
@@ -36,18 +36,15 @@
     opacity: 1;
 
     pointer-events: all;
-
-    .main-nav__item {
-      //opacity: 1;
-      //transform: translateX(0);
-    }
   }
 
   .custom-container {
-    //width: 100%;
-    //max-width: 1320px;
-    //margin: 0 auto;
     @extend %wrapper;
+
+    @media screen and (max-width: 1023px) {
+      padding: 0;
+      overflow: scroll;
+    }
   }
 
   &__header {
@@ -57,7 +54,11 @@
     padding: 0 20px 5px;
 
     @media screen and (max-width: 1023px) {
-      background-color: $bg;
+      height: 100%;
+      padding: 0;
+      overflow-y: scroll;
+
+      //background-color: $bg;
     }
   }
 
@@ -68,13 +69,12 @@
     @media screen and (max-width: 1023px) {
 
       display: flex;
+      flex: 1 0 auto;
       flex-direction: column;
       justify-content: unset;
+      width: 100%;
       height: 100%;
       padding: 0;
-      overflow: unset;
-      overflow-x: hidden;
-      overflow-y: auto;
     }
   }
 
@@ -90,6 +90,7 @@
       flex: 0 0 auto;
       min-width: unset;
       max-width: unset;
+      padding: 0 20px 0 0;
     }
   }
 
@@ -98,16 +99,30 @@
       .tabs-nav__text {
         color: rgba($red, 0.5);
       }
-
-      .tabs-nav__icon {
-        //stroke: rgba($red, 0.5);
-      }
     }
 
     @media screen and (max-width: 1023px) {
       flex-direction: row;
+      padding: 20px;
 
       background-color: transparent;
+      border-radius: 0 20px 20px 0;
+
+      &::before {
+        left: 0;
+        transform: rotate(90deg);
+        width: 20px;
+        height: 20px;
+        top: -20px;
+      }
+
+      &::after {
+        left: 0;
+        transform: rotate(90deg);
+        width: 20px;
+        height: 20px;
+        bottom: -20px;
+      }
     }
   }
 
@@ -123,6 +138,7 @@
   &__icon {
     transition: all ease-out 0.15s;
     @media screen and (max-width: 1023px) {
+      flex: 0 0 auto;
       width: 45px;
       height: 45px;
       margin: 0 30px 0 0;
@@ -143,6 +159,10 @@
     border-radius: 10px;
 
     background-color: rgba(0, 0, 0, 30%);
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
 
     .swiper-scrollbar-drag {
       width: 10%;
@@ -179,6 +199,10 @@
     cursor: pointer;
 
     transition: all ease-out 0.3s;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
 
     svg {
       fill: none;
