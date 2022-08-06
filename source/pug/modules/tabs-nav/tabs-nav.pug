@@ -2,7 +2,7 @@ section.tabs-nav(data-main-nav)
   .custom-container
     .tabs-nav__container
       .about__header.tabs-nav__header.swiper
-        ul.about__list.about__list--tabs.tabs-nav__list.swiper-wrapper
+        ul.about__list.about__list--tabs.tabs-nav__list.tabs-nav__list--small.swiper-wrapper
           li.about__item.about__item--tabs.tabs-nav__item.swiper-slide
             a.about__button.tabs-nav__link(class= pageClass === "compensation-page" ? "active" : "" href= pageClass === "compensation-page" ? "" : "compensation.html")
               if pageClass === "compensation-page"

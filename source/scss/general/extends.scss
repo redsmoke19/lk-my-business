@@ -7,6 +7,10 @@
 
   padding-right: rem(15);
   padding-left: rem(15);
+
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
 }
 
 %w100 {

@@ -19,12 +19,20 @@
     margin: 0 0 30px;
   }
 
+  @media screen and (max-width: 767px) {
+    margin: 0 0 50px 0;
+  }
+
   &__block {
     padding: 0 20px 30px;
     border-radius: 10px;
 
     background-color: $white;
     box-shadow: 0 4px 30px rgba(35, 31, 32, 10%);
+
+    @media screen and (max-width: 767px) {
+      padding: 0 15px 25px;
+    }
 
     &:not(:last-child) {
       margin: 0 0 20px;
@@ -43,6 +51,14 @@
     line-height: 22px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 -15px 15px;
+      padding: 15px;
+
+      font-size: 14px;
+      line-height: 18px;
+    }
 
     &::after {
       position: absolute;
@@ -71,9 +87,18 @@
 
     padding: 0 0 0 40px;
 
+    @media screen and (max-width: 767px) {
+      padding: 0 0 0 35px;
+    }
+
     &:not(:last-child) {
       margin: 0 0 20px;
       padding: 0 0 20px 40px;
+
+      @media screen and (max-width: 767px) {
+        margin: 0 0 15px;
+        padding: 0 0 15px 35px;
+      }
 
       &::after {
         bottom: 0;
@@ -91,6 +116,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__title-text {
@@ -106,6 +136,11 @@
 
     fill: none;
     stroke: $brown-color;
+
+    @media screen and (max-width: 767px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__dl-list {
@@ -118,7 +153,9 @@
     display: flex;
 
     @media screen and (max-width: 767px) {
-      flex-direction: column;
+      &:not(:last-child) {
+        margin: 0 0 8px;
+      }
     }
   }
 
@@ -127,6 +164,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 6px 0 0;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &__dl-list-definition {
@@ -137,7 +181,10 @@
     font-size: 16px;
 
     @media screen and (max-width: 767px) {
-      margin: 6px 0 0 0;
+      margin: 0;
+
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
@@ -153,6 +200,11 @@
 
     transition: all ease-out 0.3s;
 
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
     &:hover {
       opacity: 0.7;
     }
@@ -167,6 +219,13 @@
 
     fill: none;
     stroke: $red;
+
+    @media screen and (max-width: 767px) {
+      left: -35px;
+
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__banner {
@@ -180,6 +239,11 @@
 
     background: linear-gradient(180deg, #C79569 21.35%, rgba(199, 149, 105, 20%) 100%), url('../img/aside-banner.png');
     background-size: cover;
+
+    @media screen and (max-width: 767px) {
+      margin: 10px 0 0;
+      padding: 20px 15px;
+    }
   }
 
   &__banner-title {
@@ -188,6 +252,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 0 15px;
+
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__banner-text {
