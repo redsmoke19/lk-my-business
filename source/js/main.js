@@ -8,7 +8,7 @@ import form from './form';
 import { initDropZone } from './dropzone';
 import { initAccordions } from './init-accordions';
 import { initSandwichMenu } from './sandwich';
-import { tabsSlider } from './tabs-slider';
+import { checkTabsCount } from './tabs-slider';
 import { getAsideInfo } from './aside-info';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initDropZone();
   initAccordions();
   initSandwichMenu();
-  tabsSlider();
+  checkTabsCount();
   getAsideInfo();
 });

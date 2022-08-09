@@ -1,5 +1,10 @@
+const tabsContainer = document.querySelector('.tabs-nav');
 const tabs = document.querySelector('.tabs-nav__header');
+const tabsList = document.querySelectorAll('.tabs-nav__item');
+const pageWrapper = document.querySelector('.page-main__wrapper');
 const breakpointTablet = window.matchMedia('(max-width: 1023px)');
+
+const TABS_SMALL_COUNT = 8;
 
 const tabsSlider = () => {
   let sliderTabsInit;
@@ -56,4 +61,24 @@ const tabsSlider = () => {
   breakpointChecker();
 };
 
-export { tabsSlider };
+const checkTabsCount = () => {
+  if (!pageWrapper) {
+    if (tabsList.length <= TABS_SMALL_COUNT) {
+      tabsContainer.classList.add('tabs-nav--small');
+    } else {
+      tabsContainer.classList.add('tabs-nav--large');
+      tabsSlider();
+    }
+  }
+
+  if (pageWrapper) {
+    if (tabsList.length <= 6) {
+      tabsContainer.classList.add('tabs-nav--small');
+    } else {
+      tabsContainer.classList.add('tabs-nav--large');
+      tabsSlider();
+    }
+  }
+};
+
+export { checkTabsCount };
