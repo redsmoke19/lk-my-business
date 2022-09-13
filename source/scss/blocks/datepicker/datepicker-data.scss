@@ -356,20 +356,7 @@
 
 .qs-datepicker .qs-event {
   position: relative;
-}
-
-.qs-datepicker .qs-event::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  width: 0.46875em;
-  height: 0.46875em;
-  border-radius: 50%;
-
-  background: #07f;
-
-  content: '';
+  background: rgba(238, 82, 56, 20%);
 }
 
 .qs-datepicker .qs-event.qs-disabled::after,

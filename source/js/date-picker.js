@@ -1,4 +1,5 @@
 export default () => {
+  const calendarEvents = window.properties?.calendarEvents || [];
   const calendarEvent = document.querySelector('.filters__datepicker');
   const chooseDateField = document.querySelector('.filters__choose-date');
   const customDays = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
@@ -46,6 +47,7 @@ export default () => {
       overlayPlaceholder: 'Введите год',
       dateSelected: new Date(),
       id: 1,
+      events: calendarEvents
     });
   }
 };
