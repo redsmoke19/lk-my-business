@@ -24,12 +24,20 @@ export default () => {
         input.value = 'c ' + date.toLocaleDateString();
       },
       onSelect: (instance, date) => {
-        //chooseDateField.textContent = `${date.getDate()} ${customMonth[date.getMonth()]} ${date.getFullYear()}`;
-		chooseDateField.textContent = "".concat(date.getDate(), " ").concat(customMonth[date.getMonth()], " ").concat(date.getFullYear());
+        if (date) {
+          //chooseDateField.textContent = `${date.getDate()} ${customMonth[date.getMonth()]} ${date.getFullYear()}`;
+		      chooseDateField.textContent = "".concat(date.getDate(), " ").concat(customMonth[date.getMonth()], " ").concat(date.getFullYear());
           chooseDateField.setAttribute("data-date", date.getDate());
-          chooseDateField.setAttribute("data-month", date.getMonth()+1);//bug-fix
+          chooseDateField.setAttribute("data-month", date.getMonth()+1);
           chooseDateField.setAttribute("data-year", date.getFullYear());
-          eventsRefreshFilter();
+        } else {
+          chooseDateField.setAttribute("data-date", "");
+          chooseDateField.setAttribute("data-month", "");
+          chooseDateField.setAttribute("data-year", "");
+        }
+        
+          //eventsRefreshFilter();
+          eventsRefreshCalendar();
       },
       disabledDates: [
         new Date(2021, 10, 5),
@@ -49,5 +57,8 @@ export default () => {
       id: 1,
       events: calendarEvents
     });
+
+    return dateChoise;
+
   }
 };

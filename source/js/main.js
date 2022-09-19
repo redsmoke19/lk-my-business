@@ -11,10 +11,13 @@ import { initSandwichMenu } from './sandwich';
 import { checkTabsCount } from './tabs-slider';
 import { getAsideInfo } from './aside-info';
 
+window.dateChoise = null;
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // user();
   // about();
-  datePicker();
+  window.dateChoise = datePicker();
   user();
   // faq();
   range();
