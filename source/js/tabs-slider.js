@@ -3,6 +3,7 @@ const tabs = document.querySelector('.tabs-nav__header');
 const tabsList = document.querySelectorAll('.tabs-nav__item');
 const pageWrapper = document.querySelector('.page-main__wrapper');
 const breakpointTablet = window.matchMedia('(max-width: 1023px)');
+const initialSlide = window?.settings?.swipper?.initialSlide || 0;
 
 const TABS_SMALL_COUNT = 8;
 
@@ -20,6 +21,8 @@ const tabsSlider = () => {
         spaceBetween: 0,
         slidesOffsetBefore: 0,
         slidesOffsetAfter: 0,
+
+        initialSlide: initialSlide,
 
         navigation: {
           nextEl: '.tabs-nav__arrow--next',
@@ -62,23 +65,26 @@ const tabsSlider = () => {
 };
 
 const checkTabsCount = () => {
-  if (!pageWrapper) {
-    if (tabsList.length <= TABS_SMALL_COUNT) {
-      tabsContainer.classList.add('tabs-nav--small');
-    } else {
-      tabsContainer.classList.add('tabs-nav--large');
-      tabsSlider();
+  if (tabsContainer) {
+    if (!pageWrapper) {
+      if (tabsList.length <= TABS_SMALL_COUNT) {
+        tabsContainer.classList.add('tabs-nav--small');
+      } else {
+        tabsContainer.classList.add('tabs-nav--large');
+        tabsSlider();
+      }
     }
-  }
 
-  if (pageWrapper) {
-    if (tabsList.length <= 6) {
-      tabsContainer.classList.add('tabs-nav--small');
-    } else {
-      tabsContainer.classList.add('tabs-nav--large');
-      tabsSlider();
+    if (pageWrapper) {
+      if (tabsList.length <= 6) {
+        tabsContainer.classList.add('tabs-nav--small');
+      } else {
+        tabsContainer.classList.add('tabs-nav--large');
+        tabsSlider();
+      }
     }
   }
+  
 };
 
 export { checkTabsCount };
