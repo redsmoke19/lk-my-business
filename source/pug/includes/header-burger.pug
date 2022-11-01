@@ -45,9 +45,12 @@ header.page-header.page-header--inner
     a.page-header__logo.page-header__logo--inner.logo(href="index.html" data-header-logo)
       img(width="364", height="70", src="img/index-logo.svg", alt="Logo")
 
-    a.page-header__phone.link(href="tel:88003500089")
-      +icon("phone", "20", "20").link__icon.link__icon--black
-      span.link__text 8-800-350-00-89
+    .page-header__contact
+      a.page-header__phone.link(href="tel:88003500089")
+        +icon("phone", "20", "20").link__icon.link__icon--black
+        span.link__text 8-800-350-00-89
+      a.page-header__mail-link.link(href="mailto:info@mb89.ru")
+        span.link__text.page-header__mail-text info@mb89.ru
 
     button.sandwich(type="button", aria-label="Переключатель отображения меню", aria-pressed="false", data-sandwich)
       span.sandwich__menu
