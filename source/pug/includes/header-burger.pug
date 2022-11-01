@@ -41,9 +41,11 @@ header.page-header.page-header--inner
                 a.link(href="account/sign-out.html")
                   span.link__text ИП Петров
 
-
-    a.page-header__logo.page-header__logo--inner.logo(href="index.html" data-header-logo)
-      img(width="364", height="70", src="img/index-logo.svg", alt="Logo")
+    .page-header__logo-wrapper(data-header-logo)
+      a.page-header__logo-image(href="index.html")
+        +icon-multi('icon-logo-1', '160', '50')
+      a.page-header__logo-text(href="#")
+        +icon-multi('icon-logo-2', '155', '17')
 
     .page-header__contact
       a.page-header__phone.link(href="tel:88003500089")
