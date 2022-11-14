@@ -12,3 +12,8 @@ block main
     include modules/personal-area/personal-area-4
 block footer
   include modules/footer/footer
+block modals
+  +modal("modal--text")(data-modal="text")
+    +modal-text({icon: true})
+  +modal("modal--input")(data-modal="input")
+    +modal-input()

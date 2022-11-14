@@ -10,6 +10,7 @@ import { initAccordions } from './init-accordions';
 import { initSandwichMenu } from './sandwich';
 import { checkTabsCount } from './tabs-slider';
 import { getAsideInfo } from './aside-info';
+import {initModals} from './vendor/init-modals';
 
 window.dateChoise = null;
 
@@ -27,4 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSandwichMenu();
   checkTabsCount();
   getAsideInfo();
+  initModals();
 });

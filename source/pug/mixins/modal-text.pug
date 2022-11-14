@@ -1,0 +1,17 @@
+mixin modal-text(options = {})
+
+  .modal-success&attributes(attributes)
+    if options.icon
+      svg.modal__icon.modal__icon--success(x='0px' y='0px' viewbox='0 0 50 50' style='enable-background:new 0 0 50 50;' xml:space='preserve')
+        circle(style='fill:#F4F4F4;' cx='25' cy='25' r='25')
+        polyline(style='fill:none;stroke:#ee5238;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;' points='38,15 22,33 12,25 ')
+
+    h2.modal__title Заявка сохранена
+    p.modal__description Что бы отправить заявку на рассмотрение, осталось загрузить необходимые документы и подписать заявку:
+    ol.modal__number-list
+      li.modal__number-item
+        p.modal__number-text Загрузите на следующем шаге необходимые документы (либо подтвердите актуальность уже загруженных).
+      li.modal__number-item
+        p.modal__number-text Подпишите заявку с помощью Электронной цифровой подписи - ЭПП (УКЭП)
+    .modal__button
+      a.button.button--red(href="#") Продолжить

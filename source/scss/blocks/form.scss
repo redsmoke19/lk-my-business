@@ -434,6 +434,8 @@
   transform: translateY(-50%);
 
   pointer-events: none;
+
+  transition: all ease-out 0.15s;
 }
 
 .form__show-password {

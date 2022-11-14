@@ -1,0 +1,226 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  transform: scale(1.1);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+  pointer-events: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 60px 40px;
+
+    background-color: rgba(#000000, 0.6);
+    transform: translateZ(0);
+
+    @media screen and (max-width: 767px) {
+      padding: 60px 20px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+
+    width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+
+    background-color: #ffffff;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: -55px;
+    right: -38px;
+
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255);
+    cursor: pointer;
+
+    transition: all ease-out 0.3s;
+
+    svg {
+      display: block;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media screen and (max-width: 767px) {
+      right: 0;
+    }
+  }
+
+  &--preload {
+    transition: none;
+  }
+
+  &.is-active {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+    pointer-events: auto;
+  }
+
+  &__icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+
+    @media screen and (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 0 20px;
+
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &--small {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    line-height: 22px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__number-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    padding: 0 0 0 15px;
+  }
+
+  &__number-item {
+    &::marker {
+      color: $black-80;
+
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__number-text {
+    margin: 0;
+
+    color: $black-80;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    .button {
+      padding: 10px 30px;
+    }
+
+    &--row {
+      justify-content: space-between;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+
+  &__form {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid $gray;
+    border-radius: unset;
+
+    box-shadow: unset;
+  }
+}
+
+.modal-success {
+  display: flex;
+  flex-direction: column;
+}

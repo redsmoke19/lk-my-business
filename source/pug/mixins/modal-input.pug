@@ -1,0 +1,16 @@
+mixin modal-input(options = {})
+
+  .modal-input&attributes(attributes)
+
+    h2.modal__title.modal__title--small Подтверждение заявки через СМС код
+    p.modal__description На Ваш телефон +7 (921) 636-1826 отправлено СМС-сообщение с кодом для подтверждения заявки на услугу. Пожалуйста, введите кид и нажмите кнопку "Отправить"
+    form.modal__form.form
+      .form__row.form__row--field
+        .form__field
+          input(type="text", name="modalText", required="true", id="modalText")
+          label.form__placeholder(for="modalText") Код из СМС
+    .modal__button.modal__button--row
+      a.button.button--white(href="#")
+        +icon("arrow-back", "24", "24").button__icon.button__icon--red.button__icon--left
+        span К заявкам
+      a.button.button--red(href="#") Отправить
