@@ -151,9 +151,7 @@
                         <div class="personal-area__status-box"><span class="personal-area__btn btn btn--white">
                                     <svg class="btn__icon" width="18" height="18" aria-hidden="true">
                                       <use xlink:href="img/sprites/sprite-mono.svg#icon-clock"></use>
-                                    </svg><span>Статус</span></span><a class="personal-area__btn btn" href="#"><span>Действие 1</span></a>
-                          <button class="personal-area__btn btn btn--attach-border"><span>Действие 2</span></button>
-                        </div>
+                                    </svg><span>Статус</span></span><a class="personal-area__btn btn" href="#" data-open-modal="text"><span>Действие 1</span></a><a class="personal-area__btn btn btn--attach-border" href="#" data-open-modal="input"><span>Действие 2</span></a></div>
                       </div>
                       <h2 class="personal-area__name">Название заявки</h2>
                       <dl class="personal-area__dl-list personal-area__dl-list--margin-top">
@@ -355,6 +353,63 @@
           </div>
         </div>
       </footer>
+              <div class="modal modal--preload modal--text" data-modal="text">
+                <div class="modal__wrapper">
+                  <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+                  <div class="modal__content">
+                            <div class="modal-success">
+                              <svg class="modal__icon modal__icon--success" x="0px" y="0px" viewbox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                <circle style="fill:#F4F4F4;" cx="25" cy="25" r="25"></circle>
+                                <polyline style="fill:none;stroke:#ee5238;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "></polyline>
+                              </svg>
+                              <h2 class="modal__title">Заявка сохранена</h2>
+                              <p class="modal__description">Что бы отправить заявку на рассмотрение, осталось загрузить необходимые документы и подписать заявку:</p>
+                              <ol class="modal__number-list">
+                                <li class="modal__number-item">
+                                  <p class="modal__number-text">Загрузите на следующем шаге необходимые документы (либо подтвердите актуальность уже загруженных).</p>
+                                </li>
+                                <li class="modal__number-item">
+                                  <p class="modal__number-text">Подпишите заявку с помощью Электронной цифровой подписи - ЭПП (УКЭП)</p>
+                                </li>
+                              </ol>
+                              <div class="modal__button"><a class="button button--red" href="#">Продолжить</a></div>
+                            </div>
+                    <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 4.5L4.5 13.5" stroke="#EE5238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.5 4.5L13.5 13.5" stroke="#EE5238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal modal--preload modal--input" data-modal="input">
+                <div class="modal__wrapper">
+                  <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+                  <div class="modal__content">
+                            <div class="modal-input">
+                              <h2 class="modal__title modal__title--small">Подтверждение заявки через СМС код</h2>
+                              <p class="modal__description">На Ваш телефон +7 (921) 636-1826 отправлено СМС-сообщение с кодом для подтверждения заявки на услугу. Пожалуйста, введите кид и нажмите кнопку "Отправить"</p>
+                              <form class="modal__form form">
+                                <div class="form__row form__row--field">
+                                  <div class="form__field">
+                                    <input type="text" name="modalText" required="true" id="modalText"/>
+                                    <label class="form__placeholder" for="modalText">Код из СМС</label>
+                                  </div>
+                                </div>
+                              </form>
+                              <div class="modal__button modal__button--row"><a class="button button--white" href="#">
+                                          <svg class="button__icon button__icon--red button__icon--left" width="24" height="24" aria-hidden="true">
+                                            <use xlink:href="img/sprites/sprite-mono.svg#arrow-back"></use>
+                                          </svg><span>К заявкам</span></a><a class="button button--red" href="#">Отправить</a></div>
+                            </div>
+                    <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 4.5L4.5 13.5" stroke="#EE5238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.5 4.5L13.5 13.5" stroke="#EE5238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
     </div>
     <script src="js/libs.js"></script>
     <script src="js/main.min.js"></script>
