@@ -316,7 +316,8 @@
 
   color: $black-60;
 
-  input {
+  input,
+  textarea {
     width: 100%;
 
     padding: rem(28) rem(20) rem(7) rem(20);
@@ -361,10 +362,15 @@
     }
   }
 
+  textarea {
+    resize: none;
+  }
+
   &.invalid,
   &.valid,
   &.filled {
-    input {
+    input,
+    textarea {
       color: $black;
 
       & + .form__placeholder {
@@ -436,6 +442,10 @@
   pointer-events: none;
 
   transition: all ease-out 0.15s;
+
+  textarea + & {
+    top: 25%;
+  }
 }
 
 .form__show-password {

@@ -7,6 +7,9 @@ mixin modal-input(options = {})
     form.modal__form.form
       .form__row.form__row--field
         .form__field
+          textarea(name="modalText", required="true", id="modalTextarea", rows="4")
+          label.form__placeholder(for="modalTextarea") Введите свой текст
+        .form__field
           input(type="text", name="modalText", required="true", id="modalText")
           label.form__placeholder(for="modalText") Код из СМС
     .modal__button.modal__button--row

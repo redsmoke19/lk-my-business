@@ -66,7 +66,17 @@
     transition: opacity ease-out 0.3s;
 
     .sandwich__menu {
+      background-color: #c59368;
+
       pointer-events: none;
+
+      &::after {
+        background-color: #c59368;
+      }
+
+      &::before {
+        background-color: #c59368;
+      }
     }
 
     &:hover {
@@ -76,6 +86,11 @@
     &.is-active,
     &.active {
       border: none;
+
+      .sandwich__menu::after,
+      .sandwich__menu::before {
+        background-color: #c59368;
+      }
     }
   }
 

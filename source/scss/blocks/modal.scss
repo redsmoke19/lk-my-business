@@ -218,9 +218,24 @@
 
     box-shadow: unset;
   }
+
+  &__icons-wrap {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+  }
 }
 
 .modal-success {
   display: flex;
   flex-direction: column;
+}
+
+.modal-input {
+  .form__field {
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+  }
 }

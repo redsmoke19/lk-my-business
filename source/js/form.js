@@ -2,7 +2,7 @@ import unActive from './un-active';
 
 export default () => {
   const falagInputFields = [];
-  const formInputs = document.querySelectorAll('.form__field input');
+  const formInputs = document.querySelectorAll('.form__field input, .form__field textarea');
 
   formInputs.forEach((formInput, i) => {
     if (formInput.value.length > 0) {

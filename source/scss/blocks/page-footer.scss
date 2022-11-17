@@ -186,3 +186,11 @@
   margin-right: auto;
   margin-left: 0;
 }
+
+.page-footer__icon-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 0 20px;
+  align-items: center;
+}

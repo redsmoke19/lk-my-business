@@ -114,4 +114,15 @@
     stroke: $white;
     margin: 0 10px 0 0;
   }
+
+  &--brown {
+    fill: $brown;
+    transition: all ease-out 0.3s;
+  }
+}
+
+a[href] .button__icon--brown {
+  &:hover {
+    fill: #de4f3f;
+  }
 }
