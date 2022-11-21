@@ -412,8 +412,9 @@
     pointer-events: none;
 
     @media screen and (max-width: 767px) {
-      width: calc(100vw - 40px);
       right: -15px;
+
+      width: calc(100vw - 40px);
     }
 
     &.active {
@@ -441,6 +442,7 @@
 
     font-size: 14px;
     line-height: 16px;
+    white-space: nowrap;
 
     cursor: pointer;
 
@@ -451,6 +453,7 @@
     }
 
     .btn__icon {
+      flex-shrink: 0;
       margin: 0;
 
       @media screen and (max-width: 767px) {

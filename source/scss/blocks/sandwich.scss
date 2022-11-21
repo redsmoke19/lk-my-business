@@ -1,7 +1,9 @@
 .sandwich {
+
   position: absolute;
   top: 40px;
   right: 20px;
+
   z-index: 55;
 
   display: none;
@@ -12,6 +14,7 @@
 
   @media screen and (max-width: 1023px) {
     display: flex;
+
     width: 40px;
     height: 40px;
     border: 1px solid rgba(#000000, 0.15);
@@ -33,6 +36,7 @@
     }
 
     .sandwich__menu::after {
+
       top: 0;
 
       background-color: #000000;
@@ -42,6 +46,7 @@
     }
 
     .sandwich__menu::before {
+
       bottom: 0;
 
       background-color: #000000;
@@ -51,50 +56,8 @@
     }
   }
 
-  &--small {
-    position: relative;
-    top: unset;
-    right: unset;
-
-    display: flex;
-    width: 20px;
-    height: 20px;
-    border: none;
-
-    cursor: pointer;
-
-    transition: opacity ease-out 0.3s;
-
-    .sandwich__menu {
-      background-color: #c59368;
-
-      pointer-events: none;
-
-      &::after {
-        background-color: #c59368;
-      }
-
-      &::before {
-        background-color: #c59368;
-      }
-    }
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    &.is-active,
-    &.active {
-      border: none;
-
-      .sandwich__menu::after,
-      .sandwich__menu::before {
-        background-color: #c59368;
-      }
-    }
-  }
-
   &__menu {
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -103,16 +66,19 @@
     height: 2px;
 
     background-color: #000000;
+
     transform: translate(-50%, -50%);
 
     transition: all 0s 0.3s;
 
     &::before {
+
       position: absolute;
       bottom: 5px;
       left: 0;
 
       width: 18px;
+
       height: 2px;
 
       background-color: #000000;
@@ -124,7 +90,9 @@
 
     &::after {
       position: absolute;
+
       top: 5px;
+
       left: 0;
 
       width: 18px;
@@ -135,6 +103,55 @@
       transition: background-color 0.3s, top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 
       content: '';
+    }
+  }
+}
+
+.sandwich.sandwich--small {
+  position: relative;
+  top: unset;
+  right: unset;
+
+  display: flex;
+
+  width: 20px;
+
+  height: 20px;
+  border: none;
+
+  cursor: pointer;
+
+  transition: opacity ease-out 0.3s;
+
+  .sandwich__menu {
+    background-color: #c59368;
+
+    pointer-events: none;
+
+    &::after {
+      background-color: #c59368;
+    }
+
+    &::before {
+      background-color: #c59368;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.is-active,
+  &.active {
+    border: none;
+
+    .sandwich__menu {
+      background-color: rgba(#000000, 0);
+    }
+
+    .sandwich__menu::after,
+    .sandwich__menu::before {
+      background-color: #c59368;
     }
   }
 }

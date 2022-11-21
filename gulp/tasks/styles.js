@@ -19,7 +19,7 @@ export const sassBuild = () => (
     .pipe(gulpif(config.isProd, autoprefixer({
       grid: true,
     })))
-    .pipe(gulpif(config.isProd, cleanCSS({ level: 2 })))
+    // .pipe(gulpif(config.isProd, cleanCSS({ level: 2 })))
     .pipe(rename({
       suffix: '.min',
     }))
