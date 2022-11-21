@@ -21,15 +21,16 @@ footer.index-footer
             span.index-footer__value Режим работы:
             span.index-footer__value ПН - ПТ 8:30-18:00, перерыв 12:30-14:00
             span.index-footer__value СБ, ВС выходной
-        ul.index-footer__social
-          li.index-footer__social-item
-            a.index-footer__social-link(href="#")
-              +icon("vk", "30", "30")
-              span.visually-hidden Ссылка на Вконтакте
-          li.index-footer__social-item
-            a.index-footer__social-link(href="#")
-              +icon("icon-tg", "24", "24")
-              span.visually-hidden Ссылка на Телеграм
+        .index-footer__social-wrapper
+          ul.index-footer__social
+            li.index-footer__social-item
+              a.index-footer__social-link(href="#")
+                +icon("vk", "30", "30")
+                span.visually-hidden Ссылка на Вконтакте
+            li.index-footer__social-item
+              a.index-footer__social-link(href="#")
+                +icon("icon-tg", "24", "24")
+                span.visually-hidden Ссылка на Телеграм
         a.index-footer__title(href="#") Документы
         .index-footer__row
           .index-footer__col
