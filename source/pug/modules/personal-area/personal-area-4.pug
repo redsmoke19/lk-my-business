@@ -28,7 +28,7 @@ section.personal-area
           h2.personal-area__data-title.personal-area__data-title--grey Черновик
           .personal-area__data
             .personal-area__box.personal-area__box--no-border
-              .personal-area__top.personal-area__top--small
+              .personal-area__top.personal-area__top--small.personal-area__top--more
                 time.personal-area__time 24.11.2021
                 .personal-area__status-box
                   a.personal-area__btn.btn(href="#")
@@ -38,47 +38,37 @@ section.personal-area
                     +icon("icon-clock", "18", "18").btn__icon
                     span Черновик
                 .personal-area__sandwich
-                  button.sandwich.sandwich--small(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-                    span.sandwich__menu
-                  ul.personal-area__sandwich-list._js-user-list
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Удалить
-                        +icon("icon-error", "18", "18").btn__icon.btn__icon--error
-                    li.personal-area__sandwich-item
-                      span.personal-area__sandwich-link
-                        span.personal-area__sandwich-text Удалить
-                        +icon("icon-error", "18", "18").btn__icon.btn__icon--error
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link
-                        span.personal-area__sandwich-text Удалить
-                    li.personal-area__sandwich-item
-                      span.personal-area__sandwich-link
-                        span.personal-area__sandwich-text Удалить
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Добавить
-                        +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Добавить
-                        +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Добавить
-                        +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Добавить
-                        +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Добавить
-                        +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
-                    li.personal-area__sandwich-item
-                      a.personal-area__sandwich-link(href="#")
-                        span.personal-area__sandwich-text Добавить
-                        +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
+                  button.personal-area__more-button
+                    span Еще
+                    +icon-multi("icon-arror-border", "24", "24")
+                  ul.personal-area__more-list.personal-area__more-list--top._js-user-list
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Удалить
+                  //-button.sandwich.sandwich--small(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+                  //-  span.sandwich__menu
+                  //-ul.personal-area__sandwich-list._js-user-list
+                  //-  li.personal-area__sandwich-item
+                  //-    a.personal-area__sandwich-link(href="#")
+                  //-      span.personal-area__sandwich-text Удалить
+                  //-      +icon("icon-error", "18", "18").btn__icon.btn__icon--error
+                  //-  li.personal-area__sandwich-item
+                  //-    span.personal-area__sandwich-link
+                  //-      span.personal-area__sandwich-text Удалить
+                  //-      +icon("icon-error", "18", "18").btn__icon.btn__icon--error
+                  //-  li.personal-area__sandwich-item
+                  //-    a.personal-area__sandwich-link
+                  //-      span.personal-area__sandwich-text Удалить
+                  //-  li.personal-area__sandwich-item
+                  //-    span.personal-area__sandwich-link
+                  //-      span.personal-area__sandwich-text Удалить
+                  //-  li.personal-area__sandwich-item
+                  //-    a.personal-area__sandwich-link(href="#")
+                  //-      span.personal-area__sandwich-text Добавить
+                  //-      +icon("icon-accept", "18", "18").btn__icon.btn__icon--green
               h2.personal-area__name Гранд социальным предприятиям
               dl.personal-area__dl-list.personal-area__dl-list--margin-top
                 .personal-area__dl-wrap
@@ -111,6 +101,19 @@ section.personal-area
                 .personal-area__dl-wrap
                   dt.personal-area__dl-term Название атрибута:
                   dd.personal-area__dl-def Значение атрибута
+              .personal-area__bottom-nav
+                a.personal-area__botton-nav-link.btn.btn--border-big(href="#") Досрочное погашение
+                .personal-area__more
+                  button.personal-area__more-button
+                    span Еще
+                    +icon-multi("icon-arror-border", "24", "24")
+                  ul.personal-area__more-list._js-user-list
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Удалить
           .personal-area__data
             .personal-area__box.personal-area__box--no-border
               .personal-area__top.personal-area__top--small
@@ -135,6 +138,18 @@ section.personal-area
                 .personal-area__dl-wrap
                   dt.personal-area__dl-term Заемщик:
                   dd.personal-area__dl-def ООО «Бизнес»
+              .personal-area__bottom-nav
+                .personal-area__more
+                  button.personal-area__more-button
+                    span Еще
+                    +icon-multi("icon-arror-border", "24", "24")
+                  ul.personal-area__more-list._js-user-list
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                    li.personal-area__more-item
+                      a.personal-area__more-link(href="#") Удалить
           .personal-area__data
             .personal-area__box.personal-area__box--no-border
               .personal-area__top.personal-area__top--small
@@ -148,19 +163,33 @@ section.personal-area
                     span Редактировать
               h2.personal-area__name Микрозайм «Универсальный»
               .personal-area__inner-box
-                dl.personal-area__dl-list.personal-area__dl-list--margin-top
-                  .personal-area__dl-wrap
-                    dt.personal-area__dl-term Сумма займа:
-                    dd.personal-area__dl-def 1 250 000 руб.
-                  .personal-area__dl-wrap
-                    dt.personal-area__dl-term Срок займа:
-                    dd.personal-area__dl-def 24 месяца
-                  .personal-area__dl-wrap
-                    dt.personal-area__dl-term Ставка:
-                    dd.personal-area__dl-def 7,5% годовых
-                  .personal-area__dl-wrap
-                    dt.personal-area__dl-term Заемщик:
-                    dd.personal-area__dl-def ООО «Бизнес»
+                .personal-area__inner-wrapper
+                  dl.personal-area__dl-list.personal-area__dl-list--margin-top
+                    .personal-area__dl-wrap
+                      dt.personal-area__dl-term Сумма займа:
+                      dd.personal-area__dl-def 1 250 000 руб.
+                    .personal-area__dl-wrap
+                      dt.personal-area__dl-term Срок займа:
+                      dd.personal-area__dl-def 24 месяца
+                    .personal-area__dl-wrap
+                      dt.personal-area__dl-term Ставка:
+                      dd.personal-area__dl-def 7,5% годовых
+                    .personal-area__dl-wrap
+                      dt.personal-area__dl-term Заемщик:
+                      dd.personal-area__dl-def ООО «Бизнес»
+                  .personal-area__bottom-nav
+                    a.personal-area__botton-nav-link.btn.btn--border-big(href="#") Досрочное погашение
+                    .personal-area__more
+                      button.personal-area__more-button
+                        span Еще
+                        +icon-multi("icon-arror-border", "24", "24")
+                      ul.personal-area__more-list._js-user-list
+                        li.personal-area__more-item
+                          a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                        li.personal-area__more-item
+                          a.personal-area__more-link(href="#") Заявка на предоставление справки на остаток долга
+                        li.personal-area__more-item
+                          a.personal-area__more-link(href="#") Удалить
                 p.personal-area__additionally Приложите к заявке заполненное по форме заявление. В заявлении укажите адрес регистрации юридического лица, а также адрес места осуществления предпринимательской деятельности.
           .personal-area__data
             .personal-area__box.personal-area__box--no-border

@@ -29,6 +29,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    align-items: start;
 
     @media screen and (max-width: 1023px) {
       grid-template-columns: 1fr;
@@ -165,6 +166,10 @@
 
     &--small {
       margin: 0 0 20px;
+    }
+
+    &--more {
+      padding: 0 50px 0 0;
     }
 
     @media screen and (max-width: 1024px) {
@@ -374,7 +379,6 @@
   }
 
   &__sandwich {
-    //margin: 0 0 0 auto;
     position: absolute;
     top: 50%;
     right: -25px;
@@ -478,6 +482,7 @@
   }
 
   &__additionally {
+    margin: 0;
     padding: 15px;
     border-radius: 10px;
 
@@ -516,6 +521,162 @@
       height: 100%;
 
       content: '';
+    }
+  }
+
+  &__bottom-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0 0;
+
+    @media screen and (max-width: 767px) {
+      position: relative;
+
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__botton-nav-link {
+    margin: 0 30px 0 0;
+
+    @media screen and (max-width: 767px) {
+      padding: 10px 15px;
+
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__more {
+    position: relative;
+
+    padding: 20px 0;
+
+    @media screen and (max-width: 767px) {
+      position: static;
+
+      padding: 10px 0;
+    }
+  }
+
+  &__more-button {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    color: $red;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all ease-out 0.3s;
+
+    &.active {
+      svg {
+        transform: rotate(0);
+      }
+    }
+
+    span {
+      margin: 0 6px 0 0;
+
+      pointer-events: none;
+    }
+
+    svg {
+      transform: rotate(180deg);
+
+      transition: all ease-out 0.3s;
+
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__more-list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    z-index: 2;
+
+    min-width: 300px;
+
+    margin: 0;
+    padding: 16px;
+
+    border: 2px solid #F4F4F4;
+    border-radius: 10px;
+
+    color: $black;
+
+    list-style: none;
+    background-color: $white;
+
+    box-shadow: 0 10px 40px rgba(35, 31, 32, 5%);
+    opacity: 0;
+
+    transition: all ease-out 0.3s;
+
+    pointer-events: none;
+
+    @media screen and (max-width: 1023px) {
+      right: 0;
+      left: unset;
+    }
+
+    @media screen and (max-width: 767px) {
+      top: 50px;
+      right: unset;
+      left: 50%;
+
+      min-width: calc(100vw - 60px);
+
+      transform: translateX(-50%);
+    }
+
+    &--top {
+      top: 35px;
+      right: 0;
+      left: unset;
+
+      @media screen and (max-width: 767px) {
+        top: 35px;
+        min-width: 200px;
+        left: unset;
+        right: 0;
+        transform: unset;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+
+      pointer-events: all;
+    }
+  }
+
+  &__more-item {
+    &:not(:last-child) {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__more-link {
+    color: $black;
+
+    cursor: pointer;
+
+    transition: all ease-out 0.3s;
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 
