@@ -39,11 +39,11 @@
   }
 
   &--christmas {
-    //padding-bottom: rem(400);
+    padding-bottom: rem(20);
 
     .promo__content {
       //max-width: 800px;
-      max-width: 60%;
+      max-width: 65%;
 
       @media screen and (max-width: 1023px) {
         max-width: 100%;
@@ -293,18 +293,18 @@
 }
 
 .promo__christmas-wrap {
+  margin: 40px 0 0;
   padding: 20px;
   border: 2px solid $white;
   border-radius: 15px;
-  margin: 80px 0 0 0;
 }
 
 .promo__christmas-text {
   margin: 0;
 
   font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   &--red {
@@ -316,16 +316,12 @@
   }
 
   &:not(:last-child) {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
     text-align: left;
-
-    &:not(:last-child) {
-      margin: 0 0 10px 0;
-    }
   }
 }
 
