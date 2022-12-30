@@ -131,7 +131,7 @@
 
   height: auto;
 
-  margin: 0 auto rem(115) 0;
+  margin: 0 auto rem(82) 0;
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -297,6 +297,8 @@
   padding: 20px;
   border: 2px solid $white;
   border-radius: 15px;
+
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .promo__christmas-text {
