@@ -13,7 +13,7 @@ html(lang="ru")
       main.page-main
         h1.visually-hidden ЛК Мой бизнес
 
-        section.promo
+        section.promo.promo--christmas
           .promo__wrapper
             .promo__content
               .promo__logo.logo
@@ -33,16 +33,17 @@ html(lang="ru")
                   <path d="M114.657 12.1372H117.511C117.595 12.1372 117.66 12.202 117.657 12.2845V23.1496C117.657 23.2144 117.618 23.2732 117.556 23.2939C116.233 23.7946 114.003 24.2981 112.004 24.2981C108.582 24.2981 107.196 22.8137 107.128 19.0232C107.125 19.0144 107.125 12.3021 107.125 12.3021V12.2845C107.125 12.202 107.19 12.1372 107.274 12.1372H110.128C110.211 12.1372 110.277 12.202 110.277 12.2845V18.9584C110.342 20.9729 110.845 21.4561 112.575 21.4561C113.271 21.4561 113.89 21.3736 114.508 21.2027V12.2845C114.508 12.202 114.573 12.1372 114.657 12.1372Z" fill="#EE2F53"/>
                   </svg>
 
-              //.promo__social.social
-              //  - const socials = ['fb', 'insta', 'vk'];
-              //    ul.social__list.social__list--vertical
-              //      each val in socials
-              //        li.social__item.social__item--vertical
-              //          a.social__link.social__link--brown(href="#", target="_blank")
-              //            svg(width="24", height="24", aria-label= val)
-              //                use(xlink:href="img/sprites/sprite-mono.svg#" + val)
+              .promo__christmas-wrap
+                p.promo__christmas-text.promo__christmas-text--red Уважаемые клиенты!
+                p.promo__christmas-text Просим ознакомиться с графиком работы в предпраздничные и праздничные дни
+                p.promo__christmas-text.promo__christmas-text--red 30 декабря работаем до 17:00 #[br] С 31 декабря 2022 года по 8 января 2023 года выходные дни
+                p.promo__christmas-text с 9 января 2023 года - работаем по привычному графику
+                p.promo__christmas-text.promo__christmas-text--red Заявки, оформленные в Личном кабинете предпринимателя будут приняты к рассмотрению в первый рабочий день после после окончания рабочих праздников года
+                p.promo__christmas-text.promo__christmas-text--right С наилучшими пожеланиями в Новом 2023 году коллектив #[br] Фонда "Агенство ЯМАО "Мой бизнес" (МКК)"
           .promo__img
             img(src="img/promo.png", alt="Фоновая картинка офиса" width="1300" height="852")
+          .promo__christmas
+            img(width="1588", height="865", src="img/christmas-tree.png", alt="Изображение ёлки")
       include includes/widget-button
       include includes/footer-index.pug
 

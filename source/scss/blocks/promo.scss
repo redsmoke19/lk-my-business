@@ -38,6 +38,19 @@
     content: '';
   }
 
+  &--christmas {
+    //padding-bottom: rem(400);
+
+    .promo__content {
+      //max-width: 800px;
+      max-width: 60%;
+
+      @media screen and (max-width: 1023px) {
+        max-width: 100%;
+      }
+    }
+  }
+
   &--login {
     padding-top: rem(141);
     padding-bottom: rem(70);
@@ -77,6 +90,8 @@
 
 .promo__wrapper {
   @extend %wrapper;
+  position: relative;
+  z-index: 11;
 
   min-height: 100%;
 
@@ -247,8 +262,8 @@
     stroke: $red-system;
 
     @media screen and (max-width: 767px) {
-      height: 70px;
       width: 70px;
+      height: 70px;
     }
   }
 
@@ -274,5 +289,61 @@
       font-size: 14px;
       line-height: 18px;
     }
+  }
+}
+
+.promo__christmas-wrap {
+  padding: 20px;
+  border: 2px solid $white;
+  border-radius: 15px;
+  margin: 80px 0 0 0;
+}
+
+.promo__christmas-text {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  &--red {
+    color: $red-80;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    text-align: left;
+
+    &:not(:last-child) {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.promo__christmas {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  display: flex;
+  height: 100%;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
+  img {
+    object-fit: cover;
+    object-position: bottom;
   }
 }
